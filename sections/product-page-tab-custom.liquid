@@ -1,3 +1,4 @@
+{%- include 'alt-domain-check' -%}
 {%- if section.blocks.size > 0 -%}
 {%- if settings.product_tab_style !='accordion' -%}
   {%- if settings.custom_product_tab_right != blank -%}
@@ -82,6 +83,8 @@
           </li>
           {%- endif -%}
           {%- when 'html' -%}
+          {%- assign tab_code = block.settings.code -%}
+          {%- if is_alt_domain and block.settings.code_alt != blank -%}{%- assign tab_code = block.settings.code_alt -%}{%- endif -%}
           {%- if block.settings.code != '' -%}
           <li class="html_tab level0 nav-item">
             <a class="level0 nav-link {% if forloop.first %}active{% endif %}" href="#tab{{block.id}}" role="tab" data-toggle="tab" aria-selected="false" aria-control="tab{{block.id}}">
@@ -192,20 +195,22 @@
           </div>
           {%- endif -%}
           {%- when 'html' -%}
+          {%- assign tab_code = block.settings.code -%}
+          {%- if is_alt_domain and block.settings.code_alt != blank -%}{%- assign tab_code = block.settings.code_alt -%}{%- endif -%}
           {%- if block.settings.code != '' -%}
           <div class="tab-content{% if forloop.first %} show active{% endif %}{% if settings.product_tab_style != 'sticky' %} fade collapse{% endif %}" id="tab{{block.id}}">
             <div class="product-tabs-content-inner clearfix">  
               {%- if settings.language_enable -%}
               <div class="lang1">
-                {%- assign code_lg1 = block.settings.code | split: '[lang2]' | first -%}
+                {%- assign code_lg1 = tab_code | split: '[lang2]' | first -%}
                 {% include 'shortcode' load: code_lg1 %}
               </div>
               <div class="lang2">
-                {%- assign code_lg2 = block.settings.code | split: '[lang2]' | last -%}
+                {%- assign code_lg2 = tab_code | split: '[lang2]' | last -%}
                 {% include 'shortcode' load: code_lg2 %} 
               </div>
               {%- else -%}
-              {%- assign code_lg = block.settings.code | split: '[lang2]' | first -%}
+              {%- assign code_lg = tab_code | split: '[lang2]' | first -%}
               {% include 'shortcode' load: code_lg %}
               {%- endif -%} 
             </div>
@@ -428,6 +433,8 @@
         </div>
         {%- endif -%}
         {%- when 'html' -%}
+          {%- assign tab_code = block.settings.code -%}
+          {%- if is_alt_domain and block.settings.code_alt != blank -%}{%- assign tab_code = block.settings.code_alt -%}{%- endif -%}
         {%- if block.settings.code != '' -%}
         <div class="panel panel-default panel-custom-tab">
           <div class="panel-heading">
@@ -446,15 +453,15 @@
             <div class="product-tabs-content-inner clearfix">
               {%- if settings.language_enable -%}
               <div class="lang1">
-                {%- assign code_lg1 = block.settings.code | split: '[lang2]' | first -%}
+                {%- assign code_lg1 = tab_code | split: '[lang2]' | first -%}
                 {% include 'shortcode' load: code_lg1 %}
               </div>
               <div class="lang2">
-                {%- assign code_lg2 = block.settings.code | split: '[lang2]' | last -%}
+                {%- assign code_lg2 = tab_code | split: '[lang2]' | last -%}
                 {% include 'shortcode' load: code_lg2 %} 
               </div>
               {%- else -%}
-              {%- assign code_lg = block.settings.code | split: '[lang2]' | first -%}
+              {%- assign code_lg = tab_code | split: '[lang2]' | first -%}
               {% include 'shortcode' load: code_lg %}
               {%- endif -%} 
             </div>
@@ -592,6 +599,12 @@
           "type": "html",
           "id": "code",
           "label": "HTML"
+        },
+        {
+          "type": "html",
+          "id": "code_alt",
+          "label": "HTML (Alternate Domain)",
+          "info": "Shown instead of HTML on the alternate domain (e.g. spinmop.com). Leave empty to use HTML."
         }
       ]
     }

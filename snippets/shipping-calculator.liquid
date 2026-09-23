@@ -3,9 +3,14 @@
   <div id="shipping-calculator" class="cart-items clearfix">
     <div class="shipping-note">
                   <h5>Quick Shipping Info:</h5>
+                  {%- include 'alt-domain-check' -%}
+                  {%- if is_alt_domain and settings.alt_shipping_note != blank -%}
+                  {{ settings.alt_shipping_note }}
+                  {%- else -%}
                   <p>Ireland: €4.99<br>
                   Mainland UK: €9.99<br>
                   <b><i>Note: We offer free shipping over €99</i></b></p>
+                  {%- endif -%}
                 </div>
     <div class="cart-item">
       <div id="wrapper-resquest">

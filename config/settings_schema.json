@@ -1327,6 +1327,18 @@
         "label": "Logo Header Overlap Image"
       },
       {
+        "type": "html",
+        "id": "alt_shipping_note",
+        "label": "Cart Quick Shipping Info (Alternate Domain)",
+        "info": "Replaces the Ireland / Mainland UK / free shipping note in the cart shipping calculator. Leave empty to keep the default."
+      },
+      {
+        "type": "text",
+        "id": "alt_oos_offer_text",
+        "label": "Awaiting Stock Offer Text (Alternate Domain)",
+        "info": "Replaces the 'AWAITING STOCK OFFER' message on products tagged 'oos'. Leave empty to keep the default."
+      },
+      {
         "type": "header",
         "content": "Header Overlap"
       },
