@@ -1,0 +1,15 @@
+{%- comment -%}
+  Sets `is_alt_domain` to true when the store is viewed on the domain in
+  Theme settings > Alternate Domain Logo (with or without "www.").
+  Use with {% include %} so the variable is available to the caller.
+{%- endcomment -%}
+{%- assign is_alt_domain = false -%}
+{%- assign alt_domain = settings.alt_logo_domain | strip | downcase | remove: 'https://' | remove: 'http://' | remove: '/' -%}
+{%- if alt_domain != blank -%}
+  {%- assign alt_domain = alt_domain | remove_first: 'www.' -%}
+  {%- assign alt_domain_www = alt_domain | prepend: 'www.' -%}
+  {%- assign current_host = request.host | downcase -%}
+  {%- if current_host == alt_domain or current_host == alt_domain_www -%}
+    {%- assign is_alt_domain = true -%}
+  {%- endif -%}
+{%- endif -%}

@@ -1299,6 +1299,35 @@
       },
       {
         "type": "header",
+        "content": "Alternate Domain Logo"
+      },
+      {
+        "type": "paragraph",
+        "content": "These logos replace the ones above only when the store is visited on the domain below (e.g. spinmop.com). Leave an image empty to fall back to the default logo."
+      },
+      {
+        "type": "text",
+        "id": "alt_logo_domain",
+        "label": "Domain",
+        "default": "spinmop.com"
+      },
+      {
+        "type": "image_picker",
+        "id": "alt_logo",
+        "label": "Logo Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "alt_logo_sticky",
+        "label": "Logo Sticky Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "alt_logo_overlap",
+        "label": "Logo Header Overlap Image"
+      },
+      {
+        "type": "header",
         "content": "Header Overlap"
       },
       {

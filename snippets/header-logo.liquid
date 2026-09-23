@@ -1,7 +1,10 @@
+{%- include 'alt-domain-check' -%}
 <div class="site-logo">
   <a href="/" class="logo porto-main-logo" rel="home">
     {%- if settings.header_overlap != blank and template == 'index' -%}
-      {%- if settings.logo_overlap_svg != '' -%}
+      {%- if is_alt_domain and settings.alt_logo_overlap != blank -%}
+        <img src="{{ settings.alt_logo_overlap | img_url: logo_size }}" alt="{{ image.alt | default: shop.name }}"/>
+      {%- elsif settings.logo_overlap_svg != '' -%}
         <img src="{{ settings.logo_overlap_svg | asset_url }}" style="max-width:{{settings.logo_width | remove: 'px' | append: 'px' }};" alt="{{ image.alt | default: shop.name }}"/>
       {%- else -%}
         {%- if settings.logo_overlap != blank -%}
@@ -11,7 +14,9 @@
         {%- endif -%}
       {%- endif -%}
     {%- else -%}
-      {%- if settings.logo_svg != '' -%}
+      {%- if is_alt_domain and settings.alt_logo != blank -%}
+        <img src="{{ settings.alt_logo | img_url: logo_size }}" alt="{{ image.alt | default: shop.name }}"/>
+      {%- elsif settings.logo_svg != '' -%}
       <img src="{{ settings.logo_svg | asset_url }}" style="max-width:{{settings.logo_width | remove: 'px' | append: 'px' }};" alt="{{ image.alt | default: shop.name }}"/>
       {%- else -%}
         {%- if settings.logo != blank -%}
