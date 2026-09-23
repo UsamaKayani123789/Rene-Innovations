@@ -1,3 +1,4 @@
+{%- include 'alt-domain-check' -%}
 <div class="top-newsletter notice-color-{{settings.notice_text_color}}">
   <div class="container">
     <div class="row">
@@ -5,12 +6,16 @@
       {%- for block in section.blocks -%}
       {%- case block.type -%}
       {%- when 'html' -%}
+      {%- assign notice_text = block.settings.custom_block -%}
+      {%- if is_alt_domain and block.settings.custom_block_alt != blank -%}
+        {%- assign notice_text = block.settings.custom_block_alt -%}
+      {%- endif -%}
       <div class="col-sm-{{block.settings.item_width_mobile}} col-lg-{{block.settings.item_width_desktop}} col-md-{{block.settings.item_width_tablet}}">
         {%- if settings.language_enable -%}
-        <div class="lang1">{{ block.settings.custom_block | split: '[lang2]' | first }}</div>
-        <div class="lang2">{{ block.settings.custom_block | split: '[lang2]' | last }}</div>
+        <div class="lang1">{{ notice_text | split: '[lang2]' | first }}</div>
+        <div class="lang2">{{ notice_text | split: '[lang2]' | last }}</div>
         {%- else -%}
-        {{ block.settings.custom_block | split: '[lang2]' | first }}
+        {{ notice_text | split: '[lang2]' | first }}
         {%- endif -%}
       </div>
       {%- else -%}
@@ -219,6 +224,12 @@
           "id": "custom_block",
           "label": "Custom Block",
           "default": "<span style=\"font-size: 16px; font-family: Georgia; line-height: 30px;\"><b>SALE:</b> use coupon code <b>PORTO</b> to save 30%</span>"
+        },
+        {
+          "type": "html",
+          "id": "custom_block_alt",
+          "label": "Custom Block (Alternate Domain)",
+          "info": "Shown instead of Custom Block on the domain set in Theme settings > Header > Alternate Domain Logo (e.g. spinmop.com). Leave empty to use Custom Block."
         }
       ]
     },
