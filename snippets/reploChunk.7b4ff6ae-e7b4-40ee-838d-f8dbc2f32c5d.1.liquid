@@ -1,0 +1,397 @@
+3-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#EBB057FF" class="r-1lb0cwi" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#EBB057FF" class="r-1lb0cwi" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg></div><div data-rid="abb2f7eb-f744-4c33-aef0-9b7448141a12" class="r-1c4b1kf alchemy-rte"><span style="width:100%"><p>Loved across Ireland & the UK</p></span></div></div><div data-rid="9e9b0c6d-4ac0-4f59-8758-53d7ceeb8b92" class="r-812bgw"><div data-rid="e49bf954-e512-41fe-a5c5-9ed77aec2ed7" class="r-u96se7 alchemy-rte"><span style="width:100%"><h2>{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{ product.title }}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</h2></span></div><div data-rid="bb7a9075-2778-4624-8d0b-a9372bc262e7" class="r-1k4ai39 alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}brand_display{%- endcapture -%}
+      {%- capture htmlOpenTag -%}<{%- endcapture -%}
+      {%- capture htmlCloseTag -%}>{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div></div><div data-rid="2abd3dc6-24b4-4615-83aa-4a7a4ad2b39b" class="r-n7hlst"><div data-rid="9fdad465-85ba-4db9-aceb-4428abd14f6a" class="r-ymp6pu alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{ reploSelectedVariant.price  | money}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div><div data-rid="b034b98c-62c4-45c8-8c10-4499c06c7346" class="r-1newn83 alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{ reploSelectedVariant.compare_at_price  | money}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div><div data-rid="b11dcb25-6f6c-400d-a919-396118d54938" class="r-111hnmq"><div data-rid="ce03b011-ef18-402f-ac5a-66d7fd4eb14b" class="r-l3usp4 alchemy-rte"><span style="width:100%"><p>Save</p></span></div><div data-rid="a6900f99-5fc6-4153-bbb1-2bdb01420de3" class="r-2lare4 alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{ reploSelectedVariant.compare_at_price | minus: reploSelectedVariant.price | at_least: 0 | money_without_currency  | money}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div></div></div><div data-rid="a8d99b9d-2166-41da-be2b-dc841fe7416b" class="r-y5wurm"><div data-rid="d3610144-e435-43ee-8403-26b0def35f1c" data-replo-decrease-product-quantity="1" tabindex="0" role="button" class="r-1cfl2he"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" role="presentation" style="width:var(--rsw, 100%);height:auto;max-height:100%" class="r-1vtosog" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"></path></svg></div><div data-rid="c6357e9e-5673-4cb1-bb3a-af3bd4cb8755" class="r-174t4yo alchemy-rte"><span style="width:100%">1</span></div><div data-rid="5d29b429-9dd9-40ca-8b10-041e19162118" data-replo-increase-product-quantity="1" tabindex="0" role="button" class="r-1cedjb7"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" role="presentation" style="width:var(--rsw, 100%);height:auto;max-height:100%" class="r-1yyci8l" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path></svg></div></div><div data-rid="50cecedb-d1b8-4e02-adef-280a137b87fd" class="r-1ht4cy7"><div data-rid="6181f74b-f68e-4fec-a4c8-f8e635ccca97" class="r-1153yic">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% capture firstTrueVariantR1elqb2 %}{% endcapture %}<!-- -->{% if firstTrueVariantR1elqb2 == empty and reploSelectedVariant.available == false %}<!-- -->{% capture firstTrueVariantR1elqb2 %}203bf060-44ac-4b1b-9ab3-cacaae45a0a0{% endcapture %}<!-- -->{% endif %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}<!-- -->{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% unless firstTrueVariantR1elqb2 == empty %}<!-- -->{% capture variantId %}203bf060-44ac-4b1b-9ab3-cacaae45a0a0{% endcapture %}<!-- -->{% if firstTrueVariantR1elqb2 == variantId %}<button data-rid="14cca3d4-06e9-4f04-bee0-8ef14b81320c" class="text r-aassw4 r-1sznvp0 alchemy-rte"><div data-rid="ee898292-a2fe-45f4-90de-38ad3ca10ab1" class="r-ljkfls alchemy-rte"><span style="width:100%"><p>En rupture de stock</p></span></div></button>{% endif %}<!-- -->{% endunless %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}<!-- -->{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% if firstTrueVariantR1elqb2 == empty %}<button data-rid="14cca3d4-06e9-4f04-bee0-8ef14b81320c" data-replo-add-product-variant-to-cart="" tabindex="0" role="button" class="text r-aassw4 alchemy-rte"><div data-rid="ee898292-a2fe-45f4-90de-38ad3ca10ab1" class="r-ljkfls alchemy-rte"><span style="width:100%"><p>Add to Cart</p></span></div></button>{% endif %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</div><div data-rid="54347e4f-16c9-47d7-b590-c08aa1d0ada4" class="r-87qrwq"><div data-rid="5edbd050-b5f3-41cc-998c-191f59326e3f" class="r-10vopsx"><div data-rid="46691c25-63f1-4472-a73a-23b3d50e5ffe" class="r-1focgff"><picture data-rid="3c96a4d4-a6cd-4833-a68b-210ffee71cae" class="r-6hwxtr"><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/db6e4f7c-2a51-4981-a52e-94306a0d69ae?width=820" media="(max-width: 640px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/db6e4f7c-2a51-4981-a52e-94306a0d69ae?width=1024" media="(min-width: 641px) and (max-width: 1024px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/db6e4f7c-2a51-4981-a52e-94306a0d69ae?width=1800" media="(min-width: 1025px) and (max-width: 2400px)"/><img src="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/db6e4f7c-2a51-4981-a52e-94306a0d69ae" class="r-l6ah09" loading="eager"/></picture><div data-rid="0bcdb3cf-8289-450d-9517-90affdd6c189" class="r-13l46x6 alchemy-rte"><span style="width:100%"><p>60‑Day Clean Home Guarantee</p></span></div></div><div data-rid="2a53bf4b-99fa-4a59-9756-ecf77e52cdcf" class="r-1wen9t"><picture data-rid="d029bc32-38f5-4fb1-8261-bd3d1b64fd06" class="r-19jtj1r"><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/36b81469-bb1b-4227-b05c-746204d9a190?width=820" media="(max-width: 640px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/36b81469-bb1b-4227-b05c-746204d9a190?width=1024" media="(min-width: 641px) and (max-width: 1024px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/36b81469-bb1b-4227-b05c-746204d9a190?width=1800" media="(min-width: 1025px) and (max-width: 2400px)"/><img src="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/36b81469-bb1b-4227-b05c-746204d9a190" alt="A line-drawing icon of a window with a checkmark in a circle." class="r-10vtimo" loading="eager"/></picture><div data-rid="f12297a1-ef1b-47a1-a5ed-83650965744a" class="r-2ogceo alchemy-rte"><span style="width:100%"><p>Machine‑washable heads</p></span></div></div></div><picture data-rid="c165e0d5-ed77-4857-8f12-6b8bc44d1555" class="r-1va1fww"><source srcSet="https://assets.replocdn.com/projects/5a710b52-733c-437f-b1fc-a8e6b8091494/68bee1ab-2f09-4ccc-a668-70fff435741c?width=820" media="(max-width: 640px)"/><source srcSet="https://assets.replocdn.com/projects/5a710b52-733c-437f-b1fc-a8e6b8091494/68bee1ab-2f09-4ccc-a668-70fff435741c?width=1024" media="(min-width: 641px) and (max-width: 1024px)"/><source srcSet="https://assets.replocdn.com/projects/5a710b52-733c-437f-b1fc-a8e6b8091494/68bee1ab-2f09-4ccc-a668-70fff435741c?width=1800" media="(min-width: 1025px) and (max-width: 2400px)"/><img src="https://assets.replocdn.com/projects/5a710b52-733c-437f-b1fc-a8e6b8091494/68bee1ab-2f09-4ccc-a668-70fff435741c" class="r-7lqvj9" loading="eager"/></picture></div></div></div></div>{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% capture reploVariantIdString %}null{% endcapture %}<!-- -->{% capture reploSellingPlanIdString %}null{% endcapture %}<!-- -->{% capture reploIdKey %}id{% endcapture %}<!-- -->{% capture reploPercentageKey %}percentage{% endcapture %}<!-- -->{% capture reploPriceKey %}price{% endcapture %}<!-- -->{% capture reploFixedAmountKey %}fixed_amount{% endcapture %}<!-- -->{% capture spKey %}selling_plan{% endcapture %}<!-- -->{%- liquid
+              assign reploVariantId = reploVariantIdString | times: 1
+              assign reploSelectedVariant = product.variants | where: reploIdKey, reploVariantId | first
+              if reploSelectedVariant == blank
+                assign reploSelectedVariant = product.selected_or_first_available_variant
+              endif
+              assign reploSelectedSellingPlanPrice = reploSelectedVariant.price
+              if product.selling_plan_groups[0]
+                assign reploAllSellingPlans = reploSelectedVariant.selling_plan_allocations | map: spKey
+                assign reploSortedSellingPlans = reploAllSellingPlans | sort: reploIdKey
+                if true
+                  assign reploSellingPlanId = reploSellingPlanIdString | times: 1
+                  assign reploSelectedSellingPlan = reploSortedSellingPlans | where: reploIdKey, reploSellingPlanId | first
+                  if reploSelectedSellingPlan.price_adjustments[0]
+                    assign adjustment = reploSelectedSellingPlan.price_adjustments[0]
+                    case adjustment.value_type
+                      when reploPercentageKey
+                        assign amountOff = 100 | minus: adjustment.value
+                        assign reploSelectedSellingPlanPrice = reploSelectedSellingPlanPrice | times: amountOff | divided_by: 100
+                      when reploFixedAmountKey
+                        assign reploSelectedSellingPlanPrice = reploSelectedSellingPlanPrice | minus: adjustment.value
+                      when reploPriceKey
+                        assign reploSelectedSellingPlanPrice = adjustment.value
+                    endcase
+                  endif
+                endif
+              endif
+            -%}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = 0 %}<!-- -->{% if reploSelectedVariant.compare_at_price != blank %}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = reploSelectedVariant.compare_at_price | minus: reploSelectedVariant.price | at_least: 0 | times: 100.0 | divided_by: reploSelectedVariant.compare_at_price | round %}<!-- -->{% endif %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}<div data-rid="807bdd15-043e-48d8-a502-605c4dd1309d" class="r-1umt4er" data-replo-product-container="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" data-replo-product-handle="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.handle}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"><product-form style="display:none"><form id="product-form-{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" method="post" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" encType="multipart/form-data" action="/cart/add" data-type="add-to-cart-form"><input type="hidden" name="id" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{reploSelectedVariant.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/><input type="hidden" name="quantity" value="1"/><input type="hidden" name="selling_plan" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- if reploSelectedSellingPlan != blank -%}{{reploSelectedSellingPlan.id}}{%- endif -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/></form></product-form><div data-rid="ffac8801-6450-4805-9f1f-6a5fbef58a1f" class="r-qdtlm1"><div data-rid="7f43ea89-50b9-4d80-8ed3-26e76144948c" class="r-1udniyf"><div data-rid="42bf9cc8-954c-4a8d-bfd9-d86f42546783" class="r-6j2ltn" data-orientation="vertical"><div data-rid="8f44f3c1-ee31-4d2a-895a-1eee51803225" class="r-1hkhukc" data-replo-collapsible="true" data-state="open" data-orientation="vertical"><div data-rid="fd7a1c85-9ccb-4b29-a795-3c5a55145c49" aria-expanded="true" aria-controls="replo-:R3tsb2:" tabindex="0" role="button" class="r-5v799q"><div data-rid="2ed69c7a-cbc6-41b3-a903-c7327e43aa56" class="r-12pbfxh alchemy-rte"><span style="width:100%"><p>Description</p></span></div><div data-rid="5e61b5d5-b935-48e4-8801-438c1f13a95e" class="r-42ylkm r-na8bz"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" role="img" aria-label="Collapse/Expand" style="width:var(--rsw, 100%);height:auto;max-height:100%" class="r-539wl1 r-dgjh5k" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"></path></svg></div></div><div id="replo-:R3tsb2:"><div data-rid="a27d5256-88d6-41af-bcb8-042e8869f037" class="r-irdgej"><div data-rid="ded0d872-2298-4027-b1a7-0b83d8dabdaf" class="r-bhx0sc alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{ product.description }}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div></div></div></div><div data-rid="d73a7ebe-3ffe-429b-8f72-d3f4f201d56e" class="r-ptw79x"></div><div data-rid="94291a05-8a46-4a6e-9515-03d09eef9fab" class="r-hm8r69" data-replo-collapsible="true" data-state="closed" data-orientation="vertical"><div data-rid="7bf4a5a3-e0fd-46be-b035-85cc1951e303" aria-expanded="false" aria-controls="replo-:R7tsb2:" tabindex="0" role="button" class="r-1e64i43"><div data-rid="d7d61123-45ec-4c6c-8ab0-e828dbc815bb" class="r-1kmsk9p alchemy-rte"><span style="width:100%"><p>Shipping & Delivery</p></span></div><div data-rid="30b4daca-698e-47a1-9ab7-23b09605920c" class="r-szs0e8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" role="img" aria-label="Collapse/Expand" style="width:var(--rsw, 100%);height:auto;max-height:100%" class="r-qosmlu" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"></path></svg></div></div><div hidden="" id="replo-:R7tsb2:"><div data-rid="21d32ea5-b134-4972-805e-2140b229c280" class="r-ijlblw"><div data-rid="61f96cfa-a2de-4a7d-a36f-76452f3016c1" class="r-1uxngvn alchemy-rte"><span style="width:100%"><ul><li><p>Free delivery on orders over €55 in Ireland.</p></li></ul><ul><li><p>Flat rate of just €6.99 for orders below €55.</p></li><li><p>Order now to receive within 3 working days.</p></li></ul></span></div></div></div></div><div data-rid="29e96f90-4be4-41ad-8a5f-a2f76dde0893" class="r-3v88zu"></div></div></div></div></div></div><div data-rid="cef65c1a-1215-400b-915e-8ff7d8aa6323" class="r-j6eiq"><div class="r-1jjotcx" data-rid="1"><div data-rid="afa15939-3b2e-49ed-8f9b-6e2e2aea97f4" class="r-17dsajg"><div data-rid="701517e9-600f-4d89-8174-660961c3ce0b" class="r-1k8o0v1"><picture data-rid="e634a956-736c-4a8e-897a-744f116f9d8a" class="r-qddzki"><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/ee264595-42fe-4116-a738-479ae53d6538?width=62" media="(max-width: 640px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/ee264595-42fe-4116-a738-479ae53d6538?width=62" media="(min-width: 641px) and (max-width: 1024px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/ee264595-42fe-4116-a738-479ae53d6538?width=62" media="(min-width: 1025px) and (max-width: 2400px)"/><img src="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/ee264595-42fe-4116-a738-479ae53d6538" class="r-pvdo54" loading="lazy"/></picture><div data-rid="7e54ca0f-c078-42c5-92f0-fa8bd430526c" class="r-ix7fm6 alchemy-rte"><span style="width:100%"><p>Hygienic, low‑waste cleaning</p></span></div></div><div data-rid="f0de1465-b598-44db-8825-34d2bff25f55" class="r-1u3kljk"><picture data-rid="fb803fb3-8b39-4adb-a3ee-ed83b4226eab" class="r-ytpd5v"><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/765123c1-448c-4941-b678-4de7b4979f01?width=66" media="(max-width: 640px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/765123c1-448c-4941-b678-4de7b4979f01?width=66" media="(min-width: 641px) and (max-width: 1024px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/765123c1-448c-4941-b678-4de7b4979f01?width=66" media="(min-width: 1025px) and (max-width: 2400px)"/><img src="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/765123c1-448c-4941-b678-4de7b4979f01" class="r-1qudyhc" loading="lazy"/></picture><div data-rid="a2e892ba-27ac-4162-8fb3-f5206314d5a1" class="r-je1fia alchemy-rte"><span style="width:100%"><p>Innovation that saves time, money and effort</p></span></div></div><div data-rid="23d8e68a-c5c5-49b6-bd31-ded2bdf3c6d7" class="r-1xshzpe"><picture data-rid="80968b1a-a28e-46d9-9cad-eb957adb680c" class="r-pymkn0"><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/fd5f3f97-f5ba-4077-828f-5de9d27f0a9c?width=62" media="(max-width: 640px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/fd5f3f97-f5ba-4077-828f-5de9d27f0a9c?width=62" media="(min-width: 641px) and (max-width: 1024px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/fd5f3f97-f5ba-4077-828f-5de9d27f0a9c?width=62" media="(min-width: 1025px) and (max-width: 2400px)"/><img src="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/fd5f3f97-f5ba-4077-828f-5de9d27f0a9c" class="r-mxtz0y" loading="lazy"/></picture><div data-rid="5854a628-7ffb-4f6d-8f07-c298fa194fc8" class="r-1tteemx alchemy-rte"><span style="width:100%"><p>Premium build quality that lasts</p></span></div></div><div data-rid="6ce4509a-474b-4c32-b359-84692721a007" class="r-1hatuet"><picture data-rid="159172ee-2aa3-43d6-93a6-9444399ffbdb" class="r-1o2077"><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/da552a8e-aa45-43ab-9df7-dd344efd6d27?width=62" media="(max-width: 640px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/da552a8e-aa45-43ab-9df7-dd344efd6d27?width=62" media="(min-width: 641px) and (max-width: 1024px)"/><source srcSet="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/da552a8e-aa45-43ab-9df7-dd344efd6d27?width=62" media="(min-width: 1025px) and (max-width: 2400px)"/><img src="https://assets.replocdn.com/projects/dbc87de3-83b1-4428-bfd4-bcf4ee980b58/da552a8e-aa45-43ab-9df7-dd344efd6d27" class="r-1c84yw8" loading="lazy"/></picture><div data-rid="9ea81a4d-f3d4-43d8-abce-db8ffd3f12b0" class="r-1c6nhtb alchemy-rte"><span style="width:100%"><p>Friendly Irish support + full spare parts</p></span></div></div></div></div></div>{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% capture reploVariantIdString %}null{% endcapture %}<!-- -->{% capture reploSellingPlanIdString %}null{% endcapture %}<!-- -->{% capture reploIdKey %}id{% endcapture %}<!-- -->{% capture reploPercentageKey %}percentage{% endcapture %}<!-- -->{% capture reploPriceKey %}price{% endcapture %}<!-- -->{% capture reploFixedAmountKey %}fixed_amount{% endcapture %}<!-- -->{% capture spKey %}selling_plan{% endcapture %}<!-- -->{%- liquid
+              assign reploVariantId = reploVariantIdString | times: 1
+              assign reploSelectedVariant = product.variants | where: reploIdKey, reploVariantId | first
+              if reploSelectedVariant == blank
+                assign reploSelectedVariant = product.selected_or_first_available_variant
+              endif
+              assign reploSelectedSellingPlanPrice = reploSelectedVariant.price
+              if product.selling_plan_groups[0]
+                assign reploAllSellingPlans = reploSelectedVariant.selling_plan_allocations | map: spKey
+                assign reploSortedSellingPlans = reploAllSellingPlans | sort: reploIdKey
+                if true
+                  assign reploSellingPlanId = reploSellingPlanIdString | times: 1
+                  assign reploSelectedSellingPlan = reploSortedSellingPlans | where: reploIdKey, reploSellingPlanId | first
+                  if reploSelectedSellingPlan.price_adjustments[0]
+                    assign adjustment = reploSelectedSellingPlan.price_adjustments[0]
+                    case adjustment.value_type
+                      when reploPercentageKey
+                        assign amountOff = 100 | minus: adjustment.value
+                        assign reploSelectedSellingPlanPrice = reploSelectedSellingPlanPrice | times: amountOff | divided_by: 100
+                      when reploFixedAmountKey
+                        assign reploSelectedSellingPlanPrice = reploSelectedSellingPlanPrice | minus: adjustment.value
+                      when reploPriceKey
+                        assign reploSelectedSellingPlanPrice = adjustment.value
+                    endcase
+                  endif
+                endif
+              endif
+            -%}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = 0 %}<!-- -->{% if reploSelectedVariant.compare_at_price != blank %}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = reploSelectedVariant.compare_at_price | minus: reploSelectedVariant.price | at_least: 0 | times: 100.0 | divided_by: reploSelectedVariant.compare_at_price | round %}<!-- -->{% endif %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}<div data-rid="eb088e1a-38e5-4cd2-b4c7-7342294164b4" class="r-1qqpw6d" data-replo-product-container="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" data-replo-product-handle="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.handle}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"><product-form style="display:none"><form id="product-form-{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" method="post" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" encType="multipart/form-data" action="/cart/add" data-type="add-to-cart-form"><input type="hidden" name="id" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{reploSelectedVariant.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/><input type="hidden" name="quantity" value="1"/><input type="hidden" name="selling_plan" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- if reploSelectedSellingPlan != blank -%}{{reploSelectedSellingPlan.id}}{%- endif -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/></form></product-form><div data-rid="c80f3a1b-126d-44ef-8a3a-dc974c5ab700" class="r-alnhbr alchemy-rte"><span style="width:100%"><p>Why you’ll love it</p></span></div><div data-rid="bab68873-3b38-4436-9f7c-519e8941fe6f" class="r-pb8v2o"><div class="r-13a21vl" data-rid="1"><div data-rid="9a3766c3-4630-4e24-a198-ab617b0448c5" class="r-19syvga"><div data-rid="e5cd0137-a43b-4e0f-9da3-f7524dfae893" class="r-an9nhq"><div data-rid="213c3b91-709a-4563-bf4c-fe0a2bf3e341" class="r-ko4s0e alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_1_heading{%- endcapture -%}
+      {%- capture htmlOpenTag -%}<{%- endcapture -%}
+      {%- capture htmlCloseTag -%}>{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div><div data-rid="772ad39c-9611-44dc-87bc-3d79ab03baec" class="r-lo966u alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_1_body{%- endcapture -%}
+      {%- capture htmlOpenTag -%}<{%- endcapture -%}
+      {%- capture htmlCloseTag -%}>{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div></div><div data-rid="d5fd2360-5208-497e-b354-13e7426691e1" class="r-mndw0m"><picture data-rid="5d4efa42-c657-452c-9082-476fa53699e1" style="--replo-attributes-product-productmetafields-custom-replo-custom-benefit-1-image:{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_1_image{%- endcapture -%}
+      {%- capture htmlOpenTag -%}&lt;{%- endcapture -%}
+      {%- capture htmlCloseTag -%}&gt;{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" class="r-19nsls8"><img src="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_1_image{%- endcapture -%}
+      {%- capture htmlOpenTag -%}&lt;{%- endcapture -%}
+      {%- capture htmlCloseTag -%}&gt;{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" class="r-13y61hb" loading="eager"/></picture></div></div></div><div class="r-auk38v" data-rid="1"><div data-rid="e43a3b75-b868-47d0-a9f8-020a6b73dba5" class="r-17f5p97"><div data-rid="653897b6-a648-4d98-8d3a-b524ec8be1ca" class="r-bttn08"><picture data-rid="a78dbab5-2d5c-45e2-a75e-357a5962e912" style="--replo-attributes-product-productmetafields-custom-replo-custom-benefit-2-image:{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_2_image{%- endcapture -%}
+      {%- capture htmlOpenTag -%}&lt;{%- endcapture -%}
+      {%- capture htmlCloseTag -%}&gt;{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" class="r-1hzlzwy"><img src="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_2_image{%- endcapture -%}
+      {%- capture htmlOpenTag -%}&lt;{%- endcapture -%}
+      {%- capture htmlCloseTag -%}&gt;{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" class="r-z56ltw" loading="eager"/></picture></div><div data-rid="5d75aaf0-8b5a-4df0-a58a-551376d6df94" class="r-10n3uay"><div data-rid="24962df1-b37b-4870-ad5d-a1fad0b700b4" class="r-1mm8h6z alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_2_heading{%- endcapture -%}
+      {%- capture htmlOpenTag -%}<{%- endcapture -%}
+      {%- capture htmlCloseTag -%}>{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div><div data-rid="c6ed73be-f656-494f-abfe-992371ebe0b9" class="r-r4ae9d alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_2_body{%- endcapture -%}
+      {%- capture htmlOpenTag -%}<{%- endcapture -%}
+      {%- capture htmlCloseTag -%}>{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div></div></div></div><div class="r-3p07yh" data-rid="1"><div data-rid="54216e5f-5a8c-463d-894f-21e5f7044c80" class="r-pp5ju8"><div data-rid="833cfce3-2c86-48c5-ba59-c9c212ffb0c0" class="r-47idg0"><div data-rid="cecfe558-04fd-4570-9640-1ec70b1ea479" class="r-1rl1hrw alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_3_heading{%- endcapture -%}
+      {%- capture htmlOpenTag -%}<{%- endcapture -%}
+      {%- capture htmlCloseTag -%}>{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div><div data-rid="d699b66d-03c3-4f97-9c29-1e2aaf8ae482" class="r-1ku1e3e alchemy-rte"><span style="width:100%">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_3_body{%- endcapture -%}
+      {%- capture htmlOpenTag -%}<{%- endcapture -%}
+      {%- capture htmlCloseTag -%}>{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</span></div></div><div data-rid="818e435a-9349-4ef6-afe2-4777b28669fd" class="r-1lnllp7"><picture data-rid="cd534a44-db6f-42ec-99d4-5bb280279c98" style="--replo-attributes-product-productmetafields-custom-replo-custom-benefit-3-image:{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_3_image{%- endcapture -%}
+      {%- capture htmlOpenTag -%}&lt;{%- endcapture -%}
+      {%- capture htmlCloseTag -%}&gt;{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" class="r-1l6x5zk"><img src="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture fileReference -%}file_reference{%- endcapture -%}
+      {%- capture multiLineTextField -%}multi_line_text_field{%- endcapture -%}
+      {%- capture richTextField -%}rich_text_field{%- endcapture -%}
+      {%- capture reploMetafieldNamespace -%}custom{%- endcapture -%}
+      {%- capture reploMetafieldKey -%}replo_custom_benefit_3_image{%- endcapture -%}
+      {%- capture htmlOpenTag -%}&lt;{%- endcapture -%}
+      {%- capture htmlCloseTag -%}&gt;{%- endcapture -%}
+      {%- liquid
+         assign reploMetafield = product.metafields[reploMetafieldNamespace][reploMetafieldKey]
+         if reploMetafield.type == fileReference
+          echo reploMetafield | file_url
+         elsif reploMetafield.type == multiLineTextField
+           if reploMetafield.value contains htmlOpenTag and reploMetafield.value contains htmlCloseTag
+            echo reploMetafield.value
+           else
+            echo reploMetafield.value | newline_to_br
+           endif
+         elsif reploMetafield.type == richTextField
+          echo reploMetafield | metafield_tag
+         else
+          echo reploMetafield.value
+         endif
+      -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" class="r-zbymui" loading="eager"/></picture></div></div></div></div></div><div data-rid="dc17a91a-8a50-497f-b272-b470e64a3699" data-alchemy-url-hashmark="Rev" tabindex="-1" id="Rev" data-alchemy-url-hashmark-ignore="true" class="r-1wvxgeh">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% capture reploVariantIdString %}null{% endcapture %}<!-- -->{% capture reploSellingPlanIdString %}null{% endcapture %}<!-- -->{% capture reploIdKey %}id{% endcapture %}<!-- -->{% capture reploPercentageKey %}percentage{% endcapture %}<!-- -->{% capture reploPriceKey %}price{% endcapture %}<!-- -->{% capture reploFixedAmountKey %}fixed_amount{% endcapture %}<!-- -->{% capture spKey %}selling_plan{% endcapture %}<!-- -->{%- liquid
+              assign reploVariantId = reploVariantIdString | times: 1
+              assign reploSelectedVariant = product.variants | where: reploIdKey, reploVariantId | first
+              if reploSelectedVariant == blank
+                assign reploSelectedVariant = product.selected_or_first_available_variant
+              endif
+              assign reploSelectedSellingPlanPrice = reploSelectedVariant.price
+              if product.selling_plan_groups[0]
+                assign reploAllSellingPlans = reploSelectedVariant.selling_plan_allocations | map: spKey
+                assign reploSortedSellingPlans = reploAllSellingPlans | sort: reploIdKey
+                if true
+                  assign reploSellingPlanId = reploSellingPlanIdString | times: 1
+                  assign reploSelectedSellingPlan = reploSortedSellingPlans | where: reploIdKey, reploSellingPlanId | first
+                  if reploSelectedSellingPlan.price_adjustments[0]
+                    assign adjustment = reploSelectedSellingPlan.price_adjustments[0]
+                    case adjustment.value_type
+                      when reploPercentageKey
+                        assign amountOff = 100 | minus: adjustment.value
+                        assign reploSelectedSellingPlanPrice = reploSelectedSellingPlanPrice | times: amountOff | divided_by: 100
+                      when reploFixedAmountKey
+                        assign reploSelectedSellingPlanPrice = reploSelectedSellingPlanPrice | minus: adjustment.value
+                      when reploPriceKey
+                        assign reploSelectedSellingPlanPrice = adjustment.value
+                    endcase
+                  endif
+                endif
+              endif
+            -%}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = 0 %}<!-- -->{% if reploSelectedVariant.compare_at_price != blank %}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = reploSelectedVariant.compare_at_price | minus: reploSelectedVariant.price | at_least: 0 | times: 100.0 | divided_by: reploSelectedVariant.compare_at_price | round %}<!-- -->{% endif %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}<div data-rid="e5ae5601-4a00-4e5d-99c5-f028c118c319" class="r-g1wyzy" data-replo-product-container="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" data-replo-product-handle="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.handle}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"><product-form style="display:none"><form id="product-form-{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" method="post" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" encType="multipart/form-data" action="/cart/add" data-type="add-to-cart-form"><input type="hidden" name="id" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{reploSelectedVariant.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/><input type="hidden" name="quantity" value="1"/><input type="hidden" name="selling_plan" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- if reploSelectedSellingPlan != blank -%}{{reploSelectedSellingPlan.id}}{%- endif -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/></form></product-form><div data-rid="034d4b87-0882-41cb-b6c7-7c41b28b8258" class="r-1qsr1w6" data-alchemy-prerendered-component-id="034d4b87-0882-41cb-b6c7-7c41b28b8258">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<div style="width:100%;height:100%" data-alchemy-prerendered-placeholder="true">
+  <!-- Start of Judge.me code -->
+    <div style='clear:both'></div>
+    <div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}'>
+        {{ product.metafields.judgeme.widget }}
+    </div>
+  <!-- End of Judge.me code -->
+</div>{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</div></div></div></div></div><style>@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900;950&family=Inter:wght@100;200;300;400;500;600;700;800;900;950&family=Poppins:wght@100;200;300;400;500;600;700;800;900;950)</style></div>
+{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}
+    <script  type="application/json" id="replo-deps-template-product">
+    {"id": "{{ product.id }}","handle": "{{ product.handle }}","data":{{ product | json }}}
+    </script>
+  <script type="application/json" id="replo-deps-products">
+    [{"id": "{{ product.id }}","handle": "{{ product.handle }}","data":{{ product | json }}}]
+  </script>
+  {%- comment -%}replo-liquid-chunk-end{%- endcomment -%}
+    <script type="application/json" id="replo-deps-products-metafields">
+      {%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture replo_double_tick -%}"{%- endcapture -%}{"14782858723653":{"custom":{"brand_display":{"type":"single_line_text_field","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['brand_display'].value | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_1_heading":{"type":"single_line_text_field","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['replo_custom_benefit_1_heading'].value | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_1_body":{"type":"multi_line_text_field","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['replo_custom_benefit_1_body'].value | newline_to_br | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_1_image":{"type":"file_reference","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['replo_custom_benefit_1_image'] | file_url | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_2_image":{"type":"file_reference","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['replo_custom_benefit_2_image'] | file_url | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_2_heading":{"type":"single_line_text_field","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['replo_custom_benefit_2_heading'].value | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_2_body":{"type":"multi_line_text_field","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['replo_custom_benefit_2_body'].value | newline_to_br | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_3_heading":{"type":"single_line_text_field","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['replo_custom_benefit_3_heading'].value | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_3_body":{"type":"multi_line_text_field","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['replo_custom_benefit_3_body'].value | newline_to_br | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_3_image":{"type":"file_reference","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['replo_custom_benefit_3_image'] | file_url | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"}}},"{{ product.id }}":{"custom":{"replo_custom_benefit_1_heading":{"type":"single_line_text_field","value":"{{- product.metafields['custom']['replo_custom_benefit_1_heading'].value | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_1_body":{"type":"multi_line_text_field","value":"{{- product.metafields['custom']['replo_custom_benefit_1_body'].value | newline_to_br | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_1_image":{"type":"file_reference","value":"{{- product.metafields['custom']['replo_custom_benefit_1_image'] | file_url | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_2_image":{"type":"file_reference","value":"{{- product.metafields['custom']['replo_custom_benefit_2_image'] | file_url | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_2_heading":{"type":"single_line_text_field","value":"{{- product.metafields['custom']['replo_custom_benefit_2_heading'].value | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_2_body":{"type":"multi_line_text_field","value":"{{- product.metafields['custom']['replo_custom_benefit_2_body'].value | newline_to_br | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_3_heading":{"type":"single_line_text_field","value":"{{- product.metafields['custom']['replo_custom_benefit_3_heading'].value | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_3_body":{"type":"multi_line_text_field","value":"{{- product.metafields['custom']['replo_custom_benefit_3_body'].value | newline_to_br | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"},"replo_custom_benefit_3_image":{"type":"file_reference","value":"{{- product.metafields['custom']['replo_custom_benefit_3_image'] | file_url | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"}}}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}
+    </script>
+  
+    <script type="application/json" id="replo-deps-variant-metafields">
+      {%- capture replo_double_tick -%}"{%- endcapture -%}{
+        {%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}
+    {% for reploVariant in product.variants %}
+      "{{ reploVariant.id }}":
+      {%- capture replo_double_tick -%}"{%- endcapture -%}{}{% unless forloop.last %},{% endunless %}
+    {% endfor %}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}
+      }
+    </script>
+  {%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<script type="application/json" id="replo-deps-shopify-store">{ "shop": { "moneyFormat": {{ shop.money_format | json }}, "moneyWithCurrencyFormat": {{ shop.money_with_currency_format | json }} } }</script>{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}

@@ -1,0 +1,30 @@
+{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<div style="width:100%;height:100%" data-alchemy-prerendered-placeholder="true">
+  <!-- Start of Judge.me code -->
+    <div style='clear:both'></div>
+    <div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}'>
+        {{ product.metafields.judgeme.widget }}
+    </div>
+  <!-- End of Judge.me code -->
+</div>{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</div></div></div></div></div><style>@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900;950&family=Inter:wght@100;200;300;400;500;600;700;800;900;950&family=Poppins:wght@100;200;300;400;500;600;700;800;900;950)</style></div>
+{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}
+    <script  type="application/json" id="replo-deps-template-product">
+    {"id": "{{ product.id }}","handle": "{{ product.handle }}","data":{{ product | json }}}
+    </script>
+  <script type="application/json" id="replo-deps-products">
+    [{"id": "{{ product.id }}","handle": "{{ product.handle }}","data":{{ product | json }}}]
+  </script>
+  {%- comment -%}replo-liquid-chunk-end{%- endcomment -%}
+    <script type="application/json" id="replo-deps-products-metafields">
+      {%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- capture replo_double_tick -%}"{%- endcapture -%}{"14782858723653":{"custom":{"brand_display":{"type":"single_line_text_field","value":"{{- all_products['one-sweep-dustpan'].metafields['custom']['brand_display'].value | default: null | json | replace_first: replo_double_tick, '' | replace_last: replo_double_tick, '' -}}"}}},"{{ product.id }}":{}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}
+    </script>
+  
+    <script type="application/json" id="replo-deps-variant-metafields">
+      {%- capture replo_double_tick -%}"{%- endcapture -%}{
+        {%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}
+    {% for reploVariant in product.variants %}
+      "{{ reploVariant.id }}":
+      {%- capture replo_double_tick -%}"{%- endcapture -%}{}{% unless forloop.last %},{% endunless %}
+    {% endfor %}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}
+      }
+    </script>
+  {%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<script type="application/json" id="replo-deps-shopify-store">{ "shop": { "moneyFormat": {{ shop.money_format | json }}, "moneyWithCurrencyFormat": {{ shop.money_with_currency_format | json }} } }</script>{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}

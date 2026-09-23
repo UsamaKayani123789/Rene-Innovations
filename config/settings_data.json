@@ -1,0 +1,2081 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "boxed": "wide",
+    "out_of_box_background_color_for_boxed_version": "#c73030",
+    "checkbox_background_image": false,
+    "disable_responsive": "no",
+    "layout": "full_width",
+    "border_radius": "yes",
+    "new_style_css": "yes",
+    "ajax_cart_use": true,
+    "scroll_top_use": true,
+    "image_lazyload": true,
+    "login_popup": true,
+    "language_enable": false,
+    "flag_user_icon": false,
+    "multi_language_1": "English",
+    "multi_language_2": "French",
+    "currency_enable": false,
+    "currency_format": "money_format",
+    "supported_currencies": "EUR USD GBP",
+    "default_currency": "EUR",
+    "theme_color": "#30A3D5",
+    "background_color": "light_default",
+    "custom_general": "1",
+    "text_color": "#000000",
+    "color_link": "#30A3D5",
+    "color_link_hover": "#838384",
+    "button_background_color": "#30A3D5",
+    "button_text_color": "#fff",
+    "button_hover_background_color": "#30A3D5",
+    "button_hover_text_color": "#fff",
+    "add_to_cart_text_color": "#ffffff",
+    "add_to_cart_background_color": "#279acc",
+    "add_to_cart_border_color": "#f4f4f4",
+    "add_to_cart_text_hover_color": "#ffffff",
+    "add_to_cart_background_hover_color": "#2b2b2d",
+    "add_to_cart_border_hover_color": "#2b2b2d",
+    "add_to_wishlist_link_color": "#2b2b2d",
+    "add_to_wishlist_link_border_color": "#d8d8d6",
+    "add_to_wishlist_link_background_color": "#f4f4f4",
+    "add_to_wishlist_link_active_color": "#ed4949",
+    "add_to_compare_link_color": "#2b2b2d",
+    "add_to_compare_link_border_color": "#d8d8d6",
+    "add_to_compare_link_background_color": "#f4f4f4",
+    "add_to_compare_link_active_color": "#ff0000",
+    "sale_label_background_color": "#ff0000",
+    "sale_label_text_color": "#ffffff",
+    "label1_background_color": "#00ffa8",
+    "label1_text_color": "#fff",
+    "label2_background_color": "#eb2771",
+    "label2_text_color": "#fff",
+    "breadcrumbs_background_color": "rgba(0,0,0,0)",
+    "breadcrumbs_text_font_color": "#FFF",
+    "breadcrumbs_links_color": "#FFF",
+    "breadcrumbs_links_hover_color": "#FFF",
+    "custom_footer": "1",
+    "footer_top_background_color": "#30A3D5",
+    "footer_top_text_font_color": "#777777",
+    "footer_top_links_color": "#818181",
+    "footer_top_links_hover_color": "#30A3D5",
+    "footer_top_socical_color": "#fff",
+    "footer_middle_background_color": "transparent",
+    "footer_middle_text_font_color": "#FFF",
+    "footer_middle_links_color": "#FFF",
+    "footer_middle_links_hover_color": "#FFF",
+    "footer_middle_block_title_color": "#ffffff",
+    "footer_middle_links_icon_color": "#30A3D5",
+    "footer_middle_ribbon_background_color": "#30A3D5",
+    "footer_middle_ribbon_shadow_color": "#30A3D5",
+    "footer_middle_ribbon_text_font_color": "#fff",
+    "footer_middle_2_background_color": "#30A3D5",
+    "footer_middle_2_text_font_color": "#ffffff",
+    "footer_middle_2_links_color": "#ffffff",
+    "footer_middle_2_links_hover_color": "#d8d8d6",
+    "footer_middle_2_block_title_olor": "#1e1e1e",
+    "footer_middle_2_links_icon_color": "#1e1e1e",
+    "footer_bottom_background_color": "#30A3D5",
+    "footer_bottom_text_font_color": "#FFF",
+    "footer_bottom_links_color": "#FFF",
+    "footer_bottom_links_hover_color": "#FFF",
+    "to_top_icon_background_color": "#565458",
+    "to_top_icon_hover_background_color": "#838384",
+    "to_top_icon_font_color": "#30A3D5",
+    "to_top_icon_hover_font_color": "#30A3D5",
+    "page_header": "no",
+    "custom_page": "no",
+    "body_background_color": "#f3f5f4",
+    "page_background_image_enable": false,
+    "custom_style": "",
+    "custom_main_container": "yes",
+    "main_container_background_color": "rgba(0,0,0,0)",
+    "main_container_background_image_enable": false,
+    "custom_main_container_text": "",
+    "font_size": "13",
+    "basic_font": "google",
+    "google_font": "Montserrat",
+    "family_font": "'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif",
+    "font_menu": "Montserrat",
+    "font_menu_size": 13,
+    "font_menu_style": "600",
+    "heading_font": "google",
+    "heading_google_font": "Montserrat",
+    "heading_family_font": "Helvetica, Arial, sans-serif",
+    "h1_font_size": "38",
+    "h2_font_size": "30",
+    "h3_font_size": "18",
+    "h4_font_size": "16",
+    "h5_font_size": "14",
+    "h6_font_size": "12",
+    "header_show_notice": true,
+    "notice_text_color": "light",
+    "notice_background_color": "#30A3D5",
+    "header_topbar_disable": false,
+    "topbar_text_color": "dark",
+    "topbar_background_color": "#f4f4f4",
+    "topbar_text_custom_color": "#777777",
+    "topbar_background_image": "",
+    "topbar_background_image_repeat": "no-repeat",
+    "topbar_background_size": "cover",
+    "topbar_background_attachment": "default",
+    "topbar_background_position": "center_center",
+    "logo_svg": "",
+    "logo": "shopify://shop_images/Rene_Innovations_LogoVertical-Grey_38e10eec-8605-420c-8edc-051b804caad7.png",
+    "logo_width": "70",
+    "logo_sticky_svg": "",
+    "logo_sticky": "shopify://shop_images/Rene_Innovations_LogoHorizontal-Greylow.png",
+    "logo_sticky_width": "50",
+    "header_overlap": false,
+    "logo_overlap_svg": "",
+    "logo_overlap": "shopify://shop_images/Rene_Innovations_LogoVertical-Whitelow.png",
+    "header_fullwidth": true,
+    "header_sticky_enable": "enable",
+    "header_design": "type11",
+    "header_compare_enable": false,
+    "header_ajax_search": true,
+    "header_search_colletion": false,
+    "search_box_radius": "",
+    "header_search_background_color": "#f4f4f4",
+    "header_search_text_color": "#777777",
+    "header_search_border_color": "#f4f4f4",
+    "header_custom_text": "",
+    "header_custom_text2": "",
+    "header_category_text": "SHOP BY CATEGORY",
+    "custom_block_2": "",
+    "shopping_cart_design": "5",
+    "shopping_cart_widget_design": "1",
+    "shopping_cart_action": "popup",
+    "shopping_cart_icon_color": "#777777",
+    "shopping_cart_icon_text_color": "#777777",
+    "sticky_shopping_cart_icon_color": "#30A3D5",
+    "sticky_shopping_cart_icon_text_color": "#606669",
+    "header_menu_main_bg_color": "#FFF",
+    "header_menu_bg_style": "full",
+    "header_menu_align": "center",
+    "header_menu_style": "default_new",
+    "header_menu_style_color": "light",
+    "header_menu_bg_color": "#fff",
+    "header_menu_text_color": "#777777",
+    "header_menu_hover_text_color": "#30A3D5",
+    "header_menu_custom": "",
+    "category_menu_style": "default",
+    "category_menu_hover_bg_color": "#fff",
+    "category_menu_text_color": "#333",
+    "category_menu_hover_text_color": "#333",
+    "header_mobile_custom_text": "<div class=\"social-icons\">\n<a href=\"https://web.facebook.com/Shop4Choice/\" title=\"Facebook\" target=\"_blank\"><i class=\"icon-facebook\"></i></a><a href=\"https://www.instagram.com/reneinnovations/\" title=\"Linkedin\" target=\"_blank\"><i class=\"icon-instagram\"></i></a><a href=\"https://www.youtube.com/channel/UCgAsLUB5-qWRaW9DimTW9iQ\"><i class=\"icon-video\" aria-hidden=\"true\"></i></a>\n</div>",
+    "header_background_color": "#fff",
+    "header_sticky_background_color": "#fff",
+    "header_text_color": "custom",
+    "header_text_custom_color": "#777777",
+    "header_sticky_menu_style_color": "custom",
+    "header_sticky_menu_bg_color": "#fff",
+    "header_sticky_menu_text_color": "#777777",
+    "header_sticky_menu_hover_text_color": "#30A3D5",
+    "header_background_image": "",
+    "header_background_image_repeat": "no-repeat",
+    "header_background_size": "contain",
+    "header_background_attachment": "default",
+    "header_background_position": "center_center",
+    "nav_linklist": "ap-header-menu",
+    "menu_item_type_1": "default",
+    "menu_item_staticwidth_1": "600",
+    "menu_item_float_1": "default",
+    "menu_icon_image_use_1": false,
+    "menu_item_font_icon_1": "",
+    "menu_item_label_1": "",
+    "menu_item_label_1_text1": "",
+    "menu_item_label_1_text2": "",
+    "menu_item_column_1": "1",
+    "menu_banner_left_enable_1": false,
+    "menu_item_block_left_1": "",
+    "menu_proportions_left_1": "0",
+    "menu_banner_right_enable_1": false,
+    "menu_item_block_right_1": "",
+    "menu_proportions_right_1": "0",
+    "menu_banner_top_enable_1": false,
+    "menu_banner_sub_1_top_enable_1": false,
+    "menu_banner_sub_1_top_enable_2": false,
+    "menu_banner_sub_1_top_enable_3": false,
+    "menu_banner_sub_1_top_enable_4": false,
+    "menu_banner_sub_1_top_enable_5": false,
+    "menu_banner_sub_1_top_enable_6": false,
+    "menu_item_block_top_1": "",
+    "menu_banner_bottom_enable_1": false,
+    "menu_item_block_bottom_1": "",
+    "menu_item_type_2": "classic",
+    "menu_item_staticwidth_2": "600",
+    "menu_item_float_2": "default",
+    "menu_icon_image_use_2": false,
+    "menu_item_font_icon_2": "",
+    "menu_item_label_2": "",
+    "menu_item_label_2_text1": "New",
+    "menu_item_label_2_text2": "",
+    "menu_item_column_2": "1",
+    "menu_banner_left_enable_2": false,
+    "menu_item_block_left_2": "",
+    "menu_proportions_left_2": "0",
+    "menu_banner_right_enable_2": false,
+    "menu_item_block_right_2": "",
+    "menu_proportions_right_2": "0",
+    "menu_banner_top_enable_2": false,
+    "menu_banner_sub_2_top_enable_1": false,
+    "menu_banner_sub_2_top_enable_2": false,
+    "menu_banner_sub_2_top_enable_3": false,
+    "menu_banner_sub_2_top_enable_4": false,
+    "menu_banner_sub_2_top_enable_5": false,
+    "menu_banner_sub_2_top_enable_6": false,
+    "menu_item_block_top_2": "",
+    "menu_banner_bottom_enable_2": false,
+    "menu_item_block_bottom_2": "",
+    "menu_item_type_3": "classic",
+    "menu_item_staticwidth_3": "600",
+    "menu_item_float_3": "default",
+    "menu_icon_image_use_3": false,
+    "menu_item_font_icon_3": "",
+    "menu_item_label_3": "",
+    "menu_item_label_3_text1": "",
+    "menu_item_label_3_text2": "",
+    "menu_item_column_3": "1",
+    "menu_banner_left_enable_3": false,
+    "menu_item_block_left_3": "",
+    "menu_proportions_left_3": "0",
+    "menu_banner_right_enable_3": false,
+    "menu_item_block_right_3": "",
+    "menu_proportions_right_3": "0",
+    "menu_banner_top_enable_3": false,
+    "menu_banner_sub_3_top_enable_1": false,
+    "menu_banner_sub_3_top_enable_2": false,
+    "menu_banner_sub_3_top_enable_3": false,
+    "menu_banner_sub_3_top_enable_4": false,
+    "menu_banner_sub_3_top_enable_5": false,
+    "menu_banner_sub_3_top_enable_6": false,
+    "menu_item_block_top_3": "",
+    "menu_banner_bottom_enable_3": false,
+    "menu_item_block_bottom_3": "",
+    "menu_item_type_4": "classic",
+    "menu_item_staticwidth_4": "600",
+    "menu_item_float_4": "default",
+    "menu_icon_image_use_4": false,
+    "menu_item_font_icon_4": "",
+    "menu_item_label_4": "",
+    "menu_item_label_4_text1": "",
+    "menu_item_label_4_text2": "",
+    "menu_item_column_4": "1",
+    "menu_banner_left_enable_4": false,
+    "menu_item_block_left_4": "",
+    "menu_proportions_left_4": "0",
+    "menu_banner_right_enable_4": false,
+    "menu_item_block_right_4": "",
+    "menu_proportions_right_4": "0",
+    "menu_banner_top_enable_4": false,
+    "menu_banner_sub_4_top_enable_1": false,
+    "menu_banner_sub_4_top_enable_2": false,
+    "menu_banner_sub_4_top_enable_3": false,
+    "menu_banner_sub_4_top_enable_4": false,
+    "menu_banner_sub_4_top_enable_5": false,
+    "menu_banner_sub_4_top_enable_6": false,
+    "menu_item_block_top_4": "",
+    "menu_banner_bottom_enable_4": false,
+    "menu_item_block_bottom_4": "",
+    "menu_item_type_5": "classic",
+    "menu_item_staticwidth_5": "",
+    "menu_item_float_5": "default",
+    "menu_icon_image_use_5": false,
+    "menu_item_font_icon_5": "",
+    "menu_item_label_5": "",
+    "menu_item_label_5_text1": "",
+    "menu_item_label_5_text2": "",
+    "menu_item_column_5": "3",
+    "menu_banner_left_enable_5": false,
+    "menu_item_block_left_5": "",
+    "menu_proportions_left_5": "0",
+    "menu_banner_right_enable_5": false,
+    "menu_item_block_right_5": "",
+    "menu_proportions_right_5": "0",
+    "menu_banner_top_enable_5": false,
+    "menu_banner_sub_5_top_enable_1": false,
+    "menu_banner_sub_5_top_enable_2": false,
+    "menu_banner_sub_5_top_enable_3": false,
+    "menu_banner_sub_5_top_enable_4": false,
+    "menu_banner_sub_5_top_enable_5": false,
+    "menu_banner_sub_5_top_enable_6": false,
+    "menu_item_block_top_5": "",
+    "menu_banner_bottom_enable_5": false,
+    "menu_item_block_bottom_5": "",
+    "menu_item_type_6": "classic",
+    "menu_item_staticwidth_6": "",
+    "menu_item_float_6": "right",
+    "menu_icon_image_use_6": false,
+    "menu_item_font_icon_6": "",
+    "menu_item_label_6": "2",
+    "menu_item_label_6_text1": "",
+    "menu_item_label_6_text2": "Hot",
+    "menu_item_column_6": "3",
+    "menu_banner_left_enable_6": false,
+    "menu_item_block_left_6": "",
+    "menu_proportions_left_6": "0",
+    "menu_banner_right_enable_6": false,
+    "menu_item_block_right_6": "",
+    "menu_proportions_right_6": "0",
+    "menu_banner_top_enable_6": false,
+    "menu_banner_sub_6_top_enable_1": false,
+    "menu_banner_sub_6_top_enable_2": false,
+    "menu_banner_sub_6_top_enable_3": false,
+    "menu_banner_sub_6_top_enable_4": false,
+    "menu_banner_sub_6_top_enable_5": false,
+    "menu_banner_sub_6_top_enable_6": false,
+    "menu_item_block_top_6": "",
+    "menu_banner_bottom_enable_6": false,
+    "menu_item_block_bottom_6": "",
+    "menu_item_type_7": "default",
+    "menu_item_staticwidth_7": "",
+    "menu_item_float_7": "right",
+    "menu_icon_image_use_7": false,
+    "menu_item_font_icon_7": "",
+    "menu_item_label_7": "",
+    "menu_item_label_7_text1": "",
+    "menu_item_label_7_text2": "",
+    "menu_item_column_7": "3",
+    "menu_banner_left_enable_7": false,
+    "menu_item_block_left_7": "",
+    "menu_proportions_left_7": "0",
+    "menu_banner_right_enable_7": false,
+    "menu_item_block_right_7": "",
+    "menu_proportions_right_7": "0",
+    "menu_banner_top_enable_7": false,
+    "menu_banner_sub_7_top_enable_1": false,
+    "menu_banner_sub_7_top_enable_2": false,
+    "menu_banner_sub_7_top_enable_3": false,
+    "menu_banner_sub_7_top_enable_4": false,
+    "menu_banner_sub_7_top_enable_5": false,
+    "menu_banner_sub_7_top_enable_6": false,
+    "menu_item_block_top_7": "",
+    "menu_banner_bottom_enable_7": false,
+    "menu_item_block_bottom_7": "",
+    "menu_item_type_8": "default",
+    "menu_item_staticwidth_8": "",
+    "menu_item_float_8": "default",
+    "menu_icon_image_use_8": false,
+    "menu_item_font_icon_8": "",
+    "menu_item_label_8": "",
+    "menu_item_label_8_text1": "",
+    "menu_item_label_8_text2": "",
+    "menu_item_column_8": "3",
+    "menu_banner_left_enable_8": false,
+    "menu_item_block_left_8": "",
+    "menu_proportions_left_8": "0",
+    "menu_banner_right_enable_8": false,
+    "menu_item_block_right_8": "",
+    "menu_proportions_right_8": "0",
+    "menu_banner_top_enable_8": false,
+    "menu_banner_sub_8_top_enable_1": false,
+    "menu_banner_sub_8_top_enable_2": false,
+    "menu_banner_sub_8_top_enable_3": false,
+    "menu_banner_sub_8_top_enable_4": false,
+    "menu_banner_sub_8_top_enable_5": false,
+    "menu_banner_sub_8_top_enable_6": false,
+    "menu_item_block_top_8": "",
+    "menu_banner_bottom_enable_8": false,
+    "menu_item_block_bottom_8": "",
+    "menu_item_type_9": "default",
+    "menu_item_staticwidth_9": "",
+    "menu_item_float_9": "default",
+    "menu_icon_image_use_9": false,
+    "menu_item_font_icon_9": "",
+    "menu_item_label_9": "",
+    "menu_item_label_9_text1": "",
+    "menu_item_label_9_text2": "",
+    "menu_item_column_9": "3",
+    "menu_banner_left_enable_9": false,
+    "menu_item_block_left_9": "",
+    "menu_proportions_left_9": "0",
+    "menu_banner_right_enable_9": false,
+    "menu_item_block_right_9": "",
+    "menu_proportions_right_9": "0",
+    "menu_banner_top_enable_9": false,
+    "menu_banner_sub_9_top_enable_1": false,
+    "menu_banner_sub_9_top_enable_2": false,
+    "menu_banner_sub_9_top_enable_3": false,
+    "menu_banner_sub_9_top_enable_4": false,
+    "menu_banner_sub_9_top_enable_5": false,
+    "menu_banner_sub_9_top_enable_6": false,
+    "menu_item_block_top_9": "",
+    "menu_banner_bottom_enable_9": false,
+    "menu_item_block_bottom_9": "",
+    "menu_item_type_10": "default",
+    "menu_item_staticwidth_10": "",
+    "menu_item_float_10": "default",
+    "menu_icon_image_use_10": false,
+    "menu_item_font_icon_10": "",
+    "menu_item_label_10": "",
+    "menu_item_label_10_text1": "",
+    "menu_item_label_10_text2": "",
+    "menu_item_column_10": "3",
+    "menu_banner_left_enable_10": false,
+    "menu_item_block_left_10": "",
+    "menu_proportions_left_10": "0",
+    "menu_banner_right_enable_10": false,
+    "menu_item_block_right_10": "",
+    "menu_proportions_right_10": "0",
+    "menu_banner_top_enable_10": false,
+    "menu_banner_sub_10_top_enable_1": false,
+    "menu_banner_sub_10_top_enable_2": false,
+    "menu_banner_sub_10_top_enable_3": false,
+    "menu_banner_sub_10_top_enable_4": false,
+    "menu_banner_sub_10_top_enable_5": false,
+    "menu_banner_sub_10_top_enable_6": false,
+    "menu_item_block_top_10": "",
+    "menu_banner_bottom_enable_11": false,
+    "menu_item_block_bottom_10": "",
+    "nav_linklist2": "main-meno-2-right",
+    "menu2_item_type_1": "classic",
+    "menu2_item_staticwidth_1": "600",
+    "menu2_item_float_1": "default",
+    "menu2_icon_image_use_1": false,
+    "menu2_item_font_icon_1": "",
+    "menu2_item_label_1": "",
+    "menu2_item_label_1_text1": "",
+    "menu2_item_label_1_text2": "",
+    "menu2_item_column_1": "1",
+    "menu2_banner_left_enable_1": false,
+    "menu2_item_block_left_1": "",
+    "menu2_proportions_left_1": "0",
+    "menu2_banner_right_enable_1": false,
+    "menu2_item_block_right_1": "",
+    "menu2_proportions_right_1": "0",
+    "menu2_banner_top_enable_1": false,
+    "menu2_banner_sub_1_top_enable_1": false,
+    "menu2_banner_sub_1_top_enable_2": false,
+    "menu2_banner_sub_1_top_enable_3": false,
+    "menu2_banner_sub_1_top_enable_4": false,
+    "menu2_banner_sub_1_top_enable_5": false,
+    "menu2_banner_sub_1_top_enable_6": false,
+    "menu2_item_block_top_1": "",
+    "menu2_banner_bottom_enable_1": false,
+    "menu2_item_block_bottom_1": "",
+    "menu2_item_type_2": "classic",
+    "menu2_item_staticwidth_2": "600",
+    "menu2_item_float_2": "default",
+    "menu2_icon_image_use_2": false,
+    "menu2_item_font_icon_2": "",
+    "menu2_item_label_2": "",
+    "menu2_item_label_2_text1": "",
+    "menu2_item_label_2_text2": "",
+    "menu2_item_column_2": "1",
+    "menu2_banner_left_enable_2": false,
+    "menu2_item_block_left_2": "",
+    "menu2_proportions_left_2": "0",
+    "menu2_banner_right_enable_2": false,
+    "menu2_item_block_right_2": "",
+    "menu2_proportions_right_2": "0",
+    "menu2_banner_top_enable_2": false,
+    "menu2_banner_sub_2_top_enable_1": false,
+    "menu2_banner_sub_2_top_enable_2": false,
+    "menu2_banner_sub_2_top_enable_3": false,
+    "menu2_banner_sub_2_top_enable_4": false,
+    "menu2_banner_sub_2_top_enable_5": false,
+    "menu2_banner_sub_2_top_enable_6": false,
+    "menu2_item_block_top_2": "",
+    "menu2_banner_bottom_enable_2": false,
+    "menu2_item_block_bottom_2": "",
+    "menu2_item_type_3": "classic",
+    "menu2_item_staticwidth_3": "600",
+    "menu2_item_float_3": "default",
+    "menu2_icon_image_use_3": false,
+    "menu2_item_font_icon_3": "",
+    "menu2_item_label_3": "",
+    "menu2_item_label_3_text1": "",
+    "menu2_item_label_3_text2": "",
+    "menu2_item_column_3": "1",
+    "menu2_banner_left_enable_3": false,
+    "menu2_item_block_left_3": "",
+    "menu2_proportions_left_3": "0",
+    "menu2_banner_right_enable_3": false,
+    "menu2_item_block_right_3": "",
+    "menu2_proportions_right_3": "0",
+    "menu2_banner_top_enable_3": false,
+    "menu2_banner_sub_3_top_enable_1": false,
+    "menu2_banner_sub_3_top_enable_2": false,
+    "menu2_banner_sub_3_top_enable_3": false,
+    "menu2_banner_sub_3_top_enable_4": false,
+    "menu2_banner_sub_3_top_enable_5": false,
+    "menu2_banner_sub_3_top_enable_6": false,
+    "menu2_item_block_top_3": "",
+    "menu2_banner_bottom_enable_3": false,
+    "menu2_item_block_bottom_3": "",
+    "menu2_item_type_4": "default",
+    "menu2_item_staticwidth_4": "",
+    "menu2_item_float_4": "default",
+    "porto-demo5-new.myshopify.comicon_image_use_4": false,
+    "menu2_item_font_icon_4": "",
+    "menu2_item_label_4": "",
+    "menu2_item_label_4_text1": "",
+    "menu2_item_label_4_text2": "",
+    "menu2_item_column_4": "3",
+    "menu2_banner_left_enable_4": false,
+    "menu2_item_block_left_4": "",
+    "menu2_proportions_left_4": "0",
+    "menu2_banner_right_enable_4": false,
+    "menu2_item_block_right_4": "",
+    "menu2_proportions_right_4": "0",
+    "menu2_banner_top_enable_4": false,
+    "menu2_banner_sub_4_top_enable_1": false,
+    "menu2_banner_sub_4_top_enable_2": false,
+    "menu2_banner_sub_4_top_enable_3": false,
+    "menu2_banner_sub_4_top_enable_4": false,
+    "menu2_banner_sub_4_top_enable_5": false,
+    "menu2_banner_sub_4_top_enable_6": false,
+    "menu2_item_block_top_4": "",
+    "menu2_banner_bottom_enable_4": false,
+    "menu2_item_block_bottom_4": "",
+    "menu2_item_type_5": "default",
+    "menu2_item_staticwidth_5": "",
+    "menu2_item_float_5": "default",
+    "menu2_icon_image_use_5": false,
+    "menu2_item_font_icon_5": "",
+    "menu2_item_label_5": "",
+    "menu2_item_label_5_text1": "",
+    "menu2_item_label_5_text2": "",
+    "menu2_item_column_5": "3",
+    "menu2_banner_left_enable_5": false,
+    "menu2_item_block_left_5": "",
+    "menu2_proportions_left_5": "0",
+    "menu2_banner_right_enable_5": false,
+    "menu2_item_block_right_5": "",
+    "menu2_proportions_right_5": "0",
+    "menu2_banner_top_enable_5": false,
+    "menu2_banner_sub_5_top_enable_1": false,
+    "menu2_banner_sub_5_top_enable_2": false,
+    "menu2_banner_sub_5_top_enable_3": false,
+    "menu2_banner_sub_5_top_enable_4": false,
+    "menu2_banner_sub_5_top_enable_5": false,
+    "menu2_banner_sub_5_top_enable_6": false,
+    "menu2_item_block_top_5": "",
+    "menu2_banner_bottom_enable_5": false,
+    "menu2_item_block_bottom_5": "",
+    "collection_menu_onepage": false,
+    "opc_nav_linklist": "main-menu",
+    "opc_collection_1": "",
+    "opc_use_icon_image_1": true,
+    "opc_font_icon_1": "",
+    "opc_item_hover_bg_color_1": "#00d59d",
+    "collection_image_enable_1": true,
+    "additional_content_link_1_1": "",
+    "additional_content_link_1_2": "",
+    "opc_collection_2": "",
+    "opc_use_icon_image_2": true,
+    "opc_font_icon_2": "",
+    "opc_item_hover_bg_color_2": "#00d59d",
+    "collection_image_enable_2": true,
+    "additional_content_link_2_1": "",
+    "additional_content_link_2_2": "",
+    "opc_collection_3": "",
+    "opc_use_icon_image_3": true,
+    "opc_font_icon_3": "",
+    "opc_item_hover_bg_color_3": "#00d59d",
+    "collection_image_enable_3": true,
+    "additional_content_link_3_1": "",
+    "additional_content_link_3_2": "",
+    "opc_collection_4": "",
+    "opc_use_icon_image_4": true,
+    "opc_font_icon_4": "",
+    "opc_item_hover_bg_color_4": "#00d59d",
+    "collection_image_enable_4": true,
+    "additional_content_link_4_1": "",
+    "additional_content_link_4_2": "",
+    "opc_collection_5": "",
+    "opc_use_icon_image_5": true,
+    "opc_font_icon_5": "",
+    "opc_item_hover_bg_color_5": "#00d59d",
+    "collection_image_enable_5": true,
+    "additional_content_link_5_1": "",
+    "additional_content_link_5_2": "",
+    "opc_collection_6": "",
+    "opc_use_icon_image_6": true,
+    "opc_font_icon_6": "",
+    "opc_item_hover_bg_color_6": "#00d59d",
+    "collection_image_enable_6": true,
+    "additional_content_link_6_1": "",
+    "additional_content_link_6_2": "",
+    "opc_collection_7": "",
+    "opc_use_icon_image_7": true,
+    "opc_font_icon_7": "",
+    "opc_item_hover_bg_color_7": "#00d59d",
+    "collection_image_enable_7": true,
+    "additional_content_link_7_1": "",
+    "additional_content_link_7_2": "",
+    "opc_collection_8": "",
+    "opc_use_icon_image_8": false,
+    "opc_font_icon_8": "",
+    "opc_item_hover_bg_color_8": "#00d59d",
+    "collection_image_enable_8": false,
+    "additional_content_link_8_1": "",
+    "additional_content_link_8_2": "",
+    "opc_collection_9": "",
+    "opc_use_icon_image_9": false,
+    "opc_font_icon_9": "",
+    "opc_item_hover_bg_color_9": "#00d59d",
+    "collection_image_enable_9": false,
+    "additional_content_link_9_1": "",
+    "additional_content_link_9_2": "",
+    "opc_collection_10": "",
+    "opc_use_icon_image_10": false,
+    "opc_font_icon_10": "",
+    "opc_item_hover_bg_color_10": "#00d59d",
+    "collection_image_enable_10": false,
+    "additional_content_link_10_1": "",
+    "additional_content_link_10_2": "",
+    "product_page_type": "default",
+    "product_prev_next": false,
+    "product_prev_text": "<i class=\"icon-left-open\"></i>",
+    "product_next_text": "<i class=\"icon-right-open\"></i>",
+    "product_countdown": true,
+    "product_availability": true,
+    "product_sku": false,
+    "product_type": false,
+    "product_vendor": false,
+    "product_short_desc": "1",
+    "product_short_custom": false,
+    "custom_block_content_after": "<div class=\"item\">\n<i class=\"icon-shipped\"></i><h3>FREE<br>SHIPPING</h3>\n</div>\n<div class=\"item\">\n<i class=\"icon-us-dollar\"></i><h3>100% MONEY<br>BACK GUARANTEE</h3>\n</div>\n<div class=\"item\">\n<i class=\"icon-online-support\"></i><h3>ONLINE<br>SUPPORT 24/7</h3>\n</div>",
+    "product_short_custom_fullwidth": false,
+    "custom_block_content_fullwidth": "<div class=\"item\"><h3>Fee Shipping</h3></div><div class=\"item\"><h3>100% Money Back Guarantee</h3></div><div class=\"item\"> <h3>Online Support 24/7</h3>\n</div>",
+    "product_short_custom_widegrid": false,
+    "custom_block_content_widegrid": "<div class=\"item\"><h3>Fee Shipping</h3></div>",
+    "product_tags": false,
+    "product_addtocart_sticky": false,
+    "disable_socical_icon": false,
+    "disable_addtolink": false,
+    "enable_payment_button": true,
+    "product_aspect_ratio": "1",
+    "product_ratio_width": "600",
+    "product_ratio_height": "600",
+    "media_slide_layout": "horizontal",
+    "product_image_size": "6",
+    "product_zoom_disable": false,
+    "media_zoom_position": "1",
+    "media_zoom_lightbox_enable": true,
+    "product_swatch_type": "1",
+    "product_swatch_setting": "1",
+    "product_swatch_size": "size-small",
+    "product_tab_style": "",
+    "move_product_tab": false,
+    "full_width_product_tab": false,
+    "move_down_product_tab_related": false,
+    "custom_product_tab_right": false,
+    "product_custom_tab_title": "",
+    "product_custom_tab_collection": "",
+    "product_custom_tab_limit": "3",
+    "product_sidebar_display": false,
+    "product_sidebar_content": "<div>\n<i class=\"icon-shipped\"></i><h3>FREE<br>SHIPPING</h3>\n</div>\n<div>\n<i class=\"icon-us-dollar\"></i><h3>100% MONEY<br>BACK GUARANTEE</h3>\n</div>\n<div>\n<i class=\"icon-online-support\"></i><h3>ONLINE<br>SUPPORT 24/7</h3>\n</div>",
+    "sidebar_banner1_enable": false,
+    "sidebar_banner1": "",
+    "product_sidebar_banner_link_1": "",
+    "sidebar_banner2_enable": false,
+    "sidebar_banner2": "",
+    "product_sidebar_banner_link_2": "",
+    "sidebar_banner3_enable": false,
+    "sidebar_banner3": "",
+    "product_sidebar_banner_link_3": "",
+    "sidebar_product_title": "Bestseller Products",
+    "bestseller_product_enable": false,
+    "sidebar_product": "",
+    "sidebar_product_limit": "9",
+    "related_product_display": true,
+    "full_width_background_related": true,
+    "related_product_type": "collection",
+    "related_view_mode": "products-slider",
+    "related_product_layout": "default",
+    "related_columns": "3",
+    "space_related_product": "20",
+    "related_product_limit": "9",
+    "related_autoplay": "5000",
+    "related_show_nav": false,
+    "related_nav_position": "middle",
+    "related_nav_side": "",
+    "related_nav_type": "nav-style-4",
+    "related_show_nav_hover": false,
+    "related_show_paging": true,
+    "related_page_position": "show-dots-title-right",
+    "collection_sidebar_position": "none",
+    "collection_products_count": "25",
+    "collection_view_mode": "grid",
+    "product_layout": "default",
+    "collection_columns": "4",
+    "space_product": "10",
+    "disable_sidebar_category": false,
+    "collection_alternative_image": false,
+    "collection_aspect_ratio": "1",
+    "collection_ratio_width": "250",
+    "collection_ratio_height": "250",
+    "collection_product_category": false,
+    "collection_rating_star": false,
+    "collection_product_price": true,
+    "collection_show_addtocart": false,
+    "collection_grid_quickview": false,
+    "collection_show_addtolinks": false,
+    "collection_show_sale": true,
+    "collection_show_discount": false,
+    "collection_sale_label_text": "SALE",
+    "collection_grid_swatch_type": "0",
+    "collection_grid_product_countdown": true,
+    "porto_settings_category_grid_one_column_mobile": true,
+    "collection_infinite_scrolling": true,
+    "collection_infinite_mode": "byscroll",
+    "sidebar_collection_style": "1",
+    "collection_sidebar_menu_use": true,
+    "sidebar_menu_categories": "",
+    "sidebar_collection_user": true,
+    "sidebar_collection_title": "Featured",
+    "sidebar_collection": "",
+    "sidebar_collection_limit": "6",
+    "html_siderbar_collection": "<h2>Custom HTML Block</h2>\r\n<h5>This is a custom sub-title.</h5>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non placerat mi. Etiam non tellus </p>",
+    "collection_sidebar_filters": "none",
+    "filtering_1": false,
+    "filtering_heading_1": "Price",
+    "filtering_filters_1": "Below $100.00,\r\n$100.00-199.00,\r\n$200.00-299.00,\r\n$300.00-399.00,\r\n$400.00-499.00,\r\nAbove $500.00",
+    "filtering_2": false,
+    "filtering_heading_2": "Color",
+    "filtering_filters_2": "Black,\nBlue,\nBrown,\nYellow,\nCharcoal,\nGreen,\nTaupe,\nGarden,\nGrey,\nIndigo,\nIvory,\nKhaki,\nOatmeal,\nOrange,\nPink,\nPurple,\nRed,\nRoyal Blue,\nSilver,\nTaupe,\nWhite",
+    "filtering_3": false,
+    "filtering_heading_3": "Size",
+    "filtering_filters_3": "S,\r\nM,\r\nL,\r\nXL,\r\n2XL,\r\n3XL",
+    "filtering_4": false,
+    "filtering_heading_4": "Brand",
+    "filtering_filters_4": "Adidas,\r\nCamel,\r\nMotorola,\r\nRolex,\r\nSamsung Galaxy,\r\nSeiko,\r\nSony",
+    "filtering_5": false,
+    "filtering_heading_5": "",
+    "filtering_filters_5": "",
+    "filtering_6": false,
+    "filtering_heading_6": "",
+    "filtering_filters_6": "",
+    "filtering_7": false,
+    "filtering_heading_7": "",
+    "filtering_filters_7": "",
+    "filtering_8": false,
+    "filtering_heading_8": "",
+    "filtering_filters_8": "",
+    "filtering_9": false,
+    "filtering_heading_9": "",
+    "filtering_filters_9": "",
+    "filtering_10": false,
+    "filtering_heading_10": "",
+    "filtering_filters_10": "",
+    "blog_sidebar_position": "right",
+    "blog_sidebar_recent": true,
+    "blog_sidebar_tags": false,
+    "related_posts_display": true,
+    "related_posts_autoplay": "",
+    "related_posts_show_paging": false,
+    "related_posts_show_nav": true,
+    "related_posts_nav_prev": "<i class=\"icon-left-open\"></i>",
+    "related_posts_nav_next": "<i class=\"icon-right-open\"></i>",
+    "related_posts_column": "4",
+    "space_related_posts": "10",
+    "related_posts_limit": "8",
+    "google_map_enable": true,
+    "google_map_api_key": "AIzaSyB-qVvoa-s1NPnJBavKO2KBKKrdy_pbQ58",
+    "google_map_address": "Porto Store",
+    "google_map_pin_latitude": "53.3810876",
+    "google_map_pin_longitude": "-6.2099364",
+    "google_map_zoom": "14",
+    "contact_form_title": "Drop us a line",
+    "facebook_link": "https://web.facebook.com/Shop4Choice/",
+    "smartwave_flickrphotos_apikey": "",
+    "smartwave_flickrphotos_photosetid": "",
+    "smartwave_flickrphotos_count": "",
+    "twitter_name": "",
+    "twitter_screen_name": "",
+    "newsletter_footer_content": "Get all the latest information on Events,\nSales and Offers. Sign up for newsletter today.",
+    "newsletter_form_action": "",
+    "newsletter_enable": "0",
+    "newsletter_delay": "1000",
+    "newsletter_bg_image_use": false,
+    "newsletter_bg_color": "#f4f4f4",
+    "newsletter_title": "Important Update:",
+    "newsletter_content": "<div class=\"popup-content\">\n    <div class=\"delivery-grid\">\n      <div class=\"delivery-column\">\n        <h3>ORDER BY 1 PM</h3>\n        <div class=\"delivery-info\">\n          <p>Up to 15th December</p>\n          <p>From 16th December</p>\n        </div>\n      </div>\n      \n      <div class=\"delivery-column\">\n        <h3>DELIVERY</h3>\n        <div class=\"delivery-info\">\n          <p>Before Christmas</p>\n          <p>Estimate 2nd - 6th January</p>\n          <p>(May arrive earlier than this estimated date)</p>\n\n        </div>\n      </div>\n    </div>\n  </div>\n  \n  <div class=\"popup-footer\">\n    <p>An Post is currently experiencing delivery delays. Please allow more than 3 working days for your parcel to arrive. We appreciate your understanding.</p>\n  </div>",
+    "newsletter_custom_style": ".popup-content {\n  margin: 0 -30px;\n }\n\n.delivery-grid {\n  display: none; //grid\n  grid-template-columns: 1fr 1fr;\n  gap: 10px;\n  margin-bottom: 30px;\nmargin-top: 30px;\n\n}\n\n\n.input-box{\ndisplay: none!important;\n}\n\n.delivery-column h3 {\n  font-size: 15px;\n  color: #333;\n  margin-bottom: 15px;\n}\n\n.delivery-info {\n  font-size: 14px;\n  color: #666;\n  line-height: 1.6;\n}\n\n.popup-footer {\n\n  text-align: center;\n  color: #666;\n  font-size: 14px;\n//margin-top: -20px;\n}\n\n.close-popup {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  background: none;\n  border: none;\n  font-size: 24px;\n  cursor: pointer;\n  color: #666;\n}\n\n.close-popup:hover {\n  color: #333;\n}\n\n.show-popup-btn {\n  background: #4A90E2;\n  color: white;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 16px;\n}\n\n.block-subscribe{\n@media (max-width:715px)  {\nmargin-left: 20px;\nmargin-right: 20px;\n}\n}\n\n.show-popup-btn:hover {\n  background: #357ABD;\n}",
+    "newsletter_width": "400",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify://shop_images/visa_banner_rene_innovation_abf45c86-0fbd-432d-9596-dfa3c6062022.jpg",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#0083c1",
+    "checkout_button_color": "#0083c1",
+    "checkout_error_color": "#ff6d6d",
+    "related_product_autoplay": "",
+    "related_product_show_paging": true,
+    "related_product_show_nav": false,
+    "related_product_nav_prev": "<i class=\"icon-left-open\"></i>",
+    "related_product_nav_next": "<i class=\"icon-right-open\"></i>",
+    "related_product_column": "5",
+    "related_product_carousel": true,
+    "style_product_view": "4",
+    "move_product_name": false,
+    "collection_actions": true,
+    "collection_flex_grid": false,
+    "collection_show_quantity": true,
+    "collection_move_actions": false,
+    "product_sample_vendor": false,
+    "product_color_swatches_enable": true,
+    "onepage_move_action": false,
+    "show_notice": "no",
+    "notice_text_1": "<span style=\"color: #fff; font-size: 16px; font-family: Georgia; line-height: 30px;\"><b>SALE:</b> use coupon code <b>PORTO</b> to save 30%</span>",
+    "notice_text_2": "<p style=\"margin: 0; color: #fff; font-family: Georgia; font-size: 15px; font-weight: 700; line-height: 15px;\">Be the First to Know</p>\r\n          <p style=\"margin: 0; font-size: 12px; color: #a7a7a7; line-height: 15px;\">Sign up for newsletter today.</p>",
+    "custom_header": "1",
+    "header_background_basic_color": "#fff",
+    "sticky_header_background_basic_color": "#fff",
+    "header_background_image_use": false,
+    "header_border_color": "#008acc",
+    "header_text_basic_color": "#777",
+    "header_links_color": "#008acc",
+    "wishlist_enable": true,
+    "wishlist_page": "",
+    "cart_notes_enable": true,
+    "enable_rtl": "no",
+    "custom_color_prd_page": "no",
+    "add_to_cart_bg_color": "#000",
+    "addtocart_hover_bg_color": "#000",
+    "atc_font_color": "#fff",
+    "atc_hover_font_color": "#fff",
+    "atc_icon_font_color": "#fff",
+    "atc_icon_hover_font_color": "#fff",
+    "price_font_color": "#000",
+    "sale_price_color": "#000",
+    "rtl": "no",
+    "time_lazy_load": "100",
+    "custom": "1",
+    "about_page_heading": "upload",
+    "about_page_heading_height": "370",
+    "instagram_accesstoken": "",
+    "instagram_user_id": "",
+    "instagram_limit": "3",
+    "name": "",
+    "newsletter_logo_use": true,
+    "hide_single_smallthumb ": "1",
+    "collection_color_swatch": true,
+    "collection_toolbar_filter": false,
+    "flag_icon_1": "shopify://shop_images/demo1_en.png",
+    "flag_icon_2": "shopify://shop_images/demo1_fr.png",
+    "sections": {
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "fixed_position_footer_enabled": "no",
+          "footer_top_enabled": "yes",
+          "footer_top_style": "2",
+          "footer_top_block": "custom_block",
+          "footer_top_custom_1": "<h3 style=\"color: #fff; text-align: left; font-size: 18px; line-height: 35px; margin: 0;\">Start Selling Today, Buy Porto eCommerce</h3>",
+          "footer_top_custom_2": "<h4 style=\"color: #fff; text-align: left; font-size: 16px;line-height: 1;margin:0;\">Be the First to Know<br>\n</h4><p style=\"font-size: 13px;font-weight: 400; margin: 0;line-height:1.5\">Sign up for newsletter today.</p>",
+          "footer_top_custom_enable": true,
+          "footer_top_custom": "<div class=\"social-icons\">\n        <a href=\"https://web.facebook.com/Shop4Choice/\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a>\n        <a href=\"https://www.instagram.com/reneinnovations/\"><i class=\"icon-instagram\" aria-hidden=\"true\"></i></a> <a href=\"https://www.youtube.com/channel/UCgAsLUB5-qWRaW9DimTW9iQ\"><i class=\"icon-video\" aria-hidden=\"true\"></i></a>\n</div>",
+          "footer_newsletter_heading": "Rene’s mailing list",
+          "footer_newsletter_content": "Get all the latest information on Events, Sales and Offers.",
+          "footer_top_custom_3": "",
+          "footer_middle_enabled": "yes",
+          "footer_ribbon_enabled": "no",
+          "footer_ribbon_text": "Become a Retailer",
+          "footer_middle_column_1": "custom_block",
+          "footer_column_1_heading": "Shopping",
+          "column_content_1": "linkslist",
+          "footer_column_linklist1": "footer",
+          "footer_middle_column_1_custom": "<ul class=\"contact-info\" style=\"padding-top: 7px;\">\n            <li><p><b style=\"color: #fff;text-transform:uppercase;\">Address</b><br>123 Street Name, City, England</p></li>\n            <li><p><b style=\"color: #fff;text-transform:uppercase;\">Phone</b><br>(123) 456-7890</p></li>\n            <li><p><b style=\"color: #fff;text-transform:uppercase;\">Email</b><br><a href=\"mailto:mail@example.com\">mail@example.com</a></p></li>\n        </ul>",
+          "collection_product_linklist1": "",
+          "footer_middle_column_1_size": "3",
+          "footer_middle_column_2": "custom_block",
+          "footer_column_2_heading": "My account",
+          "column_content_2": "linkslist",
+          "footer_column_linklist2": "footer-02",
+          "footer_middle_column_2_custom": "<div class=\"widget-wrapper\">                    \n  <div class=\"block_content\">\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n         <div class=\"block-right\">\n           <div class=\"row\"> \n             <div class=\"col-md-5\">\n               <div class=\"block\">\n                 <div class=\"block-title footer-block-title\">\n                   <h3>\n                     <span>\n                       <span>MY ACCOUNT</span>\n                     </span>\n                   </h3>\n                 </div>\n                 <div class=\"block-content\">\n                   <div class=\"row\">\n                     <ul class=\"links footer-list\">\n                     <div class=\"item\" style=\"float:left;paddding-right:15px;padding-left:15px;\">\n                       <li class=\"theme-color\">\n                         <a href=\"/pages/about-us\"> \n                           <span>About us</span>\n                         </a>\n                       </li>\n                       <li class=\"theme-color\">\n                         <a href=\"/pages/contact\"> \n                           <span>Contact us</span>\n                         </a>\n                       </li>\n                       <li class=\"theme-color\">\n                         <a href=\"/\"> \n                           <span>My Account</span>\n                         </a>\n                       </li>\n                     </div>\n                     <div class=\"item\" style=\"float:left;paddding-right:15px;padding-left:15px;\">\n                       <li class=\"theme-color\">\n                         <a href=\"/\"> \n                           <span>Order history</span>\n                         </a>\n                       </li>\n                       <li class=\"theme-color\">\n                         <a href=\"/\"> \n                           <span>Advanced search</span> \n                         </a>\n                       </li>\n                       <li class=\"theme-color\">\n                         <a href=\"/\"> \n                           <span>Login</span>\n                         </a>\n                       </li>\n                     </div>\n                     </ul>\n                   </div>\n                 </div>\n               </div>\n             </div>\n             <div class=\"col-md-7\">\n               <div class=\"block\">\n                 <div class=\"block-title footer-block-title\">\n                   <h3>\n                     <span>\n                       <span>Main Features</span>\n                     </span>\n                   </h3>\n                 </div>\n                 <div class=\"block-content\">\n                   <div class=\"row\">\n                     <ul class=\"links footer-list\">\n                     <div class=\"item\" style=\"float:left;paddding-right:15px;padding-left:15px;\"> \n                     <li class=\"theme-color\">                                 \n                       <a href=\"/\"> \n                         <span>Super Fast Shopify Theme</span>\n                       </a>\n                     </li>\n                     <li class=\"theme-color\">                                 \n                       <a href=\"/\"> \n                         <span>1st Fully working Ajax Theme</span>\n                       </a>\n                     </li>\n                     <li class=\"theme-color\">                                 \n                       <a href=\"/\"> \n                         <span>10 Unique Homepage Layouts</span>\n                       </a>\n                     </li>\n                     </div>\n                     <div class=\"item\" style=\"float:left;paddding-right:15px;padding-left:15px;\"> \n                     <li class=\"theme-color\">                                 \n                       <a href=\"/\"> \n                         <span>Powerful Admin Panel</span> \n                       </a>\n                     </li>\n                     <li class=\"theme-color\">                                 \n                       <a href=\"/\"> \n                         <span>Mobile &amp; Retina Optimized</span>\n                       </a>\n                     </li> \n                     </div> \n                   </ul>\n                   </div>\n                 </div>\n               </div>\n             </div>\n           </div>\n         </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <div class=\"block-bottom\">\n          <div class=\"row\"> \n            <div class=\"col-lg-5\">\n              <address style=\"font-size:13px;margin:0;line-height:1.42857143\">\n                <span>Porto eCommerce. © 2019. All Rights Reserved</span>  \n              </address>\n            </div>\n            <div class=\"col-lg-7\">\n              <div class=\"working\" style=\"display: inline-block;vertical-align: middle;padding-right: 8px;\">\n                <div><span>Working Days/Hours<br><b>Mon - Sun / 9:00AM - 8:00PM</b></span></div>\n              </div>\n              <div class=\"custom-block\" style=\"display: inline-block;vertical-align: middle;\">\n                <div><img data-src=\"https://cdn.shopify.com/s/files/1/1613/0113/files/payment-icon.png?10926592366744499709\" style=\"max-width: 100%;\" alt=\"\"></div>                      \n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "collection_product_linklist2": "",
+          "footer_middle_column_2_size": "3",
+          "footer_middle_column_3": "do_not_show",
+          "footer_column_3_heading": "Contact Us",
+          "column_content_3": "static_block_id",
+          "footer_column_linklist3": "",
+          "footer_middle_column_3_custom": "<i class=\"icon-phone\"> </i>\n      <b>Phone:</b><br><br>\n      <p><a href=\"tel:+35301%208058001\">01 805 8001</a> </p>\n  <br>\n    <i class=\"icon-mail\"> </i>\n      <b>Email:</b><br><br>\n      <a href=\"mailto:info@rene.ie\">info@rene.ie</a><p></p>\n  \n<br>\n<i class=\"icon-clock\"> </i>\n    <b>Opening Hours:</b><br><br>Mon - Fri / 9:30AM - 6:00PM<p></p>",
+          "collection_product_linklist3": "",
+          "footer_middle_column_3_size": "3",
+          "footer_middle_column_4": "custom_block",
+          "footer_column_4_heading": "Find Us",
+          "column_content_4": "static_block_id",
+          "footer_column_linklist4": "",
+          "footer_middle_column_4_custom": "<ul class=\"contact-info\">\n <li>\n<p>\n Mornington Business Park,<br>Malahide Road, Artane,<br>Dublin 5, Ireland. <a href=\"https://www.google.com/maps/place/Shop4Choice/@53.381088,-6.209936,14z/data=!4m5!3m4!1s0x0:0x1baa1a8c1330c3a2!8m2!3d53.3810876!4d-6.2099364?hl=en\">Get Direction</a></p>\n</li>\n<li>\n <p>\n T: <a href=\"tel:+35301%208058001\">01 805 8001</a></p>\n </li>\n  <li>\n<p>\n E: <a href=\"mailto:info@rene.ie\">info@rene.ie</a></p>\n  </li>\n  <li>\n <p>Mon - Fri / 10AM - 5PM</p>\n </li>\n</ul>",
+          "collection_product_linklist4": "",
+          "footer_middle_column_4_size": "3",
+          "footer_middle_column_5": "custom_block",
+          "footer_column_5_heading": "",
+          "column_content_5": "static_block_id",
+          "footer_column_linklist5": "",
+          "footer_middle_column_5_custom": "<div class=\"estimate-wrap\">\n<a href=\"tel:+35301%208058001\" class=\"estimate-btn\"><i class=\"icon-phone-1\"></i><span><span class=\"estimate-label\">Order Now</span><span class=\"estimate-number\">01 8058001</span></span></a>\n</div>\n\n<div class=\"social-icons\">\n        <a href=\"https://web.facebook.com/Shop4Choice/\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a>\n        <a href=\"https://www.instagram.com/reneinnovations/\"><i class=\"icon-instagram\" aria-hidden=\"true\"></i></a> <a href=\"https://www.youtube.com/channel/UCgAsLUB5-qWRaW9DimTW9iQ\"><i class=\"icon-video\" aria-hidden=\"true\"></i></a>\n</div>",
+          "collection_product_linklist5": "",
+          "footer_middle_column_5_size": "3",
+          "footer_middle_column_6": "do_not_show",
+          "footer_column_6_heading": "",
+          "column_content_6": "linkslist",
+          "footer_column_linklist6": "",
+          "footer_middle_column_6_custom": "",
+          "collection_product_linklist6": "",
+          "footer_middle_column_6_size": "3",
+          "footer_middle_2_enabled": "no",
+          "footer_middle_2_column_1": "custom_block",
+          "footer_column_2_1_heading": "",
+          "column_content_2_1": "static_block_id",
+          "footer_column_2_linklist1": "",
+          "footer_middle_2_column_1_custom": "<h4 style=\"color: #FFFFFF; text-align: center; font-size: 20px;line-height: 1;margin:0;\"><a href=\"https://www.rene.ie/pages/become-a-retailer\"><b>BECOME A RETAILER</b></a></h4>",
+          "footer_middle_2_column_1_size": "12",
+          "footer_middle_2_column_2": "do_not_show",
+          "footer_column_2_2_heading": "Contact Information  |  Coordonnées",
+          "column_content_2_2": "linkslist",
+          "footer_column_2_linklist2": "",
+          "footer_middle_2_column_2_custom": "",
+          "footer_middle_2_column_2_size": "3",
+          "footer_middle_2_column_3": "do_not_show",
+          "footer_column_2_3_heading": "Main Features  | Main Features",
+          "column_content_2_3": "linkslist",
+          "footer_column_2_linklist3": "",
+          "footer_middle_2_column_3_custom": "",
+          "footer_middle_2_column_3_size": "3",
+          "footer_middle_2_column_4": "do_not_show",
+          "footer_column_2_4_heading": "Be the First to Know  | Be the First to Know",
+          "column_content_2_4": "static_block_id",
+          "footer_column_2_linklist4": "",
+          "footer_middle_2_column_4_custom": "<ul class=\"contact-info\">\n  <li>\n    <i class=\"icon-location\"> </i>\n    <p>123 Street Name, City, England</p>\n  </li>\n  <li>\n    <i class=\"icon-phone\"> </i>\n    <p>(123)456-7890</p>\n  </li>\n  <li>\n    <i class=\"icon-mail\"> </i>\n    <p><a href=\"#\">mail@example.com</a></p>\n  </li>\n</ul>",
+          "footer_middle_2_column_4_size": "2",
+          "footer_bottom_enabled": "yes",
+          "show_logo_bottom": true,
+          "footer_logo": "shopify://shop_images/Rene_Innovations_LogoVertical-Whitelow.png",
+          "footer_bottom_socialicons": "no",
+          "socialicons_content": "<a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a>\n<a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a>\n<a href=\"#\"><i class=\"fa fa-linkedin-square\" aria-hidden=\"true\"></i></a>",
+          "copyrights": "&copy;Copyright 2020 by René Innovations. All Rights Reserved.",
+          "footer_bottom_custom_block": "no",
+          "footer_bottom_custom_block_id": "<div class=\"ultimate-badges\"></div>",
+          "footer_bottom_custom_block_2": "yes",
+          "footer_bottom_custom_block_id_2": "<div class=\"ultimate-badges\"></div>"
+        }
+      },
+      "1495910571031": {
+        "type": "text-section",
+        "blocks": {
+          "1495910571031-0": {
+            "type": "item-block",
+            "settings": {
+              "item_title": "FREE DELIVERY",
+              "item_icon": "icon-shipping",
+              "item_text": "On orders above €99"
+            }
+          },
+          "1495910571031-1": {
+            "type": "item-block",
+            "settings": {
+              "item_title": "30 DAY RETURNS",
+              "item_icon": "icon-money",
+              "item_text": "100% money back guarantee."
+            }
+          },
+          "1495910571031-2": {
+            "type": "item-block",
+            "settings": {
+              "item_title": "HIGH QUALITY PRODUCTS",
+              "item_icon": "icon-star-empty",
+              "item_text": "4.8/5 satisfied customers"
+            }
+          }
+        },
+        "block_order": [
+          "1495910571031-0",
+          "1495910571031-1",
+          "1495910571031-2"
+        ],
+        "disabled": true,
+        "settings": {
+          "bg_section_color": "#f4f4f4",
+          "margin_top": "",
+          "margin_bottom": "",
+          "section_padding": "",
+          "icon_content_color": "#465157",
+          "text_content_color": "#465157",
+          "border_color_block": ""
+        }
+      },
+      "1495910724011": {
+        "type": "text-section2",
+        "blocks": {
+          "1495910724011-0": {
+            "type": "item-block",
+            "settings": {
+              "item_title": "Brilliant innovations",
+              "item_icon": "icon-paper-plane",
+              "item_text": "<em>To Save Time, Money &amp; Effort</em>",
+              "item_link_text": "",
+              "item_link": ""
+            }
+          },
+          "1495910724011-1": {
+            "type": "item-block",
+            "settings": {
+              "item_title": "High Quality Products",
+              "item_icon": "icon-compare",
+              "item_text": "<em>Domestic &amp; Professional use \n</em>",
+              "item_link_text": "",
+              "item_link": ""
+            }
+          },
+          "1495910724011-2": {
+            "type": "item-block",
+            "settings": {
+              "item_title": "Customer Support",
+              "item_icon": "icon-earphones-alt",
+              "item_text": "<em>Spare Parts &amp; Warranty</em>",
+              "item_link_text": "",
+              "item_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1495910724011-0",
+          "1495910724011-1",
+          "1495910724011-2"
+        ],
+        "settings": {
+          "bg_section_color": "#f4f4f4",
+          "margin_top": "-5",
+          "margin_bottom": "0",
+          "section_padding": "10px 0 10px 0",
+          "icon_color": "#30a3d5",
+          "border_icon_color": "rgba(0,0,0,0)",
+          "title_color": "#2b2b2d",
+          "text_color": "#465157",
+          "button_bg_color": "",
+          "button_text_color": "",
+          "border_icon_radius": ""
+        }
+      },
+      "1495910758816": {
+        "type": "parallax-slider",
+        "blocks": {
+          "1495910758816-0": {
+            "type": "text",
+            "settings": {
+              "text_slide_1": "<h2 style=\"font-weight:400;\">fashion show collection</h2>",
+              "text_slide_2": "",
+              "button_content": "Shop Now",
+              "link": ""
+            }
+          },
+          "1495910758816-1": {
+            "type": "text",
+            "settings": {
+              "text_slide_1": "<h2 style=\"font-weight:400;\">fashion show collection</h2>",
+              "text_slide_2": "",
+              "button_content": "Shop Now",
+              "link": ""
+            }
+          },
+          "1495910758816-2": {
+            "type": "text",
+            "settings": {
+              "text_slide_1": "<h2 style=\"font-weight:400;\">fashion show collection</h2>",
+              "text_slide_2": "",
+              "button_content": "Shop Now",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1495910758816-0",
+          "1495910758816-1",
+          "1495910758816-2"
+        ],
+        "disabled": true,
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": "",
+          "section_padding": "",
+          "text_1_color": "#fff",
+          "text_2_color": "#fff",
+          "text_buton_color": "#fff",
+          "text_buton_hover_color": "#fff",
+          "image": "shopify://shop_images/Spin_mop_papa_banner_lineArtboard_1_5faa30e4-fa18-4ab0-b621-060ecf76ec06.jpg",
+          "autoplay": "5000",
+          "paging": false
+        }
+      },
+      "1495910791308": {
+        "type": "collection-brands",
+        "blocks": {
+          "1495910791308-0": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1495910791308-1": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1495910791308-2": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1495910791308-3": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1495910791308-4": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          },
+          "1538581128920": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1495910791308-0",
+          "1495910791308-1",
+          "1495910791308-2",
+          "1495910791308-3",
+          "1495910791308-4",
+          "1538581128920"
+        ],
+        "disabled": true,
+        "settings": {
+          "margin_top": "25px",
+          "margin_bottom": "",
+          "section_padding": "",
+          "title_visible": "true",
+          "title_color": "#313131",
+          "title": "Where can I buy it?",
+          "autoplay": "5000",
+          "columns": "6",
+          "margin": "30",
+          "paging": false,
+          "navigation": true,
+          "prev": "<i class=\"icon-chevron-left\"></i>",
+          "next": "<i class=\"icon-chevron-right\"></i>"
+        }
+      },
+      "1495910820801": {
+        "type": "blog-posts",
+        "disabled": true,
+        "settings": {
+          "bg_section_color": "#f4f4f4",
+          "title_section_color": "#313131",
+          "margin_top": "",
+          "margin_bottom": "",
+          "section_padding": "28px 0px 55px 0px",
+          "posts_title_color": "#000",
+          "posts_day_color": "#fff",
+          "posts_bg_day": "#08c",
+          "posts_month_color": "#fff",
+          "posts_bg_month": "#008acc",
+          "posts_desc_color": "#777",
+          "posts_readmore_color": "#fff",
+          "button_text_hover_color": "#fff",
+          "background_button_color": "#272525",
+          "background_hover_button_color": "#312f2f",
+          "type_blog_post": "2",
+          "title_type": "0",
+          "aspect_ratio": true,
+          "img_size": "400x400",
+          "title": "FROM THE BLOG",
+          "blog": "news",
+          "post_limit": "4",
+          "blog_column": "2",
+          "blog_autoplay": "",
+          "blog_show_paging": false,
+          "blog_show_nav": false,
+          "blog_nav_prev": "<i class=\"icon-chevron-left\"></i>",
+          "blog_nav_next": "<i class=\"icon-chevron-right\"></i>",
+          "blog_item_margin": "30"
+        }
+      },
+      "header-toplink-menu": {
+        "type": "header-toplink-menu",
+        "blocks": {
+          "1521138790991": {
+            "type": "menu_login",
+            "settings": {
+              "title": "Login"
+            }
+          },
+          "1579452126989": {
+            "type": "menu_wishlist",
+            "settings": {
+              "title": "My Wishlist"
+            }
+          }
+        },
+        "block_order": [
+          "1521138790991",
+          "1579452126989"
+        ],
+        "settings": {}
+      },
+      "search-by-category": {
+        "type": "search-by-category",
+        "blocks": {
+          "1521141877120": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1521141903951": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1521141913716": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1521141926835": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1521141936013": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1521141877120",
+          "1521141903951",
+          "1521141913716",
+          "1521141926835",
+          "1521141936013"
+        ],
+        "settings": {
+          "select_collection": "1"
+        }
+      },
+      "product-page-tab": {
+        "type": "product-page-tab",
+        "blocks": {
+          "1521493595274": {
+            "type": "description",
+            "settings": {
+              "title": "Description"
+            }
+          },
+          "1521493597293": {
+            "type": "review",
+            "settings": {
+              "title": "Reviews",
+              "use_count_reviews": true
+            }
+          },
+          "1521493600237": {
+            "type": "additional",
+            "settings": {
+              "title": "Additional Information"
+            }
+          },
+          "1521493602315": {
+            "type": "size_chart",
+            "settings": {
+              "title": "Size Chart",
+              "size_chart_image": "",
+              "code": "<div class=\"row\">\n<div class=\"col-lg-4 text-center\"><img data-src=\"//cdn.shopify.com/s/files/1/1632/5913/files/size_guide.png\"></div>\n<div class=\"col-lg-8\"><table class=\"sizes-table\">\n<thead><tr>\n<th>size</th>\n<th>chest(in.)</th>\n<th>waist(in.)</th>\n<th>hips(in.)</th>\n</tr></thead>\n<tbody>\n<tr>\n<th>XS</th>\n<td>34-36</td>\n<td>27-29</td>\n<td>34.5-36.5</td>\n</tr>\n<tr>\n<th>S</th>\n<td>36-38</td>\n<td>29-31</td>\n<td>36.5-38.5</td>\n</tr>\n<tr>\n<th>M</th>\n<td>38-40</td>\n<td>31-33</td>\n<td>38.5-40.5</td>\n</tr>\n<tr>\n<th>L</th>\n<td>40-42</td>\n<td>33-36</td>\n<td>40.5-43.5</td>\n</tr>\n<tr>\n<th>XL</th>\n<td>42-45</td>\n<td>36-40</td>\n<td>43.5-47.5</td>\n</tr>\n<tr>\n<th>XXL</th>\n<td>45-48</td>\n<td>40-44</td>\n<td>47.5-51.5</td>\n</tr>\n</tbody>\n</table></div>\n</div>"
+            }
+          },
+          "1521493616064": {
+            "type": "html",
+            "settings": {
+              "title": "Shipping & Delivery",
+              "code": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+          }
+        },
+        "block_order": [
+          "1521493595274",
+          "1521493597293",
+          "1521493600237",
+          "1521493602315",
+          "1521493616064"
+        ],
+        "settings": {}
+      },
+      "product-page-tab-custom": {
+        "type": "product-page-tab-custom",
+        "blocks": {
+          "1533810929610": {
+            "type": "description",
+            "settings": {
+              "title": "Description"
+            }
+          },
+          "judgeme_reviews_rLgezH": {
+            "type": "judgeme_reviews",
+            "settings": {
+              "title": "Reviews"
+            }
+          },
+          "1533810939652": {
+            "type": "html",
+            "settings": {
+              "title": "Shipping & Delivery",
+              "code": "<ul>\n    <li style=\"margin-bottom:10px;\">\n        Free delivery on orders over €55 in Ireland.\n    </li>\n    <li style=\"margin-bottom:10px;\">\n        Flat rate of just €6.99 for orders below €55. \n    </li>\n    <li>\n        Order now to receive within 3 working days.\n    </li>\n</ul>"
+            }
+          },
+          "html_UJq6F9": {
+            "type": "html",
+            "settings": {
+              "title": "60-Day Clean Home Guarantee",
+              "code": "<h3>60-Day Clean Home Guarantee</h3>\n\nWe stand behind the performance of our Spin Mop Dada. That’s why we offer a 60-Day Clean Home Guarantee—giving you 60 days from the date of delivery to request a return if you’re not satisfied with how it performs in your home.\n\nTo qualify for a return, you'll need to show that you've used the Spin Mop Dada as intended over the 60-day period (a quick video or a few photos will do), and provide your order confirmation or proof of purchase.\n\nPlease note: This guarantee excludes any accessories purchased separately from the Spin Mop Dada.\n\nTo initiate a return, email us at <a href=\"mailto:support@rene.ie\">support@rene.ie</a> and our team will be happy to help."
+            }
+          }
+        },
+        "block_order": [
+          "1533810929610",
+          "judgeme_reviews_rLgezH",
+          "1533810939652",
+          "html_UJq6F9"
+        ],
+        "custom_css": [
+          ".product-inventory {display: none !important;}"
+        ],
+        "settings": {}
+      },
+      "product-page-custom-html": {
+        "type": "product-page-custom-html",
+        "blocks": {
+          "1533811299430": {
+            "type": "custom_html",
+            "settings": {
+              "margin_top": "30px",
+              "margin_bottom": "-50px",
+              "padding": "",
+              "title": "Men Striped Dope Crew Socks",
+              "product_id": "",
+              "content": "<div class=\"fullwidth-row\" style=\"background-color: #f4f4f4; padding: 100px 0;\"><div class=\"container\"><div class=\"row\">\n<div class=\"col-lg-4\">\n<div style=\"overflow:hidden;\">\n<h3 style=\"font-size: 20px; color: #21293c;position: relative;display: inline-block;font-weight:700;line-height:32px;margin-bottom:20px;\">INCREDIBLE QUALITY<span style=\"position: absolute;border-top: 1px solid #21293c;top: 50%;margin-top: -0.5px;left: 100%;margin-left: 25px;width: 50vw;\"></span>\n</h3>\n<p style=\"line-height:24px;margin-bottom:20px;font-size:14px;\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>\n</div>\n<div style=\"overflow:hidden;\">\n<h3 style=\"font-size: 20px; color: #21293c;position: relative;display: inline-block;font-weight:700;line-height:32px;margin-bottom:20px;\">ADVANCED SOUND<span style=\"position: absolute;border-top: 1px solid #21293c;top: 50%;margin-top: -0.5px;left: 100%;margin-left: 25px;width: 50vw;\"></span>\n</h3>\n<p style=\"line-height:24px;margin-bottom:20px;font-size:14px;\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>\n</div>\n</div>\n<div class=\"col-lg-4 a-center\"><img data-src=\"//cdn.shopify.com/s/files/1/1632/5913/files/shop1_sticky_both_info_bottom-1.jpg\" alt=\"\" style=\"max-width: 100%;\"></div>\n<div class=\"col-lg-4 text-right\">\n<div style=\"overflow:hidden;\">\n<h3 style=\"font-size: 20px; color: #21293c;position: relative;display: inline-block;font-weight:700;line-height:32px;margin-bottom:20px;\">\n<span style=\"position: absolute;border-top: 1px solid #21293c;top: 50%;margin-top: -0.5px;right: 100%;margin-right: 25px;width: 50vw;\"></span>ULTRA BOOST</h3>\n<p style=\"line-height:24px;margin-bottom:20px;font-size:14px;\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>\n</div>\n<div style=\"overflow:hidden;\">\n<h3 style=\"font-size: 20px; color: #21293c;position: relative;display: inline-block;font-weight:700;line-height:32px;margin-bottom:20px;\">\n<span style=\"position: absolute;border-top: 1px solid #21293c;top: 50%;margin-top: -0.5px;right: 100%;margin-right: 25px;width: 50vw;\"></span>NOISE REDUCTION</h3>\n<p style=\"line-height:24px;margin-bottom:20px;font-size:14px;\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>\n</div>\n</div>\n</div></div></div>"
+            }
+          },
+          "1534272054475": {
+            "type": "custom_html",
+            "settings": {
+              "margin_top": "30px",
+              "margin_bottom": "-50px",
+              "padding": "",
+              "title": "Faux Leather Crisscross Slides",
+              "product_id": "",
+              "content": "<div class=\"fullwidth-row\" style=\"background-color: #f4f4f4; padding: 100px 0;\"><div class=\"container\"><div class=\"row\">\n<div class=\"col-lg-4\">\n<div style=\"overflow:hidden;\">\n<h3 style=\"font-size: 20px; color: #21293c;position: relative;display: inline-block;font-weight:700;line-height:32px;margin-bottom:20px;\">INCREDIBLE QUALITY<span style=\"position: absolute;border-top: 1px solid #21293c;top: 50%;margin-top: -0.5px;left: 100%;margin-left: 25px;width: 50vw;\"></span>\n</h3>\n<p style=\"line-height:24px;margin-bottom:20px;font-size:14px;\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>\n</div>\n<div style=\"overflow:hidden;\">\n<h3 style=\"font-size: 20px; color: #21293c;position: relative;display: inline-block;font-weight:700;line-height:32px;margin-bottom:20px;\">ADVANCED SOUND<span style=\"position: absolute;border-top: 1px solid #21293c;top: 50%;margin-top: -0.5px;left: 100%;margin-left: 25px;width: 50vw;\"></span>\n</h3>\n<p style=\"line-height:24px;margin-bottom:20px;font-size:14px;\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>\n</div>\n</div>\n<div class=\"col-lg-4 a-center\"><img data-src=\"//cdn.shopify.com/s/files/1/1632/5913/files/shop1_sticky_both_info_bottom-1.jpg\" alt=\"\" style=\"max-width: 100%;\"></div>\n<div class=\"col-lg-4 text-right\">\n<div style=\"overflow:hidden;\">\n<h3 style=\"font-size: 20px; color: #21293c;position: relative;display: inline-block;font-weight:700;line-height:32px;margin-bottom:20px;\">\n<span style=\"position: absolute;border-top: 1px solid #21293c;top: 50%;margin-top: -0.5px;right: 100%;margin-right: 25px;width: 50vw;\"></span>ULTRA BOOST</h3>\n<p style=\"line-height:24px;margin-bottom:20px;font-size:14px;\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>\n</div>\n<div style=\"overflow:hidden;\">\n<h3 style=\"font-size: 20px; color: #21293c;position: relative;display: inline-block;font-weight:700;line-height:32px;margin-bottom:20px;\">\n<span style=\"position: absolute;border-top: 1px solid #21293c;top: 50%;margin-top: -0.5px;right: 100%;margin-right: 25px;width: 50vw;\"></span>NOISE REDUCTION</h3>\n<p style=\"line-height:24px;margin-bottom:20px;font-size:14px;\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>\n</div>\n</div>\n</div></div></div>"
+            }
+          }
+        },
+        "block_order": [
+          "1533811299430",
+          "1534272054475"
+        ],
+        "settings": {}
+      },
+      "product-page-video": {
+        "type": "product-page-video",
+        "blocks": {
+          "1533810616627": {
+            "type": "product_video",
+            "settings": {
+              "margin_top": "0",
+              "margin_bottom": "-50px",
+              "padding": "100px 0 95px 0",
+              "title": "Classic Crew Neck Sweatshirt",
+              "product_id": "",
+              "video_url": "//player.vimeo.com/video/1084537?autoplay=1",
+              "content1": "Concept Film",
+              "content2": "WATCH",
+              "background_image": "",
+              "background_image_repeat": "no-repeat",
+              "background_size": "cover",
+              "background_attachment": "default",
+              "background_position": "center_center"
+            }
+          }
+        },
+        "block_order": [
+          "1533810616627"
+        ],
+        "settings": {}
+      },
+      "product-page-video-fullwidth": {
+        "type": "product-page-video-fullwidth",
+        "blocks": {
+          "1533810763397": {
+            "type": "product_video",
+            "settings": {
+              "margin_top": "",
+              "margin_bottom": "-50px",
+              "padding": "100px 0 95px 0",
+              "title": "Faux Leather High-Top Sneakers",
+              "product_id": "",
+              "video_url": "//player.vimeo.com/video/1084537?autoplay=1",
+              "background_image": "",
+              "background_image_repeat": "no-repeat",
+              "background_size": "cover",
+              "background_attachment": "default",
+              "background_position": "center_center"
+            }
+          },
+          "1534271762543": {
+            "type": "product_video",
+            "settings": {
+              "margin_top": "",
+              "margin_bottom": "-50px",
+              "padding": "100px 0 95px 0",
+              "title": "Classic Sunglasses",
+              "product_id": "",
+              "video_url": "//player.vimeo.com/video/1084537?autoplay=1",
+              "background_image": "",
+              "background_image_repeat": "no-repeat",
+              "background_size": "cover",
+              "background_attachment": "default",
+              "background_position": "center_center"
+            }
+          }
+        },
+        "block_order": [
+          "1533810763397",
+          "1534271762543"
+        ],
+        "settings": {}
+      },
+      "product-page-tab-vertical": {
+        "type": "product-page-tab-vertical",
+        "blocks": {
+          "1533811479704": {
+            "type": "description",
+            "settings": {
+              "title": "Description"
+            }
+          },
+          "1533811481978": {
+            "type": "review",
+            "settings": {
+              "title": "Reviews",
+              "use_count_reviews": true
+            }
+          },
+          "1533811483997": {
+            "type": "additional",
+            "settings": {
+              "title": "Additional Information"
+            }
+          },
+          "1533811486514": {
+            "type": "size_chart",
+            "settings": {
+              "title": "Size Chart",
+              "size_chart_image": "",
+              "code": "<div class=\"row\">\n<div class=\"col-lg-4 text-center\"><img data-src=\"//cdn.shopify.com/s/files/1/1632/5913/files/size_guide.png\"></div>\n<div class=\"col-lg-8\"><table class=\"sizes-table\">\n<thead><tr>\n<th>size</th>\n<th>chest(in.)</th>\n<th>waist(in.)</th>\n<th>hips(in.)</th>\n</tr></thead>\n<tbody>\n<tr>\n<th>XS</th>\n<td>34-36</td>\n<td>27-29</td>\n<td>34.5-36.5</td>\n</tr>\n<tr>\n<th>S</th>\n<td>36-38</td>\n<td>29-31</td>\n<td>36.5-38.5</td>\n</tr>\n<tr>\n<th>M</th>\n<td>38-40</td>\n<td>31-33</td>\n<td>38.5-40.5</td>\n</tr>\n<tr>\n<th>L</th>\n<td>40-42</td>\n<td>33-36</td>\n<td>40.5-43.5</td>\n</tr>\n<tr>\n<th>XL</th>\n<td>42-45</td>\n<td>36-40</td>\n<td>43.5-47.5</td>\n</tr>\n<tr>\n<th>XXL</th>\n<td>45-48</td>\n<td>40-44</td>\n<td>47.5-51.5</td>\n</tr>\n</tbody>\n</table></div>\n</div>"
+            }
+          },
+          "1533811492639": {
+            "type": "html",
+            "settings": {
+              "title": "Shipping & Delivery",
+              "code": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat."
+            }
+          }
+        },
+        "block_order": [
+          "1533811479704",
+          "1533811481978",
+          "1533811483997",
+          "1533811486514",
+          "1533811492639"
+        ],
+        "settings": {}
+      },
+      "1568776978015": {
+        "type": "section-html",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "html": "<div style=\"background-color:#fbfbfb;padding: 60px 0 5px;\"><div class=\"container\">\n[product title=\"FEATURED PRODUCTS\" title_align=\"center\" title_style=\"border-middle\" limit=\"8\" cols=\"5\" space=\"10\" view_mode=\"products-slider\" product_layout=\"default\" creative_layout=\"4\" extra_class=\"\" aspect_ratio=\"true\" img_size=\"400x400\" layout_height=\"550\" autoplay=\"\" arrows=\"true\" arrows_side=\"nav-pos-outside\" arrows_type=\"nav-style-4\" arrows_onhover=\"true\" positionArr=\"middle\" dots=\"false\" positionPag=\"\" handle_collection=\"featured-products\" ]\n</div></div>"
+        }
+      },
+      "1568778293746": {
+        "type": "section-html",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "html": "<div style=\"padding: 60px 0 5px;\"><div class=\"container\">\n[product title=\"NEW PRODUCTS\" title_align=\"center\" title_style=\"border-middle\" limit=\"8\" cols=\"4\" space=\"10\" view_mode=\"products-slider\" product_layout=\"default\" creative_layout=\"4\" extra_class=\"\" aspect_ratio=\"true\" img_size=\"400x400\" layout_height=\"550\" autoplay=\"\" arrows=\"true\" arrows_side=\"nav-pos-outside\" arrows_type=\"nav-style-4\" arrows_onhover=\"true\" positionArr=\"middle\" dots=\"false\" positionPag=\"\" handle_collection=\"new-products\" ]\n</div></div>"
+        }
+      },
+      "1574068928152": {
+        "type": "testimonials",
+        "blocks": {
+          "1575042839236": {
+            "type": "content",
+            "settings": {
+              "testimonials_image": "shopify://shop_images/mens-business-fashion.jpg",
+              "text_content": "'' Best mop for our cafe, I love the fact that our floors dry in seconds! Don't have to worry when customers walk in. I highly recommend this mop to all shops & household.'' ",
+              "name_author": "Butlers Chocolate Cafe.",
+              "desc_author": ""
+            }
+          },
+          "1574068928152-0": {
+            "type": "content",
+            "settings": {
+              "testimonials_image": "shopify://shop_images/mens-business-fashion.jpg",
+              "text_content": "“We have used René Spin Mops here for nine years, we are delighted with their performance.”",
+              "name_author": "Facility Manager",
+              "desc_author": "Cliffs of Moher Visitor Centre"
+            }
+          },
+          "1574068928152-1": {
+            "type": "content",
+            "settings": {
+              "testimonials_image": "",
+              "text_content": "“Cleaning and drying our dog kennels is now faster and better than ever.”",
+              "name_author": "Facilities Manager, DSPCA.",
+              "desc_author": ""
+            }
+          },
+          "1575038339502": {
+            "type": "content",
+            "settings": {
+              "testimonials_image": "",
+              "text_content": "“Cleans your floors in half the time, with double the shine.”",
+              "name_author": "Publican Owner, Graingers Pebble Beach.",
+              "desc_author": ""
+            }
+          },
+          "1575042931047": {
+            "type": "content",
+            "settings": {
+              "testimonials_image": "",
+              "text_content": "'' The mop head came out almost completely dry. there is absolutely nothing to complain about this product. It makes mopping chore a lot more enjoyable for all our staff ! ''",
+              "name_author": "Supermac's.",
+              "desc_author": ""
+            }
+          }
+        },
+        "block_order": [
+          "1575042839236",
+          "1574068928152-0",
+          "1574068928152-1",
+          "1575038339502",
+          "1575042931047"
+        ],
+        "settings": {
+          "bg_section_color": "#f4f4f4",
+          "margin_top": "",
+          "margin_bottom": "0",
+          "section_padding": "60px 0 30px 0",
+          "text_color": "rgba(0,0,0,0)",
+          "bg_text_color": "#f4f4f4",
+          "name_color": "#000",
+          "desc_color": "#000",
+          "testimonials_title": "Happy Customers",
+          "num_item_show": "10",
+          "column": "1",
+          "autoplay": "10000",
+          "show_paging": false,
+          "show_nav": false,
+          "nav_prev": "<i class=\"icon-chevron-left\"></i>",
+          "nav_next": "<i class=\"icon-chevron-right\"></i>",
+          "item_margin": "10"
+        }
+      },
+      "1574254405312": {
+        "type": "slideshow-section",
+        "blocks": {
+          "1574254405312-0": {
+            "type": "image",
+            "settings": {
+              "background_image": "",
+              "background_image_use": "0",
+              "image": "shopify://shop_images/Spin_mop_papa_banner_lineArtboard_1_copy_2_05d0b2e6-c2a7-4a54-a0ab-59e7195cb26d.jpg",
+              "mobile_image": "shopify://shop_images/bannerpapa-mobile01-700px.jpg",
+              "image_use": "1",
+              "lazy_back_color": "#eee",
+              "show_content": false,
+              "content_style": "custom_html",
+              "content_pos": "left",
+              "main_title": "",
+              "sub_title": "",
+              "button_title": "",
+              "link_slider": "shopify://products/spin-mop-papa-commercial-system",
+              "content": ""
+            }
+          },
+          "1574254405312-1": {
+            "type": "image",
+            "settings": {
+              "background_image": "",
+              "background_image_use": "0",
+              "image": "shopify://shop_images/Spin_mop_papa_banner_lineArtboard_1_copy_5_c0bb3291-0045-4903-89a0-864a82c26657.jpg",
+              "mobile_image": "shopify://shop_images/bannerpapa-mobile01-700px.jpg",
+              "image_use": "1",
+              "lazy_back_color": "#eee",
+              "show_content": false,
+              "content_style": "custom_html",
+              "content_pos": "left",
+              "main_title": "",
+              "sub_title": "",
+              "button_title": "",
+              "link_slider": "shopify://products/spin-mop-papa-commercial-system",
+              "content": ""
+            }
+          }
+        },
+        "block_order": [
+          "1574254405312-0",
+          "1574254405312-1"
+        ],
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": "50",
+          "section_padding": "",
+          "slide_layout": "default",
+          "slide_transition": "slide",
+          "auto_speed": "7000",
+          "show_paging": true,
+          "show_nav": false,
+          "nav_prev": "<i class=\"icon-chevron-left\"></i>",
+          "nav_next": "<i class=\"icon-chevron-right\"></i>",
+          "copyright": "",
+          "html": "",
+          "extra_class": ""
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": true
+        }
+      },
+      "1575135065012": {
+        "type": "slideshow-section",
+        "blocks": {
+          "1575135266009": {
+            "type": "image",
+            "settings": {
+              "background_image": "",
+              "background_image_use": "0",
+              "image": "shopify://shop_images/Spin_mop_papa_banner_lineArtboard_1_copy_4_732709dd-4065-4e1a-a2f5-71efa707ccf8.jpg",
+              "mobile_image": "",
+              "image_use": "1",
+              "lazy_back_color": "#eee",
+              "show_content": false,
+              "content_style": "custom_html",
+              "content_pos": "left",
+              "main_title": "",
+              "sub_title": "",
+              "button_title": "",
+              "link_slider": "shopify://products/spin-mop-dada",
+              "content": ""
+            }
+          },
+          "1575135299238": {
+            "type": "image",
+            "settings": {
+              "background_image": "",
+              "background_image_use": "0",
+              "image": "shopify://shop_images/Spin_mop_papa_banner_lineArtboard_1_copy_2_80a23ac7-5dbf-4341-97f4-eb3723c2e5e6.jpg",
+              "mobile_image": "",
+              "image_use": "1",
+              "lazy_back_color": "#eee",
+              "show_content": false,
+              "content_style": "custom_html",
+              "content_pos": "left",
+              "main_title": "",
+              "sub_title": "",
+              "button_title": "",
+              "link_slider": "shopify://products/spin-mop-dada",
+              "content": ""
+            }
+          }
+        },
+        "block_order": [
+          "1575135266009",
+          "1575135299238"
+        ],
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": "",
+          "section_padding": "",
+          "slide_layout": "default",
+          "slide_transition": "slide",
+          "auto_speed": "30000",
+          "show_paging": true,
+          "show_nav": false,
+          "nav_prev": "<i class=\"icon-chevron-left\"></i>",
+          "nav_next": "<i class=\"icon-chevron-right\"></i>",
+          "copyright": "",
+          "html": "",
+          "extra_class": "slider-bottom"
+        }
+      },
+      "1579191329468": {
+        "type": "banner-text1",
+        "blocks": {
+          "1579191329468-0": {
+            "type": "image",
+            "settings": {
+              "banner_image": "shopify://shop_images/Image-4-V5.jpg",
+              "banner_link": "shopify://products/spin-mop-dada",
+              "banner_title": "Spin Mop Dada",
+              "banner_content": "Meet our new Spin Mop Dada The Spin Mop Dada is a revolutionary new force in floor cleaning! The specially designed hand press spin system uses centrifugal force to spin..."
+            }
+          },
+          "1579191329468-1": {
+            "type": "image",
+            "settings": {
+              "banner_image": "shopify://shop_images/mop_head_abffa404-0f33-4d51-ab26-68015bab3581.jpg",
+              "banner_link": "shopify://products/1-replacement-spin-mop-head",
+              "banner_title": "Replacement Spin Mop heads",
+              "banner_content": "Replacement Mop Heads Which Can Be Kept Aside For Individual Jobs Around The House.  100% Microfibre. Optimal Absorbency. Machine Washable. Mop head disc diameter: 16 cm..."
+            }
+          },
+          "1579191329468-2": {
+            "type": "image",
+            "settings": {
+              "banner_image": "shopify://shop_images/scrub_brush_for_spin_mop.jpg",
+              "banner_link": "shopify://products/spare-scrubbing-brush-head",
+              "banner_title": "Spare Scrubbing Brush head",
+              "banner_content": "The brush is made of Nylon material which can easily remove the tough dirt and grime without scratching the floor. This brush can be attaches to all domestic..."
+            }
+          }
+        },
+        "block_order": [
+          "1579191329468-0",
+          "1579191329468-1",
+          "1579191329468-2"
+        ],
+        "settings": {
+          "bg_section_color": "",
+          "margin_top": "40px",
+          "margin_bottom": "40px",
+          "section_padding": "",
+          "title_color": "#050203",
+          "text_color": "#7b7f83",
+          "bg_content_color": "#fff"
+        }
+      },
+      "header-notice": {
+        "type": "header-notice",
+        "blocks": {
+          "1579454856783": {
+            "type": "html",
+            "settings": {
+              "item_width_desktop": "12",
+              "item_width_tablet": "12",
+              "item_width_mobile": "12",
+              "custom_block": "<p> ✔ Free delivery on orders <b>over €55</b> in Ireland</p>"
+            }
+          }
+        },
+        "block_order": [
+          "1579454856783"
+        ],
+        "settings": {}
+      },
+      "1579243122061": {
+        "type": "banner-text1",
+        "blocks": {
+          "1579243122061-0": {
+            "type": "image",
+            "settings": {
+              "banner_image": "shopify://shop_images/cdn.shopify.com_408_Papa1.jpg",
+              "banner_link": "shopify://products/spin-mop-papa-commercial-system",
+              "banner_title": "Spin Mop Papa Commercial System",
+              "banner_content": "Rene introduces the Professional System Spin Mop Papa: Built to handle large office spaces, schools, restaurants, retail stores, hotels, and more."
+            }
+          },
+          "1579243122061-1": {
+            "type": "image",
+            "settings": {
+              "banner_image": "shopify://shop_images/mop.jpg",
+              "banner_link": "shopify://products/4x-professional-spin-mop-papa-replacement-mop-heads",
+              "banner_title": "5x Professional Spin Mop PAPA Replacement Mop Heads",
+              "banner_content": "5x Professional Spin Mop PAPA Replacement Mop Heads Choose mop heads in four different colours codes."
+            }
+          },
+          "1579243122061-2": {
+            "type": "image",
+            "settings": {
+              "banner_image": "shopify://shop_images/p-imagw.jpg",
+              "banner_link": "shopify://products/spin-mop-papa-replacement-handle",
+              "banner_title": "Spin Mop Papa Replacement Handle",
+              "banner_content": "Spin Mop Papa spare handle Its powerful drainer and absorption make a perfect floor cleaning.Comfort grip 360 handle."
+            }
+          }
+        },
+        "block_order": [
+          "1579243122061-0",
+          "1579243122061-1",
+          "1579243122061-2"
+        ],
+        "settings": {
+          "bg_section_color": "",
+          "margin_top": "40px",
+          "margin_bottom": "100px",
+          "section_padding": "",
+          "title_color": "#050203",
+          "text_color": "#7b7f83",
+          "bg_content_color": "#fff"
+        }
+      },
+      "1579344515940": {
+        "type": "banner-text3",
+        "disabled": true,
+        "settings": {
+          "bg_section_color": "",
+          "margin_top": "",
+          "margin_bottom": "",
+          "section_padding": "",
+          "banner_content_position": "left",
+          "banner_bg_content": "#555555",
+          "title_color": "#f2f4f3",
+          "content_color": "#ada4b5",
+          "link_color": "#fff",
+          "banner_title": "Rene Innovations",
+          "banner_content": "Spinning Technology\nMachine Washable Head\nPower full Dehydration\nSafe on all floor types\nSaves Time\nSaves Money",
+          "banner_link_text": "SHOP NOW",
+          "banner_link": "",
+          "banner_image": "shopify://shop_images/cleaning-product-banner.jpg"
+        }
+      },
+      "1579451676840": {
+        "type": "section-html",
+        "settings": {
+          "title": "",
+          "html": "<video id=\"bannerVideo\" src=\"https://cdn.shopify.com/s/files/1/0060/4874/3535/files/sonoc_dada_1.mp4?v=1598815651\" autoplay=\"\" muted=\"\" defaultmuted=\"\" playsinline=\"\" preload=\"auto\">\n</video>"
+        }
+      },
+      "1595593202184": {
+        "type": "section-html",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "html": "<div class=\"container\"><div id=\"insta-feed\"></div></div>"
+        }
+      },
+      "1598816413273": {
+        "type": "slideshow-section",
+        "blocks": {
+          "1598816413273-0": {
+            "type": "image",
+            "settings": {
+              "background_image": "",
+              "background_image_use": "0",
+              "image": "shopify://shop_images/banner-sonic-scrub11_1.jpg",
+              "mobile_image": "",
+              "image_use": "1",
+              "lazy_back_color": "#eee",
+              "show_content": true,
+              "content_style": "custom_html",
+              "content_pos": "left",
+              "main_title": "",
+              "sub_title": "",
+              "button_title": "",
+              "link_slider": "",
+              "content": ""
+            }
+          },
+          "1598816413273-1": {
+            "type": "image",
+            "settings": {
+              "background_image": "",
+              "background_image_use": "0",
+              "image": "shopify://shop_images/banner-sonic-scrub22_1.jpg",
+              "mobile_image": "",
+              "image_use": "1",
+              "lazy_back_color": "#eee",
+              "show_content": true,
+              "content_style": "custom_html",
+              "content_pos": "left",
+              "main_title": "",
+              "sub_title": "",
+              "button_title": "",
+              "link_slider": "",
+              "content": ""
+            }
+          }
+        },
+        "block_order": [
+          "1598816413273-0",
+          "1598816413273-1"
+        ],
+        "settings": {
+          "margin_top": "",
+          "margin_bottom": "",
+          "section_padding": "",
+          "slide_layout": "fullwidth",
+          "slide_transition": "slide",
+          "auto_speed": "3000",
+          "show_paging": false,
+          "show_nav": true,
+          "nav_prev": "<i class=\"icon-chevron-left\"></i>",
+          "nav_next": "<i class=\"icon-chevron-right\"></i>",
+          "copyright": "",
+          "html": "",
+          "extra_class": "slider-bottom"
+        }
+      },
+      "testimonials": {
+        "type": "testimonials",
+        "blocks": {
+          "e439e365-0adc-4fbd-8913-5e3d32d10be0": {
+            "type": "content",
+            "settings": {
+              "text_content": "“Cleaning and drying our dog kennels is now faster and better than ever.”",
+              "name_author": "Facilities Manager",
+              "desc_author": "DSPCA."
+            }
+          },
+          "b0f82abd-46f2-4c0d-b08f-b89584654e2c": {
+            "type": "content",
+            "settings": {
+              "text_content": "“Cleans your floors in half the time, with double the shine.”",
+              "name_author": "Publican Owner",
+              "desc_author": "Graingers Pebble Beach"
+            }
+          },
+          "1d72bd62-4742-47f0-8b55-8ee8fccb9cef": {
+            "type": "content",
+            "settings": {
+              "text_content": "\"The mop head came out almost completely dry. there is absolutely nothing to complain about this product. It makes mopping chore a lot more enjoyable for all our staff !\"",
+              "name_author": "Supermac's.",
+              "desc_author": ""
+            }
+          },
+          "ab10c4ef-2ab3-40d6-b9f8-4d04799e9267": {
+            "type": "content",
+            "settings": {
+              "text_content": "\"Best mop for our cafe, I love the fact that our floors dry in seconds! Don't have to worry when customers walk in. I highly recommend this mop to all shops & household.\"",
+              "name_author": "Butlers Chocolate Cafe.",
+              "desc_author": ""
+            }
+          }
+        },
+        "block_order": [
+          "e439e365-0adc-4fbd-8913-5e3d32d10be0",
+          "b0f82abd-46f2-4c0d-b08f-b89584654e2c",
+          "1d72bd62-4742-47f0-8b55-8ee8fccb9cef",
+          "ab10c4ef-2ab3-40d6-b9f8-4d04799e9267"
+        ],
+        "settings": {
+          "bg_section_color": "rgba(0,0,0,0)",
+          "margin_top": "",
+          "margin_bottom": "",
+          "section_padding": "",
+          "text_color": "rgba(0,0,0,0)",
+          "bg_text_color": "rgba(0,0,0,0)",
+          "name_color": "rgba(0,0,0,0)",
+          "desc_color": "rgba(0,0,0,0)",
+          "testimonials_title": "REVIEWS",
+          "num_item_show": "4",
+          "column": "2",
+          "autoplay": "",
+          "show_paging": true,
+          "show_nav": false,
+          "nav_prev": "<i class=\"icon-chevron-left\"></i>",
+          "nav_next": "<i class=\"icon-chevron-right\"></i>",
+          "item_margin": "30"
+        }
+      }
+    },
+    "content_for_index": [
+      "1579451676840",
+      "1495910724011",
+      "1495910571031",
+      "1568776978015",
+      "1598816413273",
+      "1575135065012",
+      "1495910791308",
+      "1579191329468",
+      "1568778293746",
+      "1495910758816",
+      "1495910820801",
+      "1579344515940",
+      "1574254405312",
+      "1579243122061",
+      "1574068928152",
+      "1595593202184"
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "11724500921838622758": {
+        "type": "shopify://apps/frequently-bought-together/blocks/app-embed-block/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
+        "disabled": false,
+        "settings": {}
+      },
+      "4912811683585195618": {
+        "type": "shopify://apps/smartpopup-promotion-popup/blocks/app-embed/6b7effb0-33e7-433c-acc7-0a98ef2f9da6",
+        "disabled": false,
+        "settings": {
+          "popups": "{}",
+          "filter": "{}"
+        }
+      },
+      "6065014864672580889": {
+        "type": "shopify://apps/amp-slide-cart-drawer/blocks/app-embed/0a410b8d-7dc4-4f2d-b4e8-c12d34fd2255",
+        "disabled": false,
+        "settings": {}
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {}
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "#cart-box {height: 320px !important; width: 100%; top: calc(100% - 320px) !important; right: -100%;}",
+      "#cart-box > * .close-box {font-size: 25px;}",
+      "#cart-box > * .btn-button {width: unset !important;}",
+      ".timetable-block {background-color: red;}",
+      ".out-of-stock-message {margin-top: 25px; font-size: 18px; color: red;}"
+    ]
+  }
+}

@@ -1,0 +1,894 @@
+<!-- /templates/page.liquid -->
+
+<div class="page-title-banner">
+    <div class="container">
+        <h1>
+        {% if settings.language_enable %}
+        <span class="lang1">{{ page.title | split: '|' | first }}</span>
+        <span class="lang2">{{ page.title | split: '|' | last }}</span>
+        {% else %}
+        {{ page.title | split: '|' | first }}
+        {% endif %}
+        </h1>
+        {% include 'breadcrumb' %}
+    </div>	
+</div>
+<div class="container">
+    <div class="page-container">
+        
+        {% comment %}
+        Regular page content goes here.
+        {% endcomment %}
+        <div class="rte inner-page-wrapper"> 
+        {%- if settings.language_enable -%}
+            <div class="lang1">
+            {%- assign content_lg1 = page.content | split: '[lang2]' | first -%}
+            {% include 'shortcode' load: content_lg1 %}
+            </div>
+            <div class="lang2">
+            {%- assign content_lg2 = page.content | split: '[lang2]' | last -%}
+            {% include 'shortcode' load: content_lg2 %} 
+            </div>
+        {%- else -%}
+            {%- assign content_lg = page.content | split: '[lang2]' | first -%}
+            {% include 'shortcode' load: content_lg %}
+        {%- endif -%} 
+        </div>
+    </div>
+</div>
+
+<h1>Looking to Buy a Spin Mop in Ireland?</h1>
+<p>Of course, buying direct from our website is how most Irish consumers order their <a href="https://www.rene.ie/collections/products" title="Spin Mops">Spin Mop products</a>, <a href="https://www.rene.ie/collections" title="Spin Mop parts and accessories">parts and accessories</a> online nowadays, but we're immensely proud of our strong nationwide retail presence, with 25+ stockists across Ireland, in each province for convenience and ease of reach for our growing consumer base.</p>
+<p>Click the interactive map below for details on your nearest retailer and pick up a René Spin Mop on your next visit!</p>
+<style>
+.google-maps {
+        position: relative;
+        padding-bottom: 100%; 
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+</style>
+<div class="google-maps">
+    <div><iframe src="https://www.google.com/maps/d/embed?mid=1F6gkDslXXijzz9G8lGo9uphIlc9DafBu" width="640" height="480"></iframe></div>
+</div>
+<div>
+    <div class="col-lg-12">
+        <div class="inner-stockist"><meta charset="utf-8" /></div>
+        <h3 style="text-align: center;">1. Shop4Choice - Dublin 5</h3>
+        <p style="padding-left: 0px; text-align: center;">
+            <a href="https://www.google.com/maps?cid=1993434973984572322" target="_blank" rel="noopener noreferrer">Mornington Business Park, Malahide Road, Artane, Dublin 5</a><br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:info@shop4choice.com" target="_blank" rel="noopener noreferrer">info@shop4choice.com</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:018058001">0<span>1 805 8001</span></a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div class="inner-stockist">
+        <div style="padding-left: 0px;"><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px; text-align: center;"><span>2. Right Price Tiles - Athlone - Westmeath</span></h3>
+        <p style="padding-left: 0px; text-align: center;">
+            <a href="https://goo.gl/maps/kWqVzNkHPD7bP8rr7" target="_blank" rel="noopener noreferrer">Kilmartin N6 Centre, Athlone, Co Westmeath.<span></span></a><br />
+            <i class="icon-mail"></i><b>Email:</b><span></span><a href="mailto:athlone@rightpricetiles.ie">athlone@rightpricetiles.ie</a><br />
+            <i class="icon-phone"></i><b>Phone:</b><a href="tel:+3530906486060"><span></span>0906 486060</a>
+        </p>
+        <p style="padding-left: 0px; text-align: center;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div style="padding-left: 0px;"><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>3. </span><span>Right Price Tiles - </span><span>Ballincollig - Cork</span></h3>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/5UHqg7MyREsqG1GP6" target="_blank" rel="noopener noreferrer">Unit 2, Powder Mill Retail Park, Link Road, Ballincollig, Co Cork </a><br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:ballincollig@rightpricetiles.ie">ballincollig@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+3530214874477"> 021 4874477</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div style="padding-left: 0px;"><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>4. </span><span>Right Price Tiles - </span><span>Belfast</span></h3>
+        <div style="padding-left: 0px;"><meta charset="utf-8" /></div>
+        <div style="padding-left: 0px;"><meta charset="utf-8" /></div>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/cV9Lwvbmj7egoMuv8" target="_blank" rel="noopener noreferrer"><span>95-97 Boucher Road, Belfast, BT12 6HR</span></a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> </span><a href="mailto:belfast@rightpricetiles.co.uk">belfast@rightpricetiles.co.uk</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+353028202042062139"><span> </span>028 204 62139</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div style="padding-left: 0px;"><meta charset="utf-8" /></div>
+        <div style="padding-left: 0px;"><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>5. </span><span>Right Price Tiles - </span><span>Blanchardstown - Dublin 15</span></h3>
+        <div style="padding-left: 0px;"><meta charset="utf-8" /></div>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/mze8JQeVDhewW9p3A" target="_blank" rel="noopener noreferrer"><span>Unit 9, Coolmine Industrial Estate, Blanchardstown, Dublin 15</span></a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> </span><a href="mailto:blanchardstown@rightpricetiles.co.uk">blanchardstown@rightpricetiles.co.uk</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+353018226223"><span> </span>01 8226223</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>6. </span><span>Right Price Tiles - </span><span>Bray</span></h3>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/M2wfLW3UqkFuB2fj6" target="_blank" rel="noopener noreferrer">48A Beechwood Close, Boghall Road, Bray, Co Wicklow</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> <a href="mailto:bray@rightpricetiles.ie">bray</a></span><a href="mailto:bray@rightpricetiles.ie">@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+353012014455"><span> </span></a><a href="tel:+35301202014455">01 2014455</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>7. </span><span>Right Price Tiles - </span><span>Carlow</span></h3>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/MEwYRpkB5PHjSuQ68" target="_blank" rel="noopener noreferrer">Unit 3, Carlow Retail Park, Hanover, Carlow</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> </span><a href="mailto:carlow@rightpricetiles.ie">carlow@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+3530599182496"><span> </span></a><a href="tel:059%209182496">059 9182496</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>8. </span><span>Right Price Tiles - </span><span>Castlebar - Mayo</span></h3>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/ASioZnCR7anifU7u8" target="_blank" rel="noopener noreferrer">Castlebar Retail Park, Breaffy Road, Castlebar, Co Mayo</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> </span><a href="mailto:castlebar@rightpricetiles.co.uk" target="_blank" rel="noopener noreferrer">castlebar@rightpricetiles.co.uk</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+3530949022435"><span> </span></a><a href="tel:094%209022435">094 9022435</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>9. </span><span>Right Price Tiles - </span><span>Clonmel - Tipperary</span></h3>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/72MPPtoSL8X7Esti6" target="_blank" rel="noopener noreferrer">Inner Relief Road, Clonmel, Co Tipperary,</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> </span><a href="mailto:clonmel@rightpricetiles.co.uk" target="_blank" rel="noopener noreferrer">clonmel@rightpricetiles.co.uk</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+3530526122033">052 6122033</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>10. </span><span>Right Price Tiles - </span><span>Coolock - Dublin 17</span></h3>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/AAt7BtpNugfvKPqV8" target="_blank" rel="noopener noreferrer">Malahide Road Retail Centre, Malahide Road, Dublin 17</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> <a href="mailto:coolock@rightpricetiles.ie">coolock</a></span><a href="mailto:bray@rightpricetiles.ie">@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+353012014455"><span> </span></a><a href="tel:+35301208036000">01 8036000</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>11. </span><span>Right Price Tiles - </span><span>Cork</span></h3>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/X56mbn4aFEot4mwf9" target="_blank" rel="noopener noreferrer">Glanmire House, Lower Glanmire Road, Cork</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> <a href="mailto:cork@rightpricetiles.ie">cork</a></span><a href="mailto:cork@rightpricetiles.ie">@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+353012014455"><span> </span></a><a href="tel:+3530214552600">0</a><a href="tel:021%204552600">21 4552600</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>12. </span><span>Right Price Tiles - </span><span>Drogheda - Louth</span></h3>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/6KAz9XmY15Rh64u86" target="_blank" rel="noopener noreferrer">Donore Business Park, Drogheda, Co. Louth</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> <a href="mailto:drogheda@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">drogheda</a></span>
+            <a href="mailto:drogheda@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+353012014455"><span> </span></a><a href="tel:041%209846084">041 9846084</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>13. </span><span>Right Price Tiles - </span><span>Dundalk - Louth</span></h3>
+        <p style="padding-left: 0px;">
+            <a href="https://goo.gl/maps/TFGwzkXZAPqkP8Ha6" target="_blank" rel="noopener noreferrer">Unit 10, Dundalk Retail Park, Dundalk, Co Louth</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> <a href="mailto:dundalk@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">dundalk</a></span>
+            <a href="mailto:dundalk@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone:</b><a href="tel:+353012014455"><span> </span></a><a href="tel:042%209357260">042 9357260</a>
+        </p>
+        <p style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;">
+            <span>
+                14. <span><span></span>Right Price Tiles - </span><span>Fonthill - Dublin 22</span>
+            </span>
+        </h3>
+        <p class="p1" style="padding-left: 30px;">
+            <a href="https://www.google.com/maps?cid=14986209462820746013" target="_blank" rel="noopener noreferrer">Fonthill Retail Park, Clondalkin, Dublin 22</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> <a href="mailto:coolock@rightpricetiles.ie">coolock</a></span><a href="mailto:bray@rightpricetiles.ie">@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:016206711">01 6206711</a>
+        </p>
+        <p></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>15. </span><span>Right Price Tiles - </span><span>Galway</span></h3>
+        <p class="p1" style="padding-left: 30px;">
+            <a href="https://www.google.com/maps?cid=8092311830674375287" target="_blank" rel="noopener noreferrer">Oranmore Business Park, Oranmore Roundabout, Galway</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> <a href="mailto:galway@rightpricetiles.ie">galway</a></span><a href="mailto:galway@rightpricetiles.ie">@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:091792972">091 792972</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>16. </span><span>Right Price Tiles - </span><span>Kylemore - Dublin 10</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps/place/Right+Price+Tiles+(Kylemore+Road)/@53.3364638,-6.3496111,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x2228a379356c2180!8m2!3d53.3364638!4d-6.3474224" target="_blank" rel="noopener noreferrer">
+                Unit 3, Kylemore Road, Ballyfermot, Dublin 10
+            </a>
+            <br />
+            <i class="icon-mail"> </i><b>Email:</b><span> <a href="mailto:kylemoreroad@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">kylemoreroad</a></span>
+            <a href="mailto:kylemoreroad@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:016269626">01 6269626</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>17. </span><span>Right Price Tiles - </span><span>Letterkenny - Donegal</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps/place/Right+Price+Tiles+Letterkenny/@54.9476762,-7.7310581,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x20bbd2c984cbae62!8m2!3d54.9476762!4d-7.7288694" target="_blank" rel="noopener noreferrer">
+                Letterkenny Retail Park, Letterkenny Co. Donegal
+            </a>
+            <br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:letterkenny@rightpricetiles.ie">letterkenny@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:0749168460">074 9168460</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>18. </span><span>Right Price Tiles - </span><span>Limerick</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps?cid=9653683633930214725" target="_blank" rel="noopener noreferrer">Raheen Roundabout, Cork Road, Limerick</a><br />
+            <i class="icon-mail"> </i><b>Email:</b><span> <a href="mailto:limerick@rightpricetiles.ie">limerick</a></span><a href="mailto:limerick@rightpricetiles.ie">@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:061301700">061 301700</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>19. </span><span>Right Price Tiles - </span><span>Naas - Kildare</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps?cid=14788374257887353902" target="_blank" rel="noopener noreferrer">Naas Retail Park, Co Kildare</a><br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:newhall@rightpricetiles.ie">newhall@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:045895522">045 895522</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>20. </span><span>Right Price Tiles - </span><span>Navan</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps?cid=11387782152216278754" target="_blank" rel="noopener noreferrer">Blackwater Retail Park, Kells Road, Navan</a><br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:navan@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">navan@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:0469030444">046 9030444</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>21. </span><span>Right Price Tiles - </span><span>Sligo</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps?cid=3521241806708890700" target="_blank" rel="noopener noreferrer">Unit 14, Sligo Retail Park, Carraroe, Co Sligo</a><br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:sligo@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">sligo@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:0719317380">071 9317380</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>22. </span><span>Right Price Tiles - </span><span>Stillorgan - Dublin 18</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps/place/Right+Price+Tiles+-+Sandyford/@53.279818,-6.2225356,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x1083dcae97bc7b56!8m2!3d53.279818!4d-6.2203469" target="_blank" rel="noopener noreferrer">
+                Unit 26, Spruce Avenue, Stillorgan Industrial Estate, Dublin
+            </a>
+            <br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:stillorgan@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">stillorgan@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:012938944">01 2938944</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>23. </span><span>Right Price Tiles - </span><span>Tralee - Kerry</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps/place/Right+Price+Tiles+(Tralee)/@52.2635205,-9.6765299,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7c051ddaf7d84cbf!8m2!3d52.2635205!4d-9.6743412" target="_blank" rel="noopener noreferrer">
+                Manor Mile Height, Killarney Road, Tralee, Co Kerry
+            </a>
+            <br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:tralee@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">tralee@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:0667125522">066 7125522</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>24. </span><span>Right Price Tiles - </span><span>Waterford</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps/place/Right+Price+Tiles+Waterford/@52.2485345,-7.1206222,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x4a78c2369986de40!8m2!3d52.2485345!4d-7.1184335" target="_blank" rel="noopener noreferrer">
+                Westgate Retail Park, Tramore Road, Waterford
+            </a>
+            <br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:waterford@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">waterford@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:051877007">051 877007</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+    </div>
+</div>
+<div class="col-lg-12" style="text-align: center;">
+    <div class="inner-stockist">
+        <div><meta charset="utf-8" /></div>
+        <h3 style="padding-left: 0px;"><span>25. </span><span>Right Price Tiles - </span><span>Wexford</span></h3>
+        <p class="p1" style="padding-left: 0px;">
+            <a href="https://www.google.com/maps?cid=3481298376830109476" target="_blank" rel="noopener noreferrer">Clonard Retail Park, Clonard, Wexford</a><br />
+            <i class="icon-mail"> </i><b>Email:</b> <a href="mailto:wexford@rightpricetiles.ie" target="_blank" rel="noopener noreferrer">wexford@rightpricetiles.ie</a><br />
+            <i class="icon-phone"> </i><b>Phone: </b><a href="tel:0539184232">053 9184232</a>
+        </p>
+        <p class="p1" style="padding-left: 0px;"></p>
+        <h3 style="padding-left: 0px;"><span></span></h3>
+    </div>
+</div>
+<div style="overflow-x: auto;">
+    <div style="padding-left: 30px;"><meta charset="utf-8" /></div>
+    <div style="padding-left: 30px;"><meta charset="utf-8" /></div>
+    <h3 style="padding-left: 30px;"><span></span></h3>
+    <div style="padding-left: 30px;"><meta charset="utf-8" /></div>
+    <div style="padding-left: 30px;"><meta charset="utf-8" /></div>
+    <h3 style="padding-left: 30px;"><span></span></h3>
+    <h3 style="padding-left: 30px;"><span></span></h3>
+    <div id="Paris" class="tabcontent" style="padding-left: 30px;">
+        <h3 style="padding-left: 30px;"></h3>
+    </div>
+    <div id="Tokyo" class="tabcontent" style="padding-left: 30px;">
+        <h3 style="padding-left: 30px;"></h3>
+    </div>
+</div>
+
+
+
+
+<div class="stocklist-wrapper">
+    <div class="container">
+        <div class="inner-section-heading">
+            <h2>Looking to Buy a Spin Mop in Ireland?</h2>
+            <p>Of course, buying direct from our website is how most Irish consumers order their Spin Mop products, parts and accessories online nowadays, but we're immensely proud of our strong nationwide retail presence, with 25+ stockists across Ireland, in each province for convenience and ease of reach for our growing consumer base.</p>
+            <p>Click the interactive map below for details on your nearest retailer and pick up a René Spin Mop on your next visit!</p>
+        </div>
+    </div>
+    <div class="google-maps-spinmop">
+        <div class="google-maps-wrap">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1F6gkDslXXijzz9G8lGo9uphIlc9DafBu" width="100%" frameBorder="0"></iframe>
+        </div>
+    </div>
+    <div class="stocklist-block">
+        <div class="stocklist-body">
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Shop4Choice</h3>
+                            <h4>Dublin 5</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=1993434973984572322" target="_blank">Mornington Business Park, Malahide Road, Artane, Dublin 5</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:info@shop4choice.com">info@shop4choice.com</a></p>
+                            <p><span>Phone:</span><a href="tel:018058001">01 805 8001</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Shop4Choice</h3>
+                            <h4>Dublin 5</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=1993434973984572322" target="_blank">Mornington Business Park, Malahide Road, Artane, Dublin 5</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:info@shop4choice.com">info@shop4choice.com</a></p>
+                            <p><span>Phone:</span><a href="tel:018058001">01 805 8001</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Athlone - Westmeath</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/kWqVzNkHPD7bP8rr7" target="_blank">Kilmartin N6 Centre, Athlone, Co Westmeath.</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:athlone@rightpricetiles.ie">athlone@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:+3530906486060">0906 486060</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Ballincollig - Cork</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/5UHqg7MyREsqG1GP6" target="_blank">Unit 2, Powder Mill Retail Park, Link Road, Ballincollig, Co Cork </a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:ballincollig@rightpricetiles.ie">ballincollig@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:+3530214874477">021 4874477</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Belfast</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/cV9Lwvbmj7egoMuv8" target="_blank">95-97 Boucher Road, Belfast, BT12 6HR</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:belfast@rightpricetiles.co.uk">belfast@rightpricetiles.co.uk</a></p>
+                            <p><span>Phone:</span><a href="tel:+353028202042062139">028 204 62139</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Blanchardstown - Dublin 15</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/mze8JQeVDhewW9p3A" target="_blank">Unit 9, Coolmine Industrial Estate, Blanchardstown, Dublin 15</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:belfast@rightpricetiles.co.uk">belfast@rightpricetiles.co.uk</a></p>
+                            <p><span>Phone:</span><a href="tel:+353018226223">01 8226223</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Bray</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/M2wfLW3UqkFuB2fj6" target="_blank">48A Beechwood Close, Boghall Road, Bray, Co Wicklow</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:bray@rightpricetiles.ie">bray@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:+35301202014455">01 2014455</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Carlow</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/MEwYRpkB5PHjSuQ68" target="_blank">Unit 3, Carlow Retail Park, Hanover, Carlow</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:carlow@rightpricetiles.ie">carlow@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:059%209182496">059 9182496</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Castlebar - Mayo</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/ASioZnCR7anifU7u8" target="_blank">Castlebar Retail Park, Breaffy Road, Castlebar, Co Mayo</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:castlebar@rightpricetiles.co.uk">castlebar@rightpricetiles.co.uk</a></p>
+                            <p><span>Phone:</span><a href="tel:094%209022435">094 9022435</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Clonmel - Tipperary</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/72MPPtoSL8X7Esti6" target="_blank">Inner Relief Road, Clonmel, Co Tipperary,</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:clonmel@rightpricetiles.co.uk">clonmel@rightpricetiles.co.uk</a></p>
+                            <p><span>Phone:</span><a href="tel:+3530526122033">052 6122033</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Coolock - Dublin 17</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/AAt7BtpNugfvKPqV8" target="_blank">Malahide Road Retail Centre, Malahide Road, Dublin 17</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:coolock@rightpricetiles.iek">coolock@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:+35301208036000">01 8036000</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Cork</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/X56mbn4aFEot4mwf9" target="_blank">Glanmire House, Lower Glanmire Road, Cork</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:cork@rightpricetiles.ie">cork@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:021%204552600">021 4552600</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Drogheda - Louth</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/6KAz9XmY15Rh64u86" target="_blank">Donore Business Park, Drogheda, Co. Louth</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:drogheda@rightpricetiles.ie">drogheda@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:041%209846084">041 9846084</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Dundalk - Louth</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://goo.gl/maps/TFGwzkXZAPqkP8Ha6" target="_blank">Unit 10, Dundalk Retail Park, Dundalk, Co Louth</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:dundalk@rightpricetiles.ie">dundalk@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:042%209357260">042 9357260</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Fonthill - Dublin 22</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=14986209462820746013" target="_blank">Fonthill Retail Park, Clondalkin, Dublin 22</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:coolock@rightpricetiles.ie">coolock@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:016206711">01 6206711</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Galway</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=8092311830674375287" target="_blank">Oranmore Business Park, Oranmore Roundabout, Galway</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:coolock@rightpricetiles.ie">galway@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:091792972">091 792972</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Kylemore - Dublin 10</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=8092311830674375287" target="_blank">Unit 3, Kylemore Road, Ballyfermot, Dublin 10</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:kylemoreroad@rightpricetiles.ie">kylemoreroad@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:021%204552600">01 6269626</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Letterkenny - Donegal</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps/place/Right+Price+Tiles+Letterkenny/@54.9476762,-7.7310581,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x20bbd2c984cbae62!8m2!3d54.9476762!4d-7.7288694" target="_blank">Letterkenny Retail Park, Letterkenny Co. Donegal</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:letterkenny@rightpricetiles.ie">letterkenny@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:0749168460">074 9168460</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Limerick</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=9653683633930214725" target="_blank">Raheen Roundabout, Cork Road, Limerick</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:limerick@rightpricetiles.ie">limerick@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:061301700">061 301700</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Naas - Kildare</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=9653683633930214725" target="_blank">Naas Retail Park, Co Kildare</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:newhall@rightpricetiles.ie">newhall@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:045895522">045 895522</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Navan</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=11387782152216278754" target="_blank">Blackwater Retail Park, Kells Road, Navan</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:navan@rightpricetiles.ie">navan@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:046 9030444">046 9030444</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Sligo</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=3521241806708890700" target="_blank">Unit 14, Sligo Retail Park, Carraroe, Co Sligo</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:sligo@rightpricetiles.ie">sligo@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:0719317380">071 9317380</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Stillorgan - Dublin 18</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps/place/Right+Price+Tiles+-+Sandyford/@53.279818,-6.2225356,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x1083dcae97bc7b56!8m2!3d53.279818!4d-6.2203469" target="_blank">Unit 26, Spruce Avenue, Stillorgan Industrial Estate, Dublin</a></p//www.google.com/maps/place/Right+Price+Tiles+-+>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:stillorgan@rightpricetiles.ie">stillorgan@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:012938944">01 2938944</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Tralee - Kerry</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps/place/Right+Price+Tiles+(Tralee)/@52.2635205,-9.6765299,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7c051ddaf7d84cbf!8m2!3d52.2635205!4d-9.6743412" target="_blank">Manor Mile Height, Killarney Road, Tralee, Co Kerry</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:tralee@rightpricetiles.ie">tralee@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:0667125522">066 7125522</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Waterford</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps/place/Right+Price+Tiles+(Tralee)/@52.2635205,-9.6765299,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7c051ddaf7d84cbf!8m2!3d52.2635205!4d-9.6743412" target="_blank">Westgate Retail Park, Tramore Road, Waterford</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:waterford@rightpricetiles.ie">waterford@rightpricetiles.ie
+                            </a></p>
+                            <p><span>Phone:</span><a href="tel:051877007">051 877007</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocklist-item">
+                <div class="container">
+                    <div class="stocklist-box">
+                        <div class="stocklist-title">
+                            <h3>Right Price Tiles</h3>
+                            <h4>Wexford</h4>
+                        </div>
+                        <div class="stocklist-address">
+                            <h5>Address:</h5>
+                            <p><a href="https://www.google.com/maps?cid=3481298376830109476" target="_blank">Clonard Retail Park, Clonard, Wexford</a></p>
+                        </div>
+                        <div class="stocklist-info">
+                            <p><span>Mail:</span><a href="mailto:wexford@rightpricetiles.ie">wexford@rightpricetiles.ie</a></p>
+                            <p><span>Phone:</span><a href="tel:0539184232">053 9184232</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

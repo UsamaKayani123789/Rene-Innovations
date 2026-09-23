@@ -1,0 +1,86 @@
+<!-- /templates/blog.liquid -->
+<div class="page-title-banner">
+  <div class="container">
+  	<h1>Blog</h1>
+    {% include 'breadcrumb' %}
+  </div>	
+</div>
+{% paginate blog.articles by 3 %}
+<div class="blog-container">
+  <div class="section-block">
+    <div class="container">
+      <div class="row">
+        {% if settings.blog_sidebar_position != 'none' %}
+          <div class="col-lg-3 sidebar col-{{ settings.blog_sidebar_position }}">
+            <div class="block-main-canvas">
+              {% include 'blog-sidebar' %}
+            </div>
+            <div class="mobile-canvas-overlay close-mobile-canvas"></div>
+          </div>
+          {% endif %}
+        <div class="{% if settings.blog_sidebar_position == 'none' %}col-lg-12{% else %}col-lg-9{% endif %}">
+          <div class="blog-wrapper">
+            <div class="row">
+            {% for article in blog.articles %}
+            <div class="col-md-6">
+              <div class="post-block">
+                <div class="post-img-block">
+                  <a href="{{ article.url }}" class="featured-thumbnail">
+                      {% if article.image %}
+                      {{ article.image.src | img_url: 'large' | img_tag: article.title }}
+                      {% else %}
+                      {{ article.first.featured_image | img_url: 'large' | img_tag: article.title }}
+                      {% endif %}
+                  </a>
+                </div>
+                <div class="post-body">
+
+                  <div class="post-options">
+                    {% capture date %}
+                      <time datetime='{{ article.published_at | date: '%Y-%m-%d' }}'>{{ article.published_at | date: format: 'month_day_year' }}</time>
+                    {% endcapture %}
+                    {{ 'blogs.article.author_on_date_html' | t: date: date, author: author }}
+                  </div>
+
+                  <a class="post-heading" href="{{ article.url }}">
+                    {% if settings.language_enable %}
+                    <h3 class="lang1">{{ article.title | split: '|' | first }}</h3>
+                    <h3 class="lang2">{{ article.title | split: '|' | last }}</h3>
+                    {% else %}
+                      <h3>{{ article.title | split: '|' | first }}</h3>
+                    {% endif %}
+                  </a>
+
+                  <p class="post-excerpt">
+                    {{ article.excerpt }}
+                    {% if settings.language_enable %}
+                    <span class="lang1">{{ article.content | strip_html | split: '[lang2]' | first | truncatewords: 50 }}</span>
+                    <span class="lang2">{{ article.content | strip_html | split: '[lang2]' | last | truncatewords: 50 }}</span>
+                    {% else %}
+                    {{ article.content | strip_html | split: '[lang2]' | first | truncatewords: 50}}
+                    {% endif %}
+                  </p>
+
+                  <a class="post-more" href="{{ article.url }}" {% if settings.language_enable %}data-translate="blogs.article.read_more"{% endif %}>
+                    {{- 'blogs.article.read_more' | t -}}
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+            </div>
+            {% if paginate.pages > 1 %}
+            <div class="pagenav-wrap">
+              <div class="pagination">
+                {% include 'pagination' %}
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endpaginate %}

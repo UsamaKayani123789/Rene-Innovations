@@ -1,0 +1,101 @@
+<!-- /templates/page.liquid -->
+
+<div class="page-title-banner">
+    <div class="container">
+        <h1>
+        {% if settings.language_enable %}
+        <span class="lang1">{{ page.title | split: '|' | first }}</span>
+        <span class="lang2">{{ page.title | split: '|' | last }}</span>
+        {% else %}
+        {{ page.title | split: '|' | first }}
+        {% endif %}
+      </h1>
+      {% include 'breadcrumb' %}
+    </div>	
+  </div>
+  <div class="container">
+    <div class="page-container">
+      
+      {% comment %}
+        Regular page content goes here.
+      {% endcomment %}
+      <div class="rte inner-page-wrapper"> 
+        {%- if settings.language_enable -%}
+          <div class="lang1">
+            {%- assign content_lg1 = page.content | split: '[lang2]' | first -%}
+            {% include 'shortcode' load: content_lg1 %}
+          </div>
+          <div class="lang2">
+            {%- assign content_lg2 = page.content | split: '[lang2]' | last -%}
+            {% include 'shortcode' load: content_lg2 %} 
+          </div>
+        {%- else -%}
+          {%- assign content_lg = page.content | split: '[lang2]' | first -%}
+          {% include 'shortcode' load: content_lg %}
+        {%- endif -%} 
+      </div>
+    </div>
+  </div>
+
+
+<div>
+    <div class="adM"></div>
+    <div class="adM"><span></span></div>
+    <div class="adM"></div>
+    <h1>Delivery and Shipping Information</h1>
+    <h5 class="adM" style="text-align: center;">Standard delivery services are provided by Fastway or An Post. Standard delivery to most addresses in Ireland and North Of Ireland generally takes up to 2-3 working days. If An Post is unable to deliver your item, they will leave a delivery notification docket for you. </h5>
+    <div><span color="#707070" face="MrEavesModOT, Arial, sans-serif" style="color: #707070; font-family: MrEavesModOT, Arial, sans-serif;"> </span></div>
+    <p>Please note that your delivery may take longer during sale or other busy periods. We are unable to guarantee delivery earlier than this time frame.</p>
+    <p>We will make every effort to deliver goods within the estimated timescales. However, delays are occasionally inevitable due to unforeseen factors or events outside our control, for example extreme weather, a flood or fire. Rene shall be under no liability for any delay or failure to deliver the products within estimated timescales.</p>
+    <p>For information on product returns, please visit the <a href="https://www.rene.ie/pages/returns" title="product returns">returns section</a> of our website.</p>
+    <div style="text-align: center;"> </div>
+    <div style="text-align: center;"><meta charset="utf-8" /></div>
+    <h3 class="font_8" style="text-align: center;"><strong><span style="color: #ff2a00;">Christmas &amp; New Year Order Schedule 2020.</span></strong></h3>
+    <h3 class="font_8" style="text-align: center;"><span style="color: #ff2a00;"><span class="wixGuard">​</span></span></h3>
+    <h3 class="font_8" style="text-align: center;"><span style="color: #ff2a00;"><span style="text-decoration: underline;"> Order Date</span>                     <span style="text-decoration: underline;">Delivery Date</span></span></h3>
+    <h3 class="font_8" style="text-align: center;"><span style="color: #ff2a00;">16th Dec - 17th Dec         - 18th Dec - 23rd Dec</span></h3>
+    <h3 class="font_8" style="text-align: center;"><span style="color: #ff2a00;">18th Dec - 22nd Dec          - 27th Dec - 31st Dec</span></h3>
+    <h3 class="font_8" style="text-align: center;"><span style="color: #ff2a00;">23rd Dec - 6th Jan           - 8th Jan - 9th Jan</span></h3>
+    <h3 class="font_8" style="text-align: center;"><span style="color: #ff2a00;">   Regular 2 - 3 day delivery schedule recommences on 6th January, 2021.</span></h3>
+    <h3 class="font_8" style="text-align: center;"><span style="color: #ff2a00;">Merry Christmas &amp; Happy New Year!</span></h3>
+    <h3 class="adM"> </h3>
+    <p> </p>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="common-block">
+            <h2>Information</h2>
+            <p><strong>Standard delivery services are provided by Fastway or An Post. Standard delivery to most addresses in Ireland and North Of Ireland generally takes up to 2-3 working days. If An Post is unable to deliver your item, they will leave a delivery notification docket for you. </strong></p>
+            <p>Please note that your delivery may take longer during sale or other busy periods. We are unable to guarantee delivery earlier than this time frame.</p>
+            <p>We will make every effort to deliver goods within the estimated timescales. However, delays are occasionally inevitable due to unforeseen factors or events outside our control, for example extreme weather, a flood or fire. Rene shall be under no liability for any delay or failure to deliver the products within estimated timescales.</p>
+            <p>For information on product returns, please visit the <a href="#">returns section</a> of our website.</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="timetable-block">
+            <h3>Christmas & New Year Order Schedule 2020.</h3>
+            <div class="timetable-box">
+                <div class="timetable-col">
+                    <h4>Order Date</h4>
+                    <ul>
+                        <li>16th Dec - 17th Dec</li>
+                        <li>18th Dec - 22nd Dec</li>
+                        <li>23rd Dec - 6th Jan</li>
+                    </ul>
+                </div>
+                <div class="timetable-col">
+                    <h4>Delivery Date</h4>
+                    <ul>
+                        <li>18th Dec - 23rd Dec</li>
+                        <li>27th Dec - 31st Dec</li>
+                        <li>8th Jan - 9th Jan</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Regular 2 - 3 day delivery schedule<br/>recommences on 6th January, 2021.<br/><strong>Merry Christmas & Happy New Year!</strong></p>
+        </div>
+    </div>
+</div>
+  
+  

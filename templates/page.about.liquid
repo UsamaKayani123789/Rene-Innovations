@@ -1,0 +1,175 @@
+<!-- /templates/page.liquid -->
+<div class="page-title-banner">
+    <div class="container">
+        <h1>
+        {% if settings.language_enable %}
+        <span class="lang1">{{ page.title | split: '|' | first }}</span>
+        <span class="lang2">{{ page.title | split: '|' | last }}</span>
+        {% else %}
+        {{ page.title | split: '|' | first }}
+        {% endif %}
+      </h1>
+      {% include 'breadcrumb' %}
+    </div>	
+  </div>
+  
+  <div class="wrapper">
+  
+    <div class="section-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img src="{{ 'about_content_img.jpg' | asset_url }}" class="img-fluid" alt=""/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-content">
+                      {%- if settings.language_enable -%}
+                        <div class="lang1">
+                          {%- assign content_lg1 = page.content | split: '[lang2]' | first -%}
+                          {% include 'shortcode' load: content_lg1 %}
+                        </div>
+                        <div class="lang2">
+                          {%- assign content_lg2 = page.content | split: '[lang2]' | last -%}
+                          {% include 'shortcode' load: content_lg2 %} 
+                        </div>
+                      {%- else -%}
+                        {%- assign content_lg = page.content | split: '[lang2]' | first -%}
+                        {% include 'shortcode' load: content_lg %}
+                      {%- endif -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="section-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-block">
+                      <img src="{{ 'about_block_01.jpg ' | asset_url }}" class="img-fluid" alt=""/>
+                      <h3>Extensive range</h3>
+                      <p>With a wide range of award-winning domestic and commercial cleaning solutions, we specialise in producing mops, scrubs, accessories and solutions to reduce time spent on cleaning and money spent on disposable cleaning products.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-block">
+                      <img src="{{ 'about_block_02.jpg ' | asset_url }}" class="img-fluid" alt=""/>
+                      <h3>we’ve got you covered</h3>
+                      <p>Whether you’re seeking to maintain pride in your home or professionalism and safety compliance in your workplace, we’ve got you covered when it comes to keeping your premises in tip-top shape with guaranteed quality, continual innovation, and unrivalled customer support throughout Ireland.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- <div class="section-block with-divider about-counter-wrap">
+        <div class="container">
+            <div class="row">
+  
+                <div class="col-sm-3">
+                    <div class="about-counter-box">
+                      <h2>43+</h2>
+                      <p>Daily content pieces</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="about-counter-box">
+                      <h2>54,231</h2>
+                      <p>Users per day</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="about-counter-box">
+                      <h2>12+</h2>
+                      <p>Featured articles</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="about-counter-box">
+                    <h2>12+</h2>
+                    <p>Featured articles</p>
+                  </div>
+              </div>
+  
+            </div>
+        </div>
+    </div> -->
+  
+    <div class="section-block bg-theme mt-o">
+        <div class="container">
+  
+            <div class="section-heading text-center">
+                <h2 class="text-uppercase">Reviews</h2>
+                <p>See what our happy customers have to say</p>
+            </div>
+  
+            <div class="testimonial-wrap">
+                {% section 'testimonials' %}
+            </div>
+  
+        </div>
+    </div>
+  
+    <!-- <div class="section-block">
+      <div class="container">
+  
+          <div class="section-heading text-center">
+              <h2 class="text-uppercase">Our Team</h2>
+              <p>Eget rhoncus feugiat feugiat proin leonisi tristique</p>
+          </div>
+  
+          <div class="team-wrap">
+              <div class="team-slider">
+  
+                  <div class="team-item">
+                      <div class="row">
+  
+                          <div class="col-md-4">
+                              <div class="team-box">
+                                  <div class="team-profile">
+                                      <img src="{{ 'team01.jpg' | asset_url }}" class="img-fluid" alt=""/>
+                                  </div>
+                                  <div class="team-bio">
+                                      <h4>John Doe</h4>
+                                      <h6>CEO</h6>
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <div class="col-md-4">
+                              <div class="team-box">
+                                  <div class="team-profile">
+                                      <img src="{{ 'team01.jpg' | asset_url }}" class="img-fluid" alt=""/>
+                                  </div>
+                                  <div class="team-bio">
+                                      <h4>Sandra Ellips</h4>
+                                      <h6>CTO</h6>
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <div class="col-md-4">
+                            <div class="team-box">
+                                <div class="team-profile">
+                                    <img src="{{ 'team01.jpg' | asset_url }}" class="img-fluid" alt=""/>
+                                </div>
+                                <div class="team-bio">
+                                    <h4>Craig Wilson</h4>
+                                    <h6>Finance Manager</h6>
+                                </div>
+                            </div>
+                        </div>
+  
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+  
+      </div>
+    </div> -->
+  
+  </div>

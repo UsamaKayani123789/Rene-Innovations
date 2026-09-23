@@ -1,0 +1,115 @@
+<div class="page-title-banner">
+  <div class="container">
+  	<h1>
+      {% if settings.language_enable %}
+      <span class="lang1">{{ page.title | split: '|' | first }}</span>
+      <span class="lang2">{{ page.title | split: '|' | last }}</span>
+      {% else %}
+      {{ page.title | split: '|' | first }}
+      {% endif %}
+    </h1>
+    {% include 'breadcrumb' %}
+  </div>	
+</div>
+
+<!-- /templates/page.contact.liquid -->
+<style>
+  .main-container .main-breadcrumbs {
+    margin: 0 !important;
+  }
+</style>
+<div class="page-data-wrap">
+  
+  <div class="container new-form-design">
+    <div class="contact-container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-vertical">
+            {% form 'contact' %}
+            {% if form.posted_successfully? %}
+            <p class="note form-success" {% if settings.language_enable %}data-translate="contact.form.post_success"{% endif %}>
+              {{ 'contact.form.post_success' | t }}
+            </p>
+            {% endif %}
+            {{ form.errors | default_errors }}
+            <h3 class="contact-title" {% if settings.language_enable %}data-translate="contact.form.title"{% endif %}>{{'contact.form.title' | t}}<b {% if settings.language_enable %}data-translate="contact.form.title_after"{% endif %}>{{'contact.form.title_after' | t}}</b></h3>
+            {% assign name_attr = 'contact.form.name' | t | handle %}
+              
+            <div class="form-list">
+              <div class="fields-two-group">
+                <div class="fields-wrap">
+                  <label for="name" class="required">{{ 'contact.form.name' | t }}&nbsp;<em>*</em></label>
+                  <input type="text" id="ContactFormName" class="input-full" name="contact[{{ name_attr }}]" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+                </div>
+                
+                <div class="fields-wrap">
+                  <label for="name" class="required">{{ 'contact.form.email' | t }}&nbsp;<em>*</em></label>
+                  <input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+                </div>
+              </div>
+              
+              <div class="fields-wrap">
+                <label for="name" class="required">{{ 'contact.form.phone' | t }}</label>
+                {% assign name_attr = 'contact.form.phone' | t | handle %}
+                <input type="tel" id="ContactFormPhone" class="input-full" name="contact[{{ name_attr }}]" pattern="[0-9\-]*" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+              </div>
+              
+              <div class="fields-wrap">
+                <label for="name" class="required">{{ 'contact.form.comment' | t }}&nbsp;<em>*</em></label>
+                <textarea rows="5" cols="5" id="ContactFormMessage" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+              </div>
+              
+              <div class="fields-btn">
+                <input type="submit" class="btn-button" {% if settings.language_enable %}data-translate="contact.form.submit"{% endif %} value="{{ 'contact.form.submit' | t }}">
+              </div>
+            </div>
+            
+            {% endform %}
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-contact new-box-design">
+            {% if settings.language_enable %}
+            <div class="lang1">{{ page.content | split: '[lang2]' | first }}</div>
+            <div class="lang2">{{ page.content | split: '[lang2]' | last }}</div>
+            {% else %}
+            {{ page.content | split: '[lang2]' | first }}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-map contact-map">
+    {% if settings.google_map_enable != blank %}
+    <div class="block-googlemap">
+      <script src="//maps.googleapis.com/maps/api/js{% if settings.google_map_api_key != '' %}?key={{settings.google_map_api_key}}{% else %}?v=3.17{% endif %}" type="text/javascript"></script>
+      <script type="text/javascript">
+        function initialize() {
+          var pos = new google.maps.LatLng({{ settings.google_map_pin_latitude }}, {{settings.google_map_pin_longitude}});
+          var mapOptions = {
+            center: pos,
+            panControl: true,
+            scrollwheel: false,
+            zoomControl: true,
+            mapTypeControl: true,
+            scaleControl: true,
+            streetViewControl: true,
+            overviewMapControl: true,
+            zoom: {{settings.google_map_zoom}}
+          };
+            var map = new google.maps.Map(document.getElementById("store_map"), mapOptions);
+            var marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            title: '{{settings.google_map_address}}'
+          });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+      </script>
+      <div id="store_map" style="min-height: 450px; width: 100%;">test</div>
+    </div>
+    {% endif %}
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.8860902630468!2d-6.2121250843255575!3d53.381087579986335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e509266c371%3A0x1baa1a8c1330c3a2!2sRen%C3%A9%20Innovations!5e0!3m2!1sen!2sin!4v1602746857366!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+  </div>
+</div>

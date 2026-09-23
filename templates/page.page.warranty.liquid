@@ -1,0 +1,127 @@
+<!-- /templates/page.contact.liquid -->
+
+<div class="page-title-banner">
+  <div class="container">
+  	<h1>
+      {% if settings.language_enable %}
+      <span class="lang1">{{ page.title | split: '|' | first }}</span>
+      <span class="lang2">{{ page.title | split: '|' | last }}</span>
+      {% else %}
+      {{ page.title | split: '|' | first }}
+      {% endif %}
+    </h1>
+    {% include 'breadcrumb' %}
+  </div>	
+</div>
+
+
+<style>
+  .main-container .main-breadcrumbs {
+    margin: 0 !important;
+  }
+</style>
+
+
+<div class="page-data-wrap">
+  <div class="container new-form-design">
+    <div class="contact-container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-vertical">
+            {% form 'contact' %}
+            <input type="hidden" name="contact[form_type]" value="Register Your Warranty">
+
+            {% if form.posted_successfully? %}
+            <p class="note form-success" {% if settings.language_enable %}data-translate="contact.form.post_success"{% endif %}> {{ 'contact.form.post_success' | t }} </p>
+            {% endif %}
+            {{ form.errors | default_errors }}
+            <div class="text-center reg-warranty-text">
+              <p>Congratulations on your recent purchase and welcome to the Rene's family!</p>
+              <p>To register your guarantee, please complete the form below.</p>
+              <p>If you have any doubt, please see our <a href="https://www-rene-ie.myshopify.com/pages/warranty-terms" target="_blank" title="Warranty Terms" rel="noopener noreferrer">Warranty Terms</a>.</p>
+            </div>
+            {% assign name_attr = 'contact.form.name' | t | handle %}
+
+            
+              <div class="contact-container">
+                <div class="row justify-content-center">
+                  <div class="col-md-7">
+                    <div class="form-list reg-warranty-form">
+                      <div class="fields-two-group">
+                        <div class="fields-wrap">
+                          <label for="name" class="required">{{ 'contact.form.name' | t }}<em>*</em></label>
+                          <input type="text" id="ContactFormName" class="input-full" name="contact[{{ name_attr }}]" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+                        </div>
+                        <div class="fields-wrap">
+                          <label for="name" class="required">{{ 'contact.form.email' | t }}<em>*</em></label>
+                          <input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+                        </div>
+                      </div>
+                      <div class="fields-wrap">
+                        <label for="ContactFormAddress">Address</label>
+                        <input type="text" id="ContactFormAddress" class="input-full textrea-box" name="contact[Address]" 
+                        {% assign name_attr = 'contact.form.address' | t | handle %}
+                        <input type="address" id="ContactFormAddress" class="input-full textrea-box" name="contact[address]{{ name_attr }}]" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.address }}{% endif %}">
+                      </div>
+                      <div class="fields-two-group">
+                        <div class="fields-wrap">
+                          <label for="name">{{ 'contact.form.phone' | t }}</label>
+                          {% assign name_attr = 'contact.form.phone' | t | handle %}
+                          <input type="tel" id="ContactFormPhone" class="input-full" name="contact[{{ name_attr }}]" pattern="[0-9\-]*" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+                        </div>
+                        <div class="fields-wrap">
+                          <label for="ContactFormModel" class="required">Product Model<em>*</em></label>
+                          <select id="ContactFormModel" name="contact[Model]" class="input-full">
+                            <option>Sonic Scrub</option>
+                            <option>Spin Mop Dada</option>                            
+                            <option>Spin Mop Baba</option>
+                            <option>Spin Mop Papa</option>
+                            <option>3 in 1 flexible toilet brush</option>                        
+                          </select>
+                        </div>
+                      </div>
+                      <div class="fields-two-group">
+                        <div class="fields-wrap">
+                          <label for="ContactFormWhere" >Where did you buy from?</label>
+                          <input type="text" id="ContactFormWere" class="input-full" name="contact[ProductWhere]" 
+                          {% assign name_attr = 'contact.form.productwhere' | t | handle %}
+                          <input type="text" id="ContactFormWhere" class="input-full" contact[ProductModel]{{ name_attr }}]" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.address }}{% endif %}">
+                        </div>
+                        <div class="fields-wrap">
+                          <label for="ContactFormDate" class="required">Purchase Date</label>
+                          <input type="date" id="ContactFormDate" class="input-full" name="contact[ProductDate]" 
+                          {% assign name_attr = 'contact.form.productdate' | t | handle %}
+                          <input type="date" id="ContactFormDate" class="input-full" contact[ProductDate]{{ name_attr }}]" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.address }}{% endif %}">
+                        </div>
+                      </div>
+                      <div class="fields-wrap">
+                        <label for="name" >{{ 'contact.form.comment' | t }}</label>
+                        <textarea rows="3" cols="4" id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="{{ 'contact.form.comment' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+                      </div>
+                      <div class="fields-btn text-center">
+                        <input type="submit" class="btn-button" {% if settings.language_enable %}data-translate="contact.form.submit"{% endif %} value="{{ 'contact.form.submit' | t }}">
+                      </div>
+                    </div>
+                  </div>
+                  {% endform %}
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <!-- <div class="content-contact"> -->
+                      {% if settings.language_enable %}
+                      <div class="lang1">{{ page.content | split: '[lang2]' | first }}</div>
+                      <div class="lang2">{{ page.content | split: '[lang2]' | last }}</div>
+                      {% else %}
+                      {{ page.content | split: '[lang2]' | first }}
+                      {% endif %}
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

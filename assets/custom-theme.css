@@ -1,0 +1,19 @@
+div#judgeme_product_reviews {
+    display: none;
+}
+.tab-pane.active.show div#judgeme_product_reviews {
+    display: block;
+}
+#slidecarthq .item img {
+    opacity: inherit;
+}
+#slidecarthq .quantity-selector button:first-of-type, #slidecarthq .quantity-selector button:last-of-type{
+    border-radius: 0px;
+}
+#slidecarthq .item .main-top button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center !important;
+}

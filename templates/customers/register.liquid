@@ -1,0 +1,96 @@
+<!-- /templates/customers/register.liquid -->
+<!-- {% include 'breadcrumb' %} -->
+<div class="page-title-banner">
+  <div class="container">
+  	<h1>
+      {% if settings.language_enable %}
+      <span class="lang1">{{ page.title | split: '|' | first }}</span>
+      <span class="lang2">{{ page.title | split: '|' | last }}</span>
+      {% else %}
+      {{ page.title | split: '|' | first }}
+      {% endif %}
+    </h1>
+    {% include 'breadcrumb' %}
+  </div>	
+</div>
+
+
+
+
+
+
+<div class="container new-form-design">
+  <div class="account-login">
+  <div class="page-title">
+        <!-- <h1 {% if settings.language_enable %}data-translate="customer.register.title"{% endif %}>{{ 'customer.register.title' | t }}</h1> -->
+    </div>
+    <div class="form-box login_content">
+      {% form 'create_customer' %}
+
+        {{ form.errors | default_errors }}
+        <div class="content">
+          
+          <div class="row align-items-center">
+            
+            
+            
+            
+            <div class="col-md-6">
+              <div class="login-left">
+                <div class="page-title">
+                  <h2 {% if settings.language_enable %}data-translate="customer.register.title_form"{% endif %}>{{ 'customer.register.title_form' | t }}</h2>
+                  <p>Create Account to your account to discover all great features in this template</p>
+                </div>
+                <div class="form-list">
+                  <div class="fields-two-group">
+                    <div class="fields-wrap">
+                      <label for="FirstName" class="hidden-label"><span {% if settings.language_enable %}data-translate="customer.register.first_name"{% endif %}>{{ 'customer.register.first_name' | t }}</span><em>&nbsp;*</em></label>
+                      <input type="text" name="customer[first_name]" id="FirstName" class="input-full" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus required>
+                    </div>
+                    <div class="fields-wrap">
+                      <label for="LastName" class="hidden-label"><span {% if settings.language_enable %}data-translate="customer.register.last_name"{% endif %}>{{ 'customer.register.last_name' | t }}</span><em>&nbsp;*</em></label>
+                      <input type="text" name="customer[last_name]" id="LastName" class="input-full" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words" required>
+                    </div>
+                  </div>
+
+                  <div class="fields-wrap">
+                    <label for="Email" class="hidden-label"><span {% if settings.language_enable %}data-translate="customer.register.email"{% endif %}>{{ 'customer.register.email' | t }}</span><em>&nbsp;*</em></label>
+                    <input type="email" name="customer[email]" id="Email" class="input-full" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off" required>
+                  </div>
+                  <div class="fields-wrap">
+                    <label for="CreatePassword" class="hidden-label"><span {% if settings.language_enable %}data-translate="customer.register.password"{% endif %}>{{ 'customer.register.password' | t }}</span><em>&nbsp;*</em></label>
+                    <input type="password" name="customer[password]" id="CreatePassword" class="input-full" required>
+                  </div>
+                  <div class="login-button fields-btn">
+                    <div class="buttons-set">
+                      <p class="required" {% if settings.language_enable %}data-translate="customer.register.required"{% endif %}>{{ 'customer.register.required' | t }}</p>
+                      <input type="submit" {% if settings.language_enable %}data-translate="customer.register.submit"{% endif %} value="{{ 'customer.register.submit' | t }}" class="btn-button" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="login-right text-center">
+                <div class="new-users">
+                  <h2>Already account holder?</h2>
+                  <p>Your privacy and security are important to us. For more information on how we use your data read ourprivacy policy</p>
+                </div>
+                <div class="login-button">
+                  <a class="btn-button" href="https://www.rene.ie/account/login">Login Now</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,500 @@
+<div class="product-view product-page-area {% if settings.move_product_tab != blank %}moved-tab{% endif %}">
+  <div class="section-block">
+  <div class="product-essential">
+    <div class="row">
+      <div class="product-img-box col-md-{{media_col}}">
+        <div class="product-img-list{% if settings.media_slide_layout == 'verticle' %} thumb-vertical{% endif %}">
+          {% include 'media' %}
+        </div>
+      </div>
+      <div class="product-shop col-md-{{main_col}}">
+        <div class="product-shop-wrapper">
+          {%- if settings.product_prev_next != blank -%}
+          <div class="prev-next-products">
+            {%- if collection -%}
+            {%- if collection.previous_product -%}
+            <div class="product-nav product-prev">
+              <a href="{{ collection.previous_product }}" title="Previous Product">
+                {{ settings.product_prev_text }}
+              </a>
+              {%- assign words = collection.previous_product | split:'/' -%}
+              {%- assign word = words.last -%}
+              <div class="product-pop theme-border-color" data-with-product="{{word}}">
+                <script type="text/template">
+                  <img class="product-image lazyload" data-src="[img:medium]" alt="#title#"/>
+                  <h3 class="product-name">#title#</h3>
+                </script>
+              </div>
+            </div>
+            {%- endif -%}
+            {%- if collection.next_product -%}
+            <div class="product-nav product-next">
+              <a class="product-next" href="{{ collection.next_product }}" title="Next Product">
+                {{ settings.product_next_text }}
+              </a>
+              {%- assign words = collection.next_product | split:'/' -%}
+              {%- assign word = words.last -%}
+              <div class="product-pop theme-border-color" data-with-product="{{word}}">
+                <script type="text/template">
+                  <img class="product-image lazyload" data-src="[img:medium]" alt="#title#"/>
+                  <h3 class="product-name">#title#</h3>
+                </script>
+              </div>
+            </div>
+            {%- endif -%}
+            {%- endif -%}
+          </div>
+          {%- endif -%}
+          <div class="product-name top-product-detail">
+            <h1>
+              <a href="{{ product.url }}">
+                {%- if settings.language_enable -%}
+                <span class="lang1">{{ product.title | split: '|' | first }}</span>
+                <span class="lang2">{{ product.title | split: '|' | last }}</span>
+                {%- else -%}
+                {{ product.title | split: '|' | first }}
+                {%- endif -%}
+              </a>
+            </h1>
+          </div>
+
+          <div class="review-product-details">
+            {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+            {% comment %}
+            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+            {% endcomment %}
+          </div>
+
+          <div class="product-type-data">
+            <div class="price-box">
+              <div id="price" class="detail-price" itemprop="price">
+                {%- if variant_tmp.compare_at_price > variant_tmp.price -%}
+                <s class="old-price">{{ variant_tmp.compare_at_price | money }}</s>
+                <!--span class="price_percentage">-{{ variant_tmp.compare_at_price | minus: variant_tmp.price | times: 100.0 | divided_by: variant_tmp.compare_at_price | money_without_currency | times: 100 | remove: '.0'}}%</span-->
+                {%- endif -%}
+                <div class="price">{{ variant_tmp.price | money }}</div>
+              </div>
+              <meta itemprop="priceCurrency" content="{{ shop.currency }}" />
+              {%- if product.available -%}
+              <link itemprop="availability" href="http://schema.org/InStock" />
+              {%- else -%}
+            
+              <link itemprop="availability" href="http://schema.org/OutOfStock" />
+              {%- endif -%}
+            </div>
+          </div>
+
+          <div class="product-type-main">
+          {%- form 'product', product, data-productid: product.id, class:'product-form', id:'product-main-form' -%}
+            <!-- Begin ReCharge code -->
+            {% if product.available %}{% include 'subscription-product' %}{% endif %}
+            <!-- End ReCharge code -->
+            <div id="product-variants" class="product-options" {% if product.options.size == 1 and product.options.first == 'Title' %}style="display: none;"{% endif %}>
+              <select id="product-selectors" name="id" data-productid="{{ product.id }}" style="display: none;">
+                {%- for variant in product.variants -%}
+                {%- if variant.available -%}
+                <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+                {%- else -%}
+                <option disabled="disabled">
+                  {{ variant.title }} - {{'products.product.sold_out' | t}}
+                </option>
+                {%- endif -%}
+                {%- endfor -%}
+              </select>
+            </div>
+
+            <div class="product-options-bottom">
+              <div class="add-to-cart-box">
+                <div class="input-box">
+                  <div class="increase items" onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
+                    <i class="icon-up-dir"></i>
+                  </div>
+                  <input type="text" id="qty" name="quantity" value="1" min="1" class="quantity-selector">
+                  <div class="reduced items" onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;">
+                    <i class="icon-down-dir"></i>
+                  </div>
+                </div>
+                <div class="actions">
+                  {%- if settings.disable_addtolink == blank -%}
+                  <div class="action-list wishlist">
+                    {% include 'wishlist-item' %}
+                  </div>
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+            {%- if settings.product_short_custom != blank -%}
+            <div class="porto-custom-block">
+              <div class="custom-block-bar">
+                {%- if settings.language_enable -%}
+                <div class="lang1">{{ settings.custom_block_content_after | split: '[lang2]' | first }}</div>
+                <div class="lang2">{{ settings.custom_block_content_after | split: '[lang2]' | last }}</div>
+                {%- else -%}
+                {{ settings.custom_block_content_after | split: '[lang2]' | first }}
+                {%- endif -%}
+              </div>
+            </div>
+            {%- endif -%}
+
+               
+  
+            <div class="middle-product-detail">
+              {%- if settings.product_availability -%}
+                  {% if product.tags contains 'pre-order' %}
+                          <span class="in-stock" style="color: red; font-size: 18px"></span> <!-- Insert message for preorder products -->
+                    {% else %} 
+              <div class="product-inventory">
+                <span {% if settings.language_enable %}data-translate="products.product.availability"{% endif %}>{{ 'products.product.availability' | t }} </span>
+                <span class="in-stock">
+                  {%- if product.selected_or_first_available_variant.inventory_management -%}
+                  {%- assign first_inventory = product.selected_or_first_available_variant.inventory_quantity -%}
+                  {%- if first_inventory > 0 -%}
+                  {{first_inventory}} {{ 'products.product.in_stock' | t }}
+                  {%- else -%}
+                  {{ 'products.product.out_of_stock' | t }}
+                  {%- endif -%}
+                  {%- else -%}
+               
+                        {{ 'products.product.many_in_stock' | t }}
+                      {% endif %}
+               
+                </span>
+              </div>
+               {%- endif -%}
+              {%- endif -%}
+              {%- if settings.product_sku -%}
+              {%- assign current_variant = product.selected_or_first_available_variant -%}
+              <div class="product-sku"><span {% if settings.language_enable %}data-translate="products.product.sku"{% endif %}>{{ 'products.product.sku' | t }} </span><span class="sku">{{ current_variant.sku }}</span></div>
+              {%- endif -%}
+              {%- if settings.product_type -%}
+              <div class="product-type">
+                <label {% if settings.language_enable %}data-translate="products.product.product_type"{% endif %}>{{ 'products.product.product_type' | t }} </label>
+                <span>{{ product.type }}</span>
+              </div>
+              {%- endif -%}
+              {%- if settings.product_vendor -%}
+              <div class="product-vendor">
+                <label {% if settings.language_enable %}data-translate="products.product.product_vendor"{% endif %}>{{ 'products.product.product_vendor' | t }} </label>
+                <span>{{ product.vendor }}</span>
+              </div>
+              {%- endif -%}
+              {%- if product.description contains '[countdown]' -%}
+              {%- assign count_down_first = product.description | split:'[/countdown]' | first -%}
+              {%- assign count_down_final = count_down_first | split:'[countdown]' | last -%}
+              <div class="bottom-product-dailydeal bottom-home-dailydeal">
+                <span class="title" {% if settings.language_enable %}data-translate="products.product.count_down"{% endif %}>{{'products.product.count_down' | t }} </span><div class="product-date" data-date="{{ count_down_final }}"></div>
+              </div>
+              {%- endif -%}
+            </div>
+
+            {% if additional_checkout_buttons %}
+              <div class="additional-checkout-buttons">
+                <h3>Express Checkout:</h3>
+                {{ content_for_additional_checkout_buttons }}
+              </div>
+            {% endif %}
+
+            <div class="action-list addtocart">
+              <div class="button-wrapper">
+                {%- if product.available -%}
+                <div class="button-wrapper-content">
+                  <button type="submit" name="add" class="btn-cart add-to-cart bordered uppercase">
+                    <div>{% if product.tags contains 'pre-order' %}PRE-ORDER{% else %} {{ 'products.product.add_to_cart' | t }}{% endif %}</div>
+                  </button>
+                </div>
+                {%- else -%}
+                <div class="button-wrapper-content">
+                  <button href="javascript:;" class="btn-cart add-to-cart">
+                    <span> {{ 'products.product.sold_out' | t }}</span>
+                  </button>
+                </div>
+                {%- endif -%}
+
+
+              </div>
+            </div>
+
+
+          {%- endform -%}
+                                                                          {% if product.tags contains 'oos' %}
+        <div style="    margin: 10px 0;
+    font-weight: 700;
+    padding: 20px 20px 5px;
+   
+    text-align: center;
+    line-height: 1.25em;
+    font-size: 16px">AWAITING STOCK OFFER - Buy now & receive a free scrubbing brush head worth €6.99, for delivery 3rd - 10th February.</p></div>
+        {% endif %}
+          </div>
+
+          {%- if settings.product_tags -%}
+          <div class="tags">
+            <i class="icon-tags" {% if settings.language_enable %}data-translate="blogs.article.tags"{% endif %}>{{ 'blogs.article.tags' | t }}</i>
+            {%- for tag in product.tags -%}
+            <span class="separator">/</span>
+            <a href="/collections/all/{{ tag | handle }}" rel="tag">{{ tag }}</a>
+            {%- endfor -%}
+          </div>
+          {%- endif -%}
+          
+          {%- if settings.disable_socical_icon == blank -%}
+          {% include 'addthis' %}
+          {%- endif -%}
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  {%- if settings.full_width_product_tab == blank -%}
+  <div class="section-block">
+    <div class="product-collateral">
+      <div class="product-description rte" itemprop="description">
+        {% section 'product-page-tab-custom' %}
+      </div>
+    </div>
+  </div>
+  {%- endif -%}
+
+
+  {% if product.tags contains "sonic" %}
+  <!-- <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Cleans Effortlessly</h2>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid" src="{{ 'sonic_scrub.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Spin Mop Dada</h2>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nvZo_bBdWCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div> -->
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Clean at the touch of a button </h2>
+        <p class="font_8">
+          Utilizing a high frequency motor with oscillating pads to 'effortlessly' mop, scrub & polish your floor 900 times per minute. The product was designed to be lightweight and manoeuvrable while providing up to 50 minutes of cordless cleaning. By combining an integrated sprayer with our approved disinfectant and machine washable pads, the Sonic Scrub is far more hygienic than conventional methods.
+        </p>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nvZo_bBdWCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">CORDLESS & RECHARGEABLE</h2>
+        <p class="font_8">Take the Sonic Scrub Mop with you throughout the house without fussing with a cord. One charge will last up to 50 minutes of cleaning & cleans up to 800 sq feet per 10 minutes.</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'sonic_1.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">SCRUBS 12X FASTER THAN BY HAND </h2>
+        <p class="font_8">High - frequency motor with twin oscillating pads that scrub 900 times per minute, removing dirt, grime & bacteria from your floor effortlessly. Very friendly to people with arthritis.</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'sonic_2.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">INTEGRATED SPRAY</h2>
+        <p class="font_8">Equipped with on-demand spray that allows you to dispense just the right amount of cleaning solution or just water.</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'sonic_3.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">REUSABLE PADS</h2>
+        <p class="font_8">A pair of standard cleaning pads are included, which are reusable, and machine washable. Other pads are also available for a different cleaning applications such as Looped pads, Microfibre pads & Waxing pads.</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'sonic_4.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">SUITABLE FOR ALL HARD FLOORS</h2>
+        <p class="font_8">Incredibly easy to use anywhere around the house with the 250° ergonomic control manoeuvres around objects & under furniture. The product weight is 2.5kg</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'sonic_5.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  {% endif %}
+   {% if product.handle contains "spin-mop-papa" %}
+   <!-- <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Adjustable</h2>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid" src="{{ 'spin_mop_papa.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+   <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Spin Mop Papa</h2>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YfmPJ_u8kiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div> -->
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">No more wringing out old traditional mops!</h2>
+        <p class="font_8">
+          René Innovations brings you Spin Mop Papa, the most effective cleaning system for pubs, restaurants, hotels, gyms, schools and your business. Our product utilises powerful centrifugal force to effortlessly spin the mop dry in seconds, no more wet floors! The super absorbent microfibre strands absorb up to 99% dirt & bacteria. While the practical trolley and big mop head save time & money cleaning. A commercial Spin Mop suitable for all floor types!
+        </p>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YfmPJ_u8kiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Super Absorbent Microfibre </h2>
+        <p class="font_8">The super absorbent strands are made from 100% microfiber which can absorb up to 99% of bacteria with just water! The 1,000s of strands can soak up over 1 pint of liquid in just one go!</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'papa_1.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Spin Dry Technology</h2>
+        <p class="font_8">The high speed bearing and hand press pole create powerful centrifugal drying force. By simply pressing the pole you can now easily control the moisture within your mop.</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'papa_2.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Large Telescopic Mop</h2>
+        <p class="font_8">Our 48cm diameter mop head is ideal for covering large floor areas. While the reinforced telescopic pole incorporates a quick lock to adjust it to your desired height.</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'papa_3.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Multi Functional Trolley</h2>
+        <p class="font_8">The practical trolley with tow bar and storage hook make it quick and easy to maneuver.</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'papa_4.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">A big mop for big challenges!</h2>
+        <p class="font_8">Are you ready to give it a spin? </p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'papa_5.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+   {% endif %}
+  {%  if product.handle contains "spin-mop-dada" %}
+  <!-- <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Easy Click</h2>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid" src="{{ 'spin_mop_dada.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Spin Mop Dada</h2>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xzUxdyWvQ1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div> -->
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">No more wringing out old traditional mops!</h2>
+        <p class="font_8">
+          The Spin Mop Dada utilises powerful centrifugal force to effortlessly spin the mop dry in seconds, no more wet floors! While the built in washing gear spins the mop head clean every time. Our super absorbent microfibre strands absorb up to 99% dirt & bacteria. The ergonomic head is suitable for all floor types, reaches under & around furniture while the optional scrubbing brush attachment is great for stubborn dirt! It's reinforced stainless steel handle with quick release lock provides extra durability while the foam hand grip ensures optimal comfort. The machine washable head will insure you have a fresh mop every time.
+        </p>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xzUxdyWvQ1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Commercial Quality Bucket</h2>
+        <p class="font_8">Designed with a detachable basket manufactured from stainless steel. A built in spin washing gear, sturdy handle and full size splash guard.
+        </p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'Dada_1.png' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Super Absorbent Microfibre</h2>
+        <p class="font_8">The super absorbent strands are made from 100% microfiber which can absorb up to 99% of bacteria with just water!</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'Dada_2.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Spin Wash Technology</h2>
+        <p class="font_8">The built in washing device allows you to spin wash your mop head while your cleaning. Simply press the pole to engage the wash cycle.</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'dada_3.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Spin Dry Technology</h2>
+        <p class="font_8">The high speed bearing and hand press pole create powerful centrifugal drying force. By simply pressing the pole you can now easily control the moisture within your mop.</p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'dada_4.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="section-heading text-center mb-30">
+        <h2 class="text-uppercase">Reinforced Stainless Steel Pole</h2>
+        <p class="font_8">The double gauge stainless steel pole has been reinforced for extra durability. While the foam grip provides a comfortable mopping experience. The handy quick lock allows you to lock the telescopic pole to your desired level.
+        </p>
+    </div>
+    <div class="embed-img-fluid">
+      <img class="img-fluid image_height_width-set" src="{{ 'dada_5.jpg' | asset_url }}" alt=""/>
+    </div>
+  </div>
+  {% endif %}
+
+  {%- if settings.related_product_display -%}
+  {%- if settings.full_width_background_related == blank -%}
+  <div class="section-block">
+    <div class="products-related">
+      <div class="products-collection porto-products">
+        {%- if settings.related_product_type == "tags" -%}
+        {% include 'related-products-by-tags' %}
+        {%- else -%}
+        {% include 'related-products' %}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+  {%- endif -%}
+  {%- endif -%}
+</div>
