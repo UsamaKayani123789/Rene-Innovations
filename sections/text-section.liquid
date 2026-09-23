@@ -1,4 +1,3 @@
-{%- include 'alt-domain-check' -%}
 {%- if section.blocks.size > 0 -%}
 {%- assign col = 12 | divided_by: section.blocks.size -%}
 {%- else -%}
@@ -22,14 +21,12 @@
                 {{ block.settings.item_title | split: '|' | first }}
                 {%- endif -%}
               </h3>
-              {%- assign item_text = block.settings.item_text -%}
-              {%- if is_alt_domain and block.settings.item_text_alt != blank -%}{%- assign item_text = block.settings.item_text_alt -%}{%- endif -%}
               <p>
                 {%- if settings.language_enable -%}
-                <span class="lang1">{{ item_text | split: '|' | first }}</span>
-                <span class="lang2">{{ item_text | split: '|' | last }}</span>
+                <span class="lang1">{{ block.settings.item_text | split: '|' | first }}</span>
+                <span class="lang2">{{ block.settings.item_text | split: '|' | last }}</span>
                 {%- else -%}
-                {{ item_text | split: '|' | first }}
+                {{ block.settings.item_text | split: '|' | first }}
                 {%- endif -%}
               </p>
             </div>
@@ -135,12 +132,6 @@
           "id": "item_text",
           "label": "Item Text",
           "default": "Content"
-        },
-        {
-          "type": "textarea",
-          "id": "item_text_alt",
-          "label": "Item Text (Alternate Domain)",
-          "info": "Shown instead of Item Text on the alternate domain (e.g. spinmop.com). Leave empty to use Item Text."
         }
       ]
     }
