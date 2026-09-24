@@ -16,6 +16,26 @@
 {%- assign image_logo_sticky_height = '' -%}
 {% endcase %}
 {% capture logo_sticky_size %}{{ image_logo_sticky_width }}x{{ image_logo_sticky_height }}{% endcapture %}
+{%- include 'alt-domain-check' -%}
+{%- assign alt_logo_size = logo_size -%}
+{%- assign alt_logo_sticky_size = logo_sticky_size -%}
+{%- if is_alt_domain -%}
+{%- assign alt_logo_width = settings.alt_logo_width | remove: 'px' | strip -%}
+{%- assign alt_logo_sticky_width = settings.alt_logo_sticky_width | remove: 'px' | strip -%}
+{%- if alt_logo_width != blank -%}{%- assign alt_logo_size = alt_logo_width | append: 'x' -%}{%- endif -%}
+{%- if alt_logo_sticky_width != blank -%}{%- assign alt_logo_sticky_size = alt_logo_sticky_width | append: 'x' -%}{%- endif -%}
+{%- if alt_logo_width != blank or alt_logo_sticky_width != blank -%}
+<style>
+{%- if alt_logo_width != blank %}
+.site-logo img.alt-logo { max-width: {{ alt_logo_width }}px; }
+{%- endif -%}
+{%- if alt_logo_sticky_width != blank %}
+.site-sticky-logo img.alt-logo,
+.header-clone .site-logo img.alt-logo { max-width: {{ alt_logo_sticky_width }}px; }
+{%- endif %}
+</style>
+{%- endif -%}
+{%- endif %}
 {% if settings.header_show_notice != blank %}
 {% section 'header-notice' %}
 {% endif %}
