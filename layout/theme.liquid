@@ -144,6 +144,8 @@
                 Judge.me reviews on the home page. Lives here (not in templates/index.liquid)
                 because Replo overwrites that file every time the home page is republished.
               {%- endcomment -%}
+              {%- comment -%} The Replo home page embeds the Starter Kit product reviews widget (1 review); the carousel below shows all featured reviews instead. {%- endcomment -%}
+              <style>#replo-fullpage-element #judgeme_product_reviews { display: none !important; }</style>
               <div class="section-block home-judgeme-reviews">
                 <div class="container">
                   <div class="section-heading text-center">
