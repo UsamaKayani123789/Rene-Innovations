@@ -139,6 +139,21 @@
         <div class="main-wrapper">
           <div class="main">
             {{ content_for_layout }}
+            {%- if template.name == 'index' -%}
+              {%- comment -%}
+                Judge.me reviews on the home page. Lives here (not in templates/index.liquid)
+                because Replo overwrites that file every time the home page is republished.
+              {%- endcomment -%}
+              <div class="section-block home-judgeme-reviews">
+                <div class="container">
+                  <div class="section-heading text-center">
+                    <h2 class="text-uppercase">Reviews</h2>
+                    <p>See what our happy customers have to say</p>
+                  </div>
+                  {% include 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}
+                </div>
+              </div>
+            {%- endif -%}
           </div>
         </div>
       </div>
@@ -341,6 +356,27 @@
 
 
       {% render 'wholesale-now', customer: customer, template: template, product: product, cart: cart %}
+      {%- include 'alt-domain-check' -%}
+      {%- if is_alt_domain -%}
+        {%- comment -%}
+          Replo pages store links as absolute rene.ie URLs, which send spinmop.com visitors
+          to rene.ie. Both domains serve the same store, so keep the visitor on this domain.
+        {%- endcomment -%}
+        <script>
+          (function () {
+            var re = /^https?:\/\/(www\.)?rene\.ie(?=\/|$)/i;
+            function fix(root) {
+              var links = (root || document).querySelectorAll('a[href*="rene.ie"]');
+              for (var i = 0; i < links.length; i++) {
+                var href = links[i].getAttribute('href');
+                if (re.test(href)) links[i].setAttribute('href', href.replace(re, '') || '/');
+              }
+            }
+            fix();
+            document.addEventListener('DOMContentLoaded', function () { fix(); });
+          })();
+        </script>
+      {%- endif -%}
       </body>
 </html>
 

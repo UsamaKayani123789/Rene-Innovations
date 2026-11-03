@@ -4,6 +4,16 @@ div#judgeme_product_reviews {
 .tab-pane.active.show div#judgeme_product_reviews {
     display: block;
 }
+/* Replo product pages have no tabs, so the rule above never shows the review widget there */
+#replo-fullpage-element div#judgeme_product_reviews {
+    display: block;
+}
+/* Theme hides every img without .lazyloaded (styles.scss.liquid). Replo carousels clone
+   their slides after lazysizes has run, so the visible clone stayed at opacity 0. */
+#replo-fullpage-element img:not(.lazyloaded) {
+    opacity: 1;
+    background-color: transparent;
+}
 #slidecarthq .item img {
     opacity: inherit;
 }
