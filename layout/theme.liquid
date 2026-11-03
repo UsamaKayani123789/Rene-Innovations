@@ -139,23 +139,6 @@
         <div class="main-wrapper">
           <div class="main">
             {{ content_for_layout }}
-            {%- if template.name == 'index' -%}
-              {%- comment -%}
-                Judge.me reviews on the home page. Lives here (not in templates/index.liquid)
-                because Replo overwrites that file every time the home page is republished.
-              {%- endcomment -%}
-              {%- comment -%} The Replo home page embeds the Starter Kit product reviews widget (1 review); the carousel below shows all featured reviews instead. {%- endcomment -%}
-              <style>#replo-fullpage-element #judgeme_product_reviews { display: none !important; }</style>
-              <div class="section-block home-judgeme-reviews">
-                <div class="container">
-                  <div class="section-heading text-center">
-                    <h2 class="text-uppercase">Reviews</h2>
-                    <p>See what our happy customers have to say</p>
-                  </div>
-                  {% include 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}
-                </div>
-              </div>
-            {%- endif -%}
           </div>
         </div>
       </div>
@@ -358,6 +341,7 @@
 
 
       {% render 'wholesale-now', customer: customer, template: template, product: product, cart: cart %}
+      {%- include 'judgeme-dada-reviews' -%}
       {%- include 'alt-domain-check' -%}
       {%- if is_alt_domain -%}
         {%- comment -%}
