@@ -366,12 +366,21 @@
         {%- endcomment -%}
         <script>
           (function () {
-            var re = /^https?:\/\/(www\.)?rene\.ie(?=\/|$)/i;
+            var re = /^https?:\/\/(www\.)?rene\.ie(?=[\/?#]|$)/i;
+            function local(u) { return u.replace(re, '') || '/'; }
+            // Replo click actions (e.g. the home page collection cards) navigate with
+            // window.open(url, '_top') using URLs stored in Replo's own JS, not the theme.
+            var nativeOpen = window.open;
+            window.open = function (u) {
+              var href = typeof u === 'string' ? u : (u && u.href);
+              if (href && re.test(href)) arguments[0] = local(href);
+              return nativeOpen.apply(this, arguments);
+            };
             function fix(root) {
               var links = (root || document).querySelectorAll('a[href*="rene.ie"]');
               for (var i = 0; i < links.length; i++) {
                 var href = links[i].getAttribute('href');
-                if (re.test(href)) links[i].setAttribute('href', href.replace(re, '') || '/');
+                if (re.test(href)) links[i].setAttribute('href', local(href));
               }
             }
             fix();
